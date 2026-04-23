@@ -1,0 +1,1349 @@
+//// ------------------------------------------------------
+//// THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+//// ------------------------------------------------------
+
+Table Organisation {
+  id String [pk]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  name String [not null]
+}
+
+Table User {
+  id String [pk]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  email String [unique, not null]
+  password String [not null]
+  name String
+  firstname String
+  lastname String
+  posts Post [not null]
+  role Role [not null]
+  hasCreatedActivitiLogs ActivityLog [not null]
+  surveyResultsCreated SurveyResult [not null]
+  surveyResultsUpdated SurveyResult [not null]
+  surveysCreated Survey [not null]
+  surveysUpdated Survey [not null]
+  notes Note [not null]
+  activitySubmits ActivitySubmit [not null]
+  Approvals Approval [not null]
+}
+
+Table Post {
+  id String [pk]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  published Boolean [not null]
+  title String [not null]
+  content String
+  author User
+  authorId String
+}
+
+Table Farmer {
+  id String [pk]
+  shortCode String
+  organisation String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  name String [unique, not null]
+  supportingServiceActivities SupportingServiceActivity [not null]
+
+  indexes {
+    (shortCode, organisation) [unique]
+  }
+}
+
+Table SupportingServiceCategoryType {
+  id String [pk]
+  shortCode String
+  organisation String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  supportingServiceCategories SupportingServiceCategory [not null]
+  name String [not null]
+  description String
+  type String
+  supportingServiceActivity SupportingServiceActivity [not null]
+
+  indexes {
+    (shortCode, organisation) [unique]
+  }
+}
+
+Table SupportingServiceCategory {
+  id String [pk]
+  shortCode String
+  organisation String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  supportingServiceCategoryTypeId String [not null]
+  supportingServiceCategoryType SupportingServiceCategoryType [not null]
+  supportingServiceActivities SupportingServiceActivity [not null]
+  name String [not null]
+  description String
+  type String
+  SupportingServiceActivityType SupportingServiceActivityType [not null]
+  SupportingServiceInputType SupportingServiceInputType [not null]
+
+  indexes {
+    (shortCode, organisation) [unique]
+  }
+}
+
+Table SupportingServiceActivityType {
+  id String [pk]
+  shortCode String
+  organisation String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  supportingServiceActivities SupportingServiceActivity [not null]
+  name String [not null]
+  description String
+  type String
+  beneficiaryType BeneficiaryType [not null, default: 'INDIVIDUAL']
+  supportingServiceInputType SupportingServiceInputType
+  supportingServiceInputTypeId String
+  supportingServiceCategory SupportingServiceCategory [not null]
+  supportingServiceCategoryId String [not null]
+
+  indexes {
+    (shortCode, organisation) [unique]
+  }
+}
+
+Table SupportingServiceInputType {
+  id String [pk]
+  shortCode String
+  organisation String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  name String [not null]
+  description String
+  type String
+  supportingServiceCategory SupportingServiceCategory [not null]
+  supportingServiceCategoryId String [not null]
+  supportingServiceActivities SupportingServiceActivity [not null]
+  SupportingServiceActivityType SupportingServiceActivityType [not null]
+
+  indexes {
+    (shortCode, organisation) [unique]
+  }
+}
+
+Table SupportingServiceActivity {
+  id String [pk]
+  shortCode String
+  organisation String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  supportingServiceInputType SupportingServiceInputType
+  supportingServiceInputTypeId String
+  supportingServiceActivityType SupportingServiceActivityType [not null]
+  supportingServiceActivityTypeId String [not null]
+  farmer Farmer
+  farmerId String
+  supportingServiceCategory SupportingServiceCategory [not null]
+  supportingServiceCategoryId String [not null]
+  beneficiaryType String
+  operator String [not null]
+  dateOfService DateTime [not null]
+  ServiceActivityBeneficiaries ServiceActivityBeneficiaries [not null]
+  serviceActivityLocations ServiceActivityLocation [not null]
+  description String
+  locationId String
+  location Location
+  supportingServiceCategoryType SupportingServiceCategoryType
+  supportingServiceCategoryTypeId String
+
+  indexes {
+    (shortCode, organisation) [unique]
+  }
+}
+
+Table ServiceActivityBeneficiaries {
+  id String [pk]
+  supportingServiceActivityId String [not null]
+  supportingServiceActivity SupportingServiceActivity [not null]
+  personId String [not null]
+  person Person [not null]
+  primary Boolean
+  itemValue Decimal
+  itemsProcessed Decimal
+  values Json
+  grade Decimal
+  score Decimal
+  total Decimal
+}
+
+Table ServiceActivityLocation {
+  id String [pk]
+  supportingServiceActivityId String [not null]
+  supportingServiceActivity SupportingServiceActivity [not null]
+  locationId String [not null]
+  location Location [not null]
+}
+
+Table ActivityLog {
+  id String [pk]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  organisation String [not null]
+  createdBy User [not null]
+  createdById String [not null]
+  type String [not null]
+  activityName String
+  note String [not null]
+  dataPreview Json [not null]
+  data Json [not null]
+}
+
+Table Season {
+  id String [pk]
+  shortCode String [not null]
+  organisation String [not null]
+  firestoreId String
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  name String [not null]
+  startsAt DateTime [not null]
+  endsAt DateTime
+  active Boolean [not null]
+  usedInFarms Farm [not null]
+  lots Lot [not null]
+
+  indexes {
+    (shortCode, organisation) [unique]
+  }
+}
+
+Table Tag {
+  id String [pk]
+  shortCode String
+  organisation String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  name String [not null]
+  usedByLocations Location [not null]
+  usedByFacilities Facility [not null]
+
+  indexes {
+    (shortCode, organisation) [unique]
+  }
+}
+
+Table Crop {
+  id String [pk]
+  shortCode String
+  organisation String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  name String [not null]
+  usedByVarieties CropVariety [not null]
+  usedByPlots Plot [not null]
+  usedByProductTypes ProductType [not null]
+
+  indexes {
+    (shortCode, organisation) [unique]
+  }
+}
+
+Table CropVariety {
+  id String [pk]
+  shortCode String
+  organisation String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  name String [not null]
+  description String
+  crop Crop [not null]
+  cropId String [not null]
+  usedByProducts Product [not null]
+  usedByPlots Plot [not null]
+
+  indexes {
+    (shortCode, organisation) [unique]
+  }
+}
+
+Table CertificationType {
+  id String [pk]
+  shortCode String
+  organisation String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  name String [not null]
+  products Product [not null]
+  usedByCertifications Certification [not null]
+  auditActivities AuditActivity [not null]
+
+  indexes {
+    (shortCode, organisation) [unique]
+  }
+}
+
+Table GeoCoordinate {
+  id String [pk]
+  shortCode String [unique]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  name String
+  latitude Decimal [not null]
+  longitude Decimal [not null]
+  altitude Decimal
+  accuracy Decimal
+  altitudeAccuracy Decimal
+  speed Decimal
+  altitudeMin Decimal
+  altitudeMax Decimal
+  usedByFacilities Facility [not null]
+  usedByLocations Location [not null]
+  usedByFarmHouseHoldCoordinate Farm [not null]
+}
+
+Table Location {
+  id String [pk]
+  shortCode String
+  organisation String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  mainType EnumMainType [not null, default: 'GLOBAL']
+  type String [not null]
+  name String [not null]
+  coordinateId String
+  coordinate GeoCoordinate
+  parentId String
+  parent Location
+  tags Tag [not null]
+  children Location [not null]
+  originLocationForProducts Product [not null]
+  facilities Facility [not null]
+  facilitiesCustom Facility [not null]
+  SupportingServiceActivity SupportingServiceActivity [not null]
+  ServiceActivityLocation ServiceActivityLocation [not null]
+
+  indexes {
+    (shortCode, organisation, type) [unique]
+  }
+}
+
+Table ProductType {
+  id String [pk]
+  shortCode String
+  organisation String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  name String [not null]
+  usedByProducts Product [not null]
+  cropId String
+  crop Crop
+
+  indexes {
+    (shortCode, organisation) [unique]
+  }
+}
+
+Table Product {
+  id String [pk]
+  shortCode String
+  organisation String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  name String [not null]
+  sku String
+  description String
+  organic Boolean
+  singleOrigin Boolean
+  dry Boolean
+  productTypeId String [not null]
+  productType ProductType [not null]
+  grade Int
+  originVarietyId String [not null]
+  originVariety CropVariety [not null]
+  certificationTypes CertificationType [not null]
+  originFacilities Facility [not null]
+  originFarms Farm [not null]
+  originLocationId String [not null]
+  originLocation Location [not null]
+  prices Price [not null]
+
+  indexes {
+    (shortCode, organisation) [unique]
+  }
+}
+
+Table Price {
+  id String [pk]
+  shortCode String
+  organisation String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  unit String [not null]
+  amount Decimal [not null]
+  perAmountUnit String [not null]
+  perAmountAmount Decimal [not null]
+  active Boolean [default: true]
+  startsAt DateTime
+  endsAt DateTime
+  productId String [not null]
+  product Product [not null]
+
+  indexes {
+    (shortCode, organisation) [unique]
+  }
+}
+
+Table Person {
+  id String [pk]
+  shortCode String
+  organisation String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  type String [not null]
+  email String
+  phone String
+  phone2 String
+  firstName String [not null]
+  middleName String
+  lastName String [not null]
+  gender String
+  dateOfBirth DateTime
+  dateOfBirthApproximate Boolean
+  nickName String
+  identificationNumber String
+  identificationNumberType String
+  education String
+  maritalStatus String
+  customFields Json
+  mainContactPersonFor Facility [not null]
+  contacts Contact [not null]
+  ServiceActivityBeneficiaries ServiceActivityBeneficiaries [not null]
+  notes Note [not null]
+  payments PaymentTransaction [not null]
+
+  indexes {
+    (shortCode, organisation) [unique]
+  }
+}
+
+Table Contact {
+  id String [pk]
+  shortCode String [not null]
+  organisation String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  firstName String
+  lastName String
+  type String [not null]
+  email String
+  phone String
+  address String
+  primary Boolean
+  registeredUnderPrincipalsName Boolean
+  registeredForMobileMoney Boolean
+  personId String [not null]
+  person Person [not null]
+  wallets Wallet [not null]
+
+  indexes {
+    (shortCode, organisation) [unique]
+  }
+}
+
+Table Wallet {
+  id String [pk]
+  shortCode String [not null]
+  organisation String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  externalSystemName String
+  type String [not null]
+  phone String
+  externalId String
+  externalUuid String
+  externalName String
+  externalFirstName String
+  externalLastName String
+  errorMsg String
+  errorStatus String
+  name_on_network String
+  name_matches_network_score Decimal
+  name_matches_network_status String
+  contactId String [not null]
+  contact Contact [not null]
+  paymentTransactions PaymentTransaction [not null]
+
+  indexes {
+    (shortCode, organisation) [unique]
+  }
+}
+
+Table Polygon {
+  id String [pk]
+  shortCode String [unique]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  active Boolean [not null]
+  status String
+  areaCalculated Decimal
+  coordinates Json [not null]
+  source String [not null]
+  polygonWarnings PolygonWarning [not null]
+  polygonInteractionWarnings PolygonInteractionWarning [not null]
+  plotId String [not null]
+  plot Plot [not null]
+  notes Note [not null]
+}
+
+Table PolygonWarning {
+  id String [pk]
+  polygonId String [not null]
+  key String [not null]
+  fixed Boolean [not null]
+  polygon Polygon [not null]
+}
+
+Table PolygonInteractionWarning {
+  id String [pk]
+  key String [not null]
+  fixed Boolean [not null]
+  polygons Polygon [not null]
+}
+
+Table Facility {
+  id String [pk]
+  shortCode String
+  organisation String [not null]
+  firestoreId String
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  name String [not null]
+  type String [not null]
+  areaTotalManual Decimal
+  address Json
+  locationId String
+  customLocationId String
+  location Location
+  customLocation Location
+  coordinateId String
+  coordinate GeoCoordinate
+  mainContactPersonId String
+  mainContactPerson Person
+  countryIso String
+  timezone String
+  farm Farm
+  tags Tag [not null]
+  usedAsOriginFacilityForProducts Product [not null]
+  vessles Vessel [not null]
+}
+
+Table Certification {
+  id String [pk]
+  shortCode String
+  organisation String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  status String [not null]
+  startsAt DateTime [not null]
+  endsAt DateTime
+  certificationType CertificationType [not null]
+  certificationTypeId String [not null]
+  farm Farm
+  farmId String
+  plot Plot
+  plotId String
+  auditActivities AuditActivity [not null]
+
+  indexes {
+    (shortCode, organisation) [unique]
+  }
+}
+
+Table AuditActivity {
+  id String [pk]
+  shortCode String
+  organisation String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  type String [not null]
+  name String [not null]
+  description String
+  status String [not null]
+  startDate DateTime [not null]
+  scope CertificationType [not null]
+  farm Farm
+  farmId String
+  nonCompliances AuditNonCompliance [not null]
+  entries AuditEntry [not null]
+  conductedForCertifications Certification [not null]
+
+  indexes {
+    (shortCode, organisation) [unique]
+  }
+}
+
+Table AuditEntry {
+  id String [pk]
+  shortCode String
+  organisation String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  type String [not null]
+  name String [not null]
+  description String
+  status String [not null]
+  auditActivity AuditActivity [not null]
+  auditActivityId String [not null]
+  targetNonCompliance AuditNonCompliance
+  targetNonComplianceId String
+  targetFarm Farm
+  targetFarmId String
+  targetPlot Plot
+  targetPlotId String
+  targetSurvey Survey
+  targetSurveyId String
+
+  indexes {
+    (shortCode, organisation) [unique]
+  }
+}
+
+Table AuditNonCompliance {
+  id String [pk]
+  shortCode String
+  organisation String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  type String [not null]
+  description String
+  status String [not null]
+  severity String [not null]
+  correctiveActionType String [not null]
+  correctiveActionDescription String
+  notes String
+  correctiveActionDeadlineDate DateTime
+  followUpDate DateTime
+  targetFarm Farm
+  targetFarmId String
+  targetPlot Plot
+  targetPlotId String
+  auditActivity AuditActivity
+  auditActivityId String
+  targetedInAuditEntries AuditEntry [not null]
+
+  indexes {
+    (shortCode, organisation) [unique]
+  }
+}
+
+Table Farm {
+  id String [pk]
+  organisation String [not null]
+  firestoreId String
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  facility Facility [not null]
+  facilityId String [unique, not null]
+  parentFacilityName String
+  season Season
+  seasonId String
+  plots Plot [not null]
+  certifications Certification [not null]
+  contracts Contract [not null]
+  countItems CountItem [not null]
+  surveyResults SurveyResult [not null]
+  certificationStatus String
+  approvalStatus String
+  creationStatus String
+  houseHoldCoordinateId String
+  houseHoldCoordinate GeoCoordinate
+  contractDate DateTime
+  registrationDate DateTime
+  certificationStartDate DateTime
+  lastChemicalUseDate DateTime
+  lastInspectionDate DateTime
+  firstVisitDate DateTime
+  usedAsOriginFarmForProducts Product [not null]
+  notes Note [not null]
+  incomingPayloads JsonPayload [not null]
+  payments PaymentTransaction [not null]
+  auditActivities AuditActivity [not null]
+  auditEntries AuditEntry [not null]
+  auditNonCompliances AuditNonCompliance [not null]
+  Lot Lot [not null]
+}
+
+Table CountItem {
+  id String [pk]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  category String [not null]
+  type String [not null]
+  subType String
+  count Int [not null]
+  plotId String
+  plot Plot
+  farmId String
+  farm Farm
+}
+
+Table Plot {
+  id String [pk]
+  shortCode String
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  firestoreId String
+  type String [not null]
+  name String [not null]
+  status String
+  farm Farm [not null]
+  farmId String [not null]
+  polygons Polygon [not null]
+  plotCountItems CountItem [not null]
+  satelliteAnalysis SatelliteAnalysis [not null]
+  certificationStatus String
+  interCropped Boolean
+  active Boolean
+  mainVarieties CropVariety [not null]
+  secondaryCrops Crop [not null]
+  yieldEstimateRaw Int
+  yieldEstimateProcessed Int
+  cultivationStartDate DateTime
+  registrationDate DateTime
+  lastChemicalUseDate DateTime
+  principalOwnsLand Boolean
+  principalLeasesLand Boolean
+  hasRightToLand Boolean
+  hasLandTitle Boolean
+  ownerName String
+  establishedBefore2020 Boolean
+  hasShadeTrees Boolean
+  distanceToForestKnown Boolean
+  distanceToForest Int
+  traditionalOwners Boolean
+  traditionalOwnersPresent Boolean
+  areaSizeManual Float
+  areaSizeOrganicManual Float
+  notes Note [not null]
+  certifications Certification [not null]
+  vessels Vessel [not null]
+  auditEntries AuditEntry [not null]
+  auditNonCompliances AuditNonCompliance [not null]
+}
+
+Table Contract {
+  id String [pk]
+  shortCode String
+  organisation String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  status String [not null]
+  startsAt DateTime [not null]
+  endsAt DateTime
+  farm Farm [not null]
+  farmId String [not null]
+
+  indexes {
+    (shortCode, organisation) [unique]
+  }
+}
+
+Table SatelliteAnalysis {
+  id String [pk]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  plotId String [not null]
+  plot Plot [not null]
+  status String [not null]
+  parcelId String [not null]
+  entity String [not null]
+  name String [not null]
+  area Decimal
+  countryIso String
+  countryRisk String
+  deforestationAreaHa Decimal
+  deforestationRisk String
+  landcoverForestCoverage Decimal
+  landcoverNoTreesCoverage Decimal
+  landcoverPlantationCoverage Decimal
+  landcoverShrubsCoverage Decimal
+  rawData Json [not null]
+}
+
+Table Survey {
+  id String [pk]
+  shortCode String
+  organisation String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [default: `now()`, not null]
+  deletedAt DateTime
+  title String [not null]
+  description String [not null]
+  createdBy String [not null]
+  updatedBy String [not null]
+  surveyQuestions SurveyQuestion [not null]
+  surveyResults SurveyResult [not null]
+  createdByUser User [not null]
+  updatedByUser User [not null]
+  auditEntries AuditEntry [not null]
+
+  indexes {
+    (shortCode, organisation) [unique]
+  }
+}
+
+Table SurveyQuestion {
+  id String [pk]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [default: `now()`, not null]
+  deletedAt DateTime
+  question String [not null]
+  description String [not null]
+  answerType String [not null]
+  answerOptions Json [not null]
+  min Int [not null]
+  max Int [not null]
+  unique_key String [not null]
+  sorting_index Int [not null]
+  surveyId String
+  sectionId String
+  survey Survey
+  section Section
+  surveyAnswers SurveyAnswer [not null]
+}
+
+Table Section {
+  id String [pk]
+  name String [not null]
+  surveyQuestions SurveyQuestion [not null]
+}
+
+Table SurveyResult {
+  id String [pk]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [default: `now()`, not null]
+  deletedAt DateTime
+  createdBy String [not null]
+  updatedBy String [not null]
+  farmId String
+  surveyId String
+  survey Survey
+  farm Farm
+  createdByUser User [not null]
+  updatedByUser User [not null]
+  surveyAnswers SurveyAnswer [not null]
+}
+
+Table SurveyAnswer {
+  id String [pk]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [default: `now()`, not null]
+  deletedAt DateTime
+  survey_result_id String [not null]
+  survey_question_id String [not null]
+  answer String [not null]
+  surveyResult SurveyResult [not null]
+  surveyQuestion SurveyQuestion [not null]
+}
+
+Table Document {
+  id String [pk]
+  organisation String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [default: `now()`, not null]
+  deletedAt DateTime
+  name String
+  description String
+  type String
+  mimeType String
+  sourceType String
+  url String
+  externalId String
+  storagePath String
+  language String
+  lastModifiedDate DateTime
+  isLocked Boolean
+  index Int
+  size Int
+  originalFileName String
+  note Note
+  noteId String
+  Approval Approval
+  approvalId String
+}
+
+Table Note {
+  id String [pk]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [default: `now()`, not null]
+  deletedAt DateTime
+  organisation String [not null]
+  status String [not null]
+  content String [not null]
+  createdBy User [not null]
+  createdById String [not null]
+  farm Farm [not null]
+  farmId String [not null]
+  plot Plot [not null]
+  plotId String [not null]
+  polygon Polygon [not null]
+  polygonId String [not null]
+  person Person [not null]
+  personId String [not null]
+  documents Document [not null]
+}
+
+Table Rule {
+  id String [pk]
+  category String [not null]
+  name String [unique, not null]
+  functionCode String
+  functionType FunctionTypes [not null]
+  commonThreshold Int [not null]
+  countryAdjustments String
+}
+
+Table ScoringResult {
+  id String [pk]
+  ruleName String [not null]
+  inputValue String
+  scoreValue Float [not null]
+  createdAt DateTime [default: `now()`, not null]
+}
+
+Table Change {
+  id String [pk]
+  startTime DateTime
+  endTime DateTime
+  transaction String [not null]
+  sourceType String [not null]
+  objectId String [not null]
+  objectType String [not null]
+  operationType String
+  name String [not null]
+  updatedBy String [not null]
+  oldValue String
+  newValue String
+}
+
+Table JsonPayload {
+  id String [pk]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [default: `now()`, not null]
+  deletedAt DateTime
+  organisation String [not null]
+  entityId String [not null]
+  source String [not null]
+  payload Json [not null]
+  Farm Farm
+  farmId String
+}
+
+Table Lot {
+  id String [pk]
+  idCode String [unique]
+  organisation String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  chainLabel String [not null]
+  chainId String [not null]
+  status String [not null]
+  systemStatus String [not null]
+  containerId String
+  payments PaymentTransaction [not null]
+  accumulationType String [not null]
+  originType String[] [not null]
+  type String[] [not null]
+  isBackDating Boolean [not null]
+  purchaseStatus String
+  paymentStatus String
+  transportStatus String
+  modificationStatus String
+  reportStatus String
+  approvalStatus String
+  startDate DateTime [not null]
+  endDate DateTime [not null]
+  weight Decimal [not null]
+  weightUnit String [not null]
+  sackCount Int [not null]
+  properties Json [not null]
+  farm Farm
+  farmId String
+  season Season [not null]
+  seasonId String [not null]
+  parentLots Lot [not null]
+  parentLot Lot
+  parentlotId String
+  activitySubmits ActivitySubmit [not null]
+  approvals Approval [not null]
+}
+
+Table ActivitySubmit {
+  id String [pk]
+  organisation String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  createdBy User [not null]
+  createdById String [not null]
+  rawData Json
+  approvals Approval [not null]
+  lot Lot [not null]
+  lotId String [not null]
+  processingPropertiesId String
+}
+
+Table Approval {
+  id String [pk]
+  organisation String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  type String [not null]
+  status String
+  note String
+  documents Document [not null]
+  user User [not null]
+  userId String [not null]
+  lot Lot
+  lotId String
+  activitySubmit ActivitySubmit
+  activitySubmitId String
+}
+
+Table PaymentTransaction {
+  id String [pk]
+  organisation String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  status String [not null]
+  externalStatus String [not null]
+  externalId String [not null]
+  accountId String
+  payeeFirstName String [not null]
+  payeeLastName String [not null]
+  type String [not null]
+  paymentDate DateTime [not null]
+  weight Decimal [not null]
+  weightUnit String [not null]
+  amount Decimal [not null]
+  currency String [not null]
+  conversionToUSD Decimal [not null]
+  lot Lot [not null]
+  lotId String [unique, not null]
+  farm Farm
+  farmId String
+  person Person
+  personId String
+  wallet Wallet
+  walletId String
+  errorMsg String
+}
+
+Table Vessel {
+  id String [pk]
+  shortCode String
+  organisation String [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  deletedAt DateTime
+  name String [not null]
+  type String [not null]
+  subType String [not null]
+  description String
+  permanent Boolean
+  size Decimal
+  weight Decimal
+  facility Facility
+  facilityId String
+  plot Plot
+  plotId String
+
+  indexes {
+    (shortCode, organisation) [unique]
+  }
+}
+
+Table createdByUser {
+  surveyresultscreatedId String [ref: > SurveyResult.id]
+  surveyscreatedId String [ref: > Survey.id]
+}
+
+Table updatedByUser {
+  surveyresultsupdatedId String [ref: > SurveyResult.id]
+  surveysupdatedId String [ref: > Survey.id]
+}
+
+Table LocationToTag {
+  usedbylocationsId String [ref: > Location.id]
+  tagsId String [ref: > Tag.id]
+}
+
+Table FacilityToTag {
+  usedbyfacilitiesId String [ref: > Facility.id]
+  tagsId String [ref: > Tag.id]
+}
+
+Table CropToPlot {
+  usedbyplotsId String [ref: > Plot.id]
+  secondarycropsId String [ref: > Crop.id]
+}
+
+Table CropVarietyToPlot {
+  usedbyplotsId String [ref: > Plot.id]
+  mainvarietiesId String [ref: > CropVariety.id]
+}
+
+Table CertificationTypeToProduct {
+  productsId String [ref: > Product.id]
+  certificationtypesId String [ref: > CertificationType.id]
+}
+
+Table AuditActivityToCertificationType {
+  auditactivitiesId String [ref: > AuditActivity.id]
+  scopeId String [ref: > CertificationType.id]
+}
+
+Table FacilityToProduct {
+  originfacilitiesId String [ref: > Facility.id]
+  usedasoriginfacilityforproductsId String [ref: > Product.id]
+}
+
+Table FarmToProduct {
+  originfarmsId String [ref: > Farm.id]
+  usedasoriginfarmforproductsId String [ref: > Product.id]
+}
+
+Table polygonInteractionWarnings {
+  polygoninteractionwarningsId String [ref: > PolygonInteractionWarning.id]
+  polygonsId String [ref: > Polygon.id]
+}
+
+Table AuditActivityToCertification {
+  auditactivitiesId String [ref: > AuditActivity.id]
+  conductedforcertificationsId String [ref: > Certification.id]
+}
+
+Enum Role {
+  ADMIN
+  USER
+}
+
+Enum BeneficiaryType {
+  INDIVIDUAL
+  GROUP
+}
+
+Enum EnumMainType {
+  GLOBAL
+  CUSTOM
+}
+
+Enum FunctionTypes {
+  CUSTOM
+  FARM_AREA_VALIDATOR
+}
+
+Ref: Post.authorId > User.id
+
+Ref: SupportingServiceCategory.supportingServiceCategoryTypeId > SupportingServiceCategoryType.id
+
+Ref: SupportingServiceActivityType.supportingServiceInputTypeId > SupportingServiceInputType.id
+
+Ref: SupportingServiceActivityType.supportingServiceCategoryId > SupportingServiceCategory.id
+
+Ref: SupportingServiceInputType.supportingServiceCategoryId > SupportingServiceCategory.id
+
+Ref: SupportingServiceActivity.supportingServiceInputTypeId > SupportingServiceInputType.id
+
+Ref: SupportingServiceActivity.supportingServiceActivityTypeId > SupportingServiceActivityType.id
+
+Ref: SupportingServiceActivity.farmerId > Farmer.id
+
+Ref: SupportingServiceActivity.supportingServiceCategoryId > SupportingServiceCategory.id
+
+Ref: SupportingServiceActivity.locationId > Location.id
+
+Ref: SupportingServiceActivity.supportingServiceCategoryTypeId > SupportingServiceCategoryType.id
+
+Ref: ServiceActivityBeneficiaries.supportingServiceActivityId > SupportingServiceActivity.id
+
+Ref: ServiceActivityBeneficiaries.personId > Person.id
+
+Ref: ServiceActivityLocation.supportingServiceActivityId > SupportingServiceActivity.id
+
+Ref: ServiceActivityLocation.locationId > Location.id
+
+Ref: ActivityLog.createdById > User.id
+
+Ref: CropVariety.cropId > Crop.id
+
+Ref: Location.coordinateId > GeoCoordinate.id
+
+Ref: Location.parentId - Location.id
+
+Ref: ProductType.cropId > Crop.id
+
+Ref: Product.productTypeId > ProductType.id
+
+Ref: Product.originVarietyId > CropVariety.id
+
+Ref: Product.originLocationId > Location.id
+
+Ref: Price.productId > Product.id
+
+Ref: Contact.personId > Person.id
+
+Ref: Wallet.contactId > Contact.id
+
+Ref: Polygon.plotId > Plot.id
+
+Ref: PolygonWarning.polygonId > Polygon.id
+
+Ref: Facility.locationId > Location.id
+
+Ref: Facility.customLocationId > Location.id
+
+Ref: Facility.coordinateId > GeoCoordinate.id
+
+Ref: Facility.mainContactPersonId > Person.id
+
+Ref: Certification.certificationTypeId > CertificationType.id
+
+Ref: Certification.farmId > Farm.id
+
+Ref: Certification.plotId > Plot.id
+
+Ref: AuditActivity.farmId > Farm.id
+
+Ref: AuditEntry.auditActivityId > AuditActivity.id
+
+Ref: AuditEntry.targetNonComplianceId > AuditNonCompliance.id
+
+Ref: AuditEntry.targetFarmId > Farm.id
+
+Ref: AuditEntry.targetPlotId > Plot.id
+
+Ref: AuditEntry.targetSurveyId > Survey.id
+
+Ref: AuditNonCompliance.targetFarmId > Farm.id
+
+Ref: AuditNonCompliance.targetPlotId > Plot.id
+
+Ref: AuditNonCompliance.auditActivityId > AuditActivity.id
+
+Ref: Farm.facilityId - Facility.id
+
+Ref: Farm.seasonId > Season.id
+
+Ref: Farm.houseHoldCoordinateId > GeoCoordinate.id
+
+Ref: CountItem.plotId > Plot.id
+
+Ref: CountItem.farmId > Farm.id
+
+Ref: Plot.farmId > Farm.id
+
+Ref: Contract.farmId > Farm.id
+
+Ref: SatelliteAnalysis.plotId > Plot.id
+
+Ref: Survey.createdBy > User.id
+
+Ref: Survey.updatedBy > User.id
+
+Ref: SurveyQuestion.surveyId > Survey.id
+
+Ref: SurveyQuestion.sectionId > Section.id
+
+Ref: SurveyResult.surveyId > Survey.id
+
+Ref: SurveyResult.farmId > Farm.id
+
+Ref: SurveyResult.createdBy > User.id
+
+Ref: SurveyResult.updatedBy > User.id
+
+Ref: SurveyAnswer.survey_result_id > SurveyResult.id
+
+Ref: SurveyAnswer.survey_question_id > SurveyQuestion.id
+
+Ref: Document.noteId > Note.id
+
+Ref: Document.approvalId > Approval.id
+
+Ref: Note.createdById > User.id
+
+Ref: Note.farmId > Farm.id
+
+Ref: Note.plotId > Plot.id
+
+Ref: Note.polygonId > Polygon.id
+
+Ref: Note.personId > Person.id
+
+Ref: JsonPayload.farmId > Farm.id
+
+Ref: Lot.farmId > Farm.id
+
+Ref: Lot.seasonId > Season.id
+
+Ref: Lot.parentlotId > Lot.id
+
+Ref: ActivitySubmit.createdById > User.id
+
+Ref: ActivitySubmit.lotId > Lot.id
+
+Ref: Approval.userId > User.id
+
+Ref: Approval.lotId > Lot.id
+
+Ref: Approval.activitySubmitId > ActivitySubmit.id
+
+Ref: PaymentTransaction.lotId > Lot.id
+
+Ref: PaymentTransaction.farmId > Farm.id
+
+Ref: PaymentTransaction.personId > Person.id
+
+Ref: PaymentTransaction.walletId > Wallet.id
+
+Ref: Vessel.facilityId > Facility.id
+
+Ref: Vessel.plotId > Plot.id

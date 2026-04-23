@@ -1,0 +1,8 @@
+subType,type,count,plotCode,orgId,category,farmCode
+Productive,MainCrop,2,KSG-0176-P1,testOrg,Plant
+Stumped,MainCrop,2,KSG-0176-P1,testOrg,Plant
+Young,MainCrop,2,KSG-0176-P1,testOrg,Plant
+AverageAge,MainCrop,2,KSG-0176-P1,testOrg,Plant
+MinAge,MainCrop,2,KSG-0176-P1,testOrg,Plant
+MaxAge,MainCrop,10,KSG-0176-P1,testOrg,Plant
+Goat,Goat,10,,testOrg,Animal,KSG-0176

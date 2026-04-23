@@ -1,0 +1,6 @@
+shortCode,name,type,locationCode,parentFacilityCode,idAuthTag
+BDG,BUNDIBUGYO FACILITY,ProcessingFacility,BDG,Latitude,ALL
+KSE,KASESE FACILITY,ProcessingFacility,KSE,Latitude,ALL
+KGD,KAGADI FACILITY,ProcessingFacility,KGD,Latitude,ALL
+MYG,MAYUGE FACILITY,ProcessingFacility,MYG,Latitude,ALL
+HMA,HOIMA FACILITY,ProcessingFacility,HMA,Latitude,ALL
