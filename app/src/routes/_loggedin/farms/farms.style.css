@@ -1,0 +1,34 @@
+.accordion {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+  
+  .accordion-trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f9fafb;
+    border-bottom: 1px solid #e5e7eb;
+    cursor: pointer;
+  }
+  
+  .accordion-trigger:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .accordion-content {
+    padding: 1rem;
+    background-color: #ffffff;
+  }
+  
+  .accordion-icon {
+    transition: transform 0.2s ease;
+  }
+  
+  .accordion-trigger[aria-expanded="true"] .accordion-icon {
+    transform: rotate(180deg);
+  }
+  

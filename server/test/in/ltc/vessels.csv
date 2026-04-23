@@ -1,0 +1,3 @@
+shortCode,name,size,facilityCode,type,weight,subType
+K_FB_1,K_FB_1,700;kg,KSE,FermentationBin,1;kg,subTypeWillBeAdded
+K_AR_1,K_AR_1,700;kg,KSE,AerationRack,1;kg,subTypeWillBeAdded

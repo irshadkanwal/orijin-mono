@@ -1,0 +1,23 @@
+shortCode,name,type,locationCode,parentFacilityCode,idAuthTag
+KJR-BC,CollectionPoint,Kajere Buying Center,KJR,ALL,MH
+KJR-PS,ProcessingFacility,Kajere Processing Station,KJR,ALL,MH
+YMY,CollectionPoint,Mayiyi Buying Center,YMY,ALL,MH
+YMY-PS,ProcessingFacility,Mbale/Sironko Processing Station,YMY,ALL,MH
+BGY,CollectionPoint,Buginyanya Buying Center,BGY,ALL,MH
+SPI,CollectionPoint,Sipi Buying Center,SPI,ALL,MH
+MKL,CollectionPoint,Makali Buying Center,MKL,ALL,MH
+MKL,CollectionPoint,Nakayombo Buying Center,MKL,ALL,MH
+MKL,ProcessingFacility,Makali Processing Station,MKL,ALL,MH
+BSY,CollectionPoint,Bushiyi Buying Center,BSY,ALL,MH
+BSY,CollectionPoint,Khakale Buying Center,BSY,ALL,MH
+BSY,CollectionPoint,Bumangoye Buying Center,BSY,ALL,MH
+BSY,CollectionPoint,Bukalasi Buying Center,BSY,ALL,MH
+MBO,CollectionPoint,Mabono Buying Center,MBO,ALL,MH
+MBO-PS,ProcessingFacility,Mabono Processing Station,MBO,ALL,MH
+BUF,CollectionPoint,Bufuma Buying Center,BUF,ALL,MH
+BKL,CollectionPoint,Bukalasi Buying Center,BKL,ALL,MH
+MUK,CollectionPoint,"Mukoto, Makutano, Luwa Buying Centers",MUK,ALL,MH
+MUK-PS,ProcessingFacility,Mukoto Processing Station,MUK,ALL,MH
+BUF-PS,ProcessingFacility,Bufuma Processing Station,BUF,ALL,MH
+MB-WH,ProcessingFacility,Mbale Warehouse ,,ALL,MH
+MB-DM,ProcessingFacility,Mbale Dry Mill,,ALL,MH

@@ -1,0 +1,11 @@
+shortCode,type,name,locationCode,parentFacilityCode,idAuthTag
+BDG,ProcessingFacility,BUNDIBUGYO FACILITY,BDG,Seed,ALL
+KSE,ProcessingFacility,KASESE FACILITY,KSE,Seed,ALL
+KJR-BC,CollectionPoint,Kajere Buying Center,V_BAA,ALL,MH
+YMY,CollectionPoint,Mayiyi Buying Center,V_BAA,ALL,MH
+KJR-PS,ProcessingFacility,Kajere Processing Station,V_BMA,ALL,MH
+YMY-PS,ProcessingFacility,Mbale/Sironko Processing Station,V_BMA,ALL,MH
+MUK-PS,ProcessingFacility,Mukoto Processing Station,V_BMA,ALL,MH
+BUF-PS,ProcessingFacility,Bufuma Processing Station,V_BMA,ALL,MH
+MB-WH,ProcessingFacility,Warehouse ,,ALL,MH
+MB-DM,ProcessingFacility,Dry Mill,,ALL,MH
