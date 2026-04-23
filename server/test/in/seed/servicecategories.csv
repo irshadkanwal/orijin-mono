@@ -1,0 +1,14 @@
+supportingServiceCategoryTypeCode,shortCode,name,type,description,prefix.skip
+ID,ID-BEAN,Beans,Project,Beans,BEAN
+ID,ID-AVO,Avocado,Project,Avocado,AVO
+ID,ID-RAB,Rabbit,Project,Rabbit,RAB
+ID,ID-COW,Cows,Project,Cow,COW
+ID,ID-API,Apiculture,Project,Apiculture,API
+ID,ID-MAC,Macadamia,Project,Macadamia,MAC
+EX,EX-AGRI,Regenerative Agriculture Program,Training,Trainings,AGRI
+EX,EX-ORG,Organic Inputs Program,Services,Compost and others,ORG
+EX,EX-DEMO,Demonstration Farms Program,Project,All items provided and trainings taking place,DEMO
+EX,EX-VET,Veterinary Services Program,Services,Vet visits (group based and individuals),VET
+FS,FS-MF,Microfinance Program,Project,Microfinance loans.,MF
+FS,FS-ML,Market Literacy Program,Project,"Market Literacy Program",ML
+Q,Q-S,Quality Processing Program,Project,"Trainings conducted towards quality product for lead farmers (during staff meetings), community based training, products provided",S

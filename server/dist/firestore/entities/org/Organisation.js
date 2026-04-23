@@ -1,0 +1,82 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+Object.defineProperty(exports, "default", {
+    enumerable: true,
+    get: function() {
+        return Organisation;
+    }
+});
+const _classtransformer = require("class-transformer");
+const _ObjectId = require("../utils/ObjectId");
+const _DbMappingUtils = require("../utils/DbMappingUtils");
+const _AbstractEntity = require("../utils/AbstractEntity");
+function _ts_decorate(decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for(var i = decorators.length - 1; i >= 0; i--)if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+}
+function _ts_metadata(k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+}
+let Organisation = class Organisation extends _AbstractEntity.AbstractEntity {
+    getCollection() {
+        return _DbMappingUtils.collectionKeys.organisations;
+    }
+    addWorkspace(workspace) {
+        this.workspaces.push(workspace);
+    }
+    removeWorkspace(id) {
+        this.workspaces = this.workspaces.filter((workspace)=>!workspace.equals(id));
+    }
+    addUser(userId) {
+        this.users.push(userId);
+    }
+    removeUser(userId) {
+        this.users = this.users.filter((user)=>!user.equals(userId));
+    }
+    addAdmin(user) {
+        this.admins.push(user);
+    }
+    removeAdmin(userId) {
+        this.admins = this.admins.filter((admin)=>!admin.equals(userId));
+    }
+    hasAdmin(id) {
+        const item = this.admins.find((b)=>{
+            return b.equals(id);
+        });
+        return item != undefined;
+    }
+    hasUser(id) {
+        const item = this.users.find((b)=>{
+            return b.equals(id);
+        });
+        return item != undefined;
+    }
+    hasWorkspace(id) {
+        const item = this.workspaces.find((b)=>{
+            return b.equals(id);
+        });
+        return item != undefined;
+    }
+    constructor(){
+        super();
+        this.admins = [];
+        this.users = [];
+        this.workspaces = [];
+    }
+};
+_ts_decorate([
+    (0, _classtransformer.Type)(()=>_ObjectId.ObjectId),
+    _ts_metadata("design:type", typeof Array === "undefined" ? Object : Array)
+], Organisation.prototype, "admins", void 0);
+_ts_decorate([
+    (0, _classtransformer.Type)(()=>_ObjectId.ObjectId),
+    _ts_metadata("design:type", typeof Array === "undefined" ? Object : Array)
+], Organisation.prototype, "users", void 0);
+_ts_decorate([
+    (0, _classtransformer.Type)(()=>_ObjectId.ObjectId),
+    _ts_metadata("design:type", typeof Array === "undefined" ? Object : Array)
+], Organisation.prototype, "workspaces", void 0);

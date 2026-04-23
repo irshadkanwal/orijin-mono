@@ -1,0 +1,16 @@
+supportingServiceCategoryTypeCode,shortCode,name,type,description,prefix.skip
+ID,ID-BEAN,Beans,Project,Beans,BEAN
+ID,ID-AVO,Avocado,Project,Avocado,AVO
+ID,ID-RAB,Rabbit,Project,Rabbit,RAB
+ID,ID-COW,Cows,Project,Cow,COW
+ID,ID-API,Apiculture,Project,Apiculture,API
+ID,ID-MAC,Macadamia,Project,Macadamia,MAC
+EX,EX-AGRI,Regenerative Agriculture Program,Training,Trainings,AGRI
+EX,EX-ORG,Organic Inputs Program,Services,Compost and others,ORG
+EX,EX-DEMO,Demonstration Farms Program,Project,All items provided and trainings taking place,DEMO
+EX,EX-PICK,Professional Picking Program,Project,This is an old program that you will need to think through what was provided and who was trained,PICK
+EX,EX-VET,Veterinary Services Program,Services,Vet visits (group based and individuals),VET
+FS,FS-LIT,Financial Literacy Program,Project,Nancy has financial literacy trainings and microfinance trainings. Help us define these and list them.,LIT
+FS,FS-MF,Microfinance Program,Project,Nancy has this formated quite well.,MF
+FS,FS-ML,Market Literacy Program,Project,"Farmers under microlot training (women's groups), getting third payments",ML
+Q,Q-S,Quality Processing Program,Project,"Trainings conducated towards quality product for lead farmers (during staff meetings), community based training, products provided",S

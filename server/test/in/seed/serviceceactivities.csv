@@ -1,0 +1,9 @@
+shortCode,supportingServiceCategoryCode,supportingServiceActivityTypeCode,supportingServiceInputTypeCode,beneficiaryType,dateOfService,operator,locationCode,farmerGroupCodes,skip.prefix
+ID-MAC-ID-MAC-D-1,ID-MAC,ID-MAC-D,ID-MAC-SEEDLINGS,Individual,2024-04-20 0:00:00,James,BUD,MYY,1
+ID-BEAN-ID-BEAN-D-2,ID-BEAN,ID-BEAN-D,ID-BEANS-NABE12C,Individual,2024-04-20 0:00:00,James,BUD,SGT,2
+ID-BEAN-ID-BEAN-D-3,ID-BEAN,ID-BEAN-D,ID-BEAN-NARO3,Individual,2024-04-20 0:00:00,James,BUD,SGT,3
+ID-RAB-ID-RAB-D-4,ID-RAB,ID-BEAN-D,ID-RAB-RABBIT,Individual,2024-04-20 0:00:00,James,BUD,SGT,4
+ID-API-ID-API-D-5,ID-API,ID-API-D,ID-API-HIVE,IndividualAndGroup,2024-04-20 0:00:00,James,BUD,SGT,5
+EX-AGRI-EX-AGRI-T1-6,EX-AGRI,EX-AGRI-T1,,Group,2024-04-20 0:00:00,James,BUD,MYY;SGT,6
+EX-AGRI-EX-AGRI-T1-7,EX-AGRI,EX-AGRI-T1,,Group,2024-04-20 0:00:00,James,BUD,MYY;SGT,7
+EX-AGRI-EX-AGRI-T1-8,EX-AGRI,EX-AGRI-T1,,Group,2024-04-20 0:00:00,James,BUD,MYY;SGT,8

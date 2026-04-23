@@ -1,0 +1,36 @@
+supportingServiceCategoryCode,name,shortCode,type,skip.temp,prefix.skip
+ID-BEAN,NABE 12C,ID-BEAN-NABE12C,Seedling,,NABE12C
+ID-BEAN,NARO 3,ID-BEAN-NARO3,Seedling,,NARO3
+ID-BEAN,NARO 2,ID-BEAN-NARO2,Seedling,,NARO2
+ID-BEAN,NABE F1,ID-BEAN-NABEF1,Seedling,,NABEF1
+ID-BEAN,Other,ID-BEAN-OTHER,Other,,OTHER
+ID-AVO,Avocado - Seedling,ID-AVO-SEED,Seedling,,SEED
+ID-AVO,Avocado - Other,ID-AVO-OTHER,Seedling,,OTHER
+ID-RAB,Rabbit - Rabbit,ID-RAB-RABBIT,Animal,,RABBIT
+ID-RAB,Rabbit - Other,ID-RAB-OTHER,Other,,OTHER
+ID-COW,Cow - Cow,ID-COW-COW,Animal,,COW
+ID-COW,Cow - Other,ID-COW-OTHER,Other,,OTHER
+ID-API,Apiculture- Hive,ID-API-HIVE,AnimalHousing,,HIVE
+ID-API,Apiculture - Bees,ID-API-BEES,Animal,,BEES
+ID-API,Apiculture  - Suites,ID-API-SUITES,Device,,SUITES
+ID-API,Apiculture  - Smoker,ID-API-SMOKER,Device,,SMOKER
+ID-API,Apiculture  - Other,ID-API-OTHER,Other,,OTHER
+ID-MAC,Macadamia - Seedling,ID-MAC-SEEDLINGS,Seedling,,SEEDLINGS
+Q-S,Processing - Moisture Meter,Q-S-MOISTURE-METER,Device,Moisture Meter,MOISTURE-METER
+Q-S,Processing - Taurpalines 4x6,Q-S-TAURPALINES-4X6,Device,Taurpalines 4x6,TAURPALINES-4X6
+Q-S,Processing - Taurpalines 30x30,Q-S-TAURPALINES-30X30,Device,Taurpalines 30x30,TAURPALINES-30X30
+Q-S,Processing - UV Paper,Q-S-UV-PAPER,Device,UV Paper,UV-PAPER
+Q-S,Processing - Shade Net,Q-S-SHADE-NET,Device,Shade Net,SHADE-NET
+Q-S,Processing - Rake,Q-S-RAKE,Device,Rake,RAKE
+Q-S,Processing - Barrel,Q-S-BARREL,Device,Barrel,BARREL
+Q-S,Processing - Drying Shed,Q-S-DRYING-SHED,Device,Drying Shed,DRYING-SHED
+Q-S,Processing - Pulper,Q-S-PULPER,Device,Pulper,PULPER
+Q-S,Processing - Raised Bed,Q-S-RAISED-BED,Device,Raised Bed,RAISED-BED
+Q-S,Processing - Bucket,Q-S-BUCKET,Device,Bucket,BUCKET
+Q-S,Processing - Polysacs,Q-S-POLYSACS,Device,Polysacs,POLYSACS
+Q-S,Processing - Records,Q-S-RECORDS,Device,Records,RECORDS
+Q-S,Processing - Temp and Humidity Meter,Q-S-TEMP-AND-HUMIDITY-METER,Device,Temp and Humidity Meter,TEMP-AND-HUMIDITY-METER
+Q-S,Processing - Cherry board,Q-S-CHERRY-BOARD,Device,Cherry board,CHERRY-BOARD
+Q-S,Processing - Microscale,Q-S-MICROSCALE,Device,Microscale,MICROSCALE
+Q-S,Processing - Brix Meter,Q-S-BRIX-METER,Device,Brix Meter,BRIX-METER
+Q-S,Processing - pH Meter,Q-S-PH-METER,Device,pH Meter,PH-METER

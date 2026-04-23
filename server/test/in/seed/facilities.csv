@@ -1,0 +1,6 @@
+shortCode,name,type,locationCode,idAuthTag
+Seed,Seed,Organisation,,ALL
+CP,Collection Point,ProcessingFacility,,ALL
+ELG,Mount Elgon,Operation,,ALL
+KSR,Kisoro,Operation,,ALL
+REN,Rwenzori,Operation,,ALL
