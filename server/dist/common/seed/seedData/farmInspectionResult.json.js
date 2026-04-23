@@ -1,0 +1,13144 @@
+// From Salla on 24.6.2024
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+function _export(target, all) {
+    for(var name in all)Object.defineProperty(target, name, {
+        enumerable: true,
+        get: all[name]
+    });
+}
+_export(exports, {
+    farmInspectionResultFromV1: function() {
+        return farmInspectionResultFromV1;
+    },
+    farmInspectionResultFromV2: function() {
+        return farmInspectionResultFromV2;
+    }
+});
+const farmInspectionResultFromV1 = {
+    logs: [
+        {
+            properties: {
+                idLabelShort: 'FARM-004 - P1',
+                customId: '02cb6a91-f799-4598-a14d-b2d122f5a5a3',
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: 'f518938a-6d7e-4899-9b96-3aa5a4ad9659',
+                    id: '36359bf2-2247-4bc5-822c-4bfd693f2678',
+                    label: 'AUDIT-21062024',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: 'd54966f9-f365-4b74-bd24-2561d6da2b3a',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_salla',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '02cb6a91-f799-4598-a14d-b2d122f5a5a3',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T12:55:29.079Z',
+            updatedDate: '2024-06-21T12:55:29.079Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.249625205677035,
+                    lon: 24.971673084383617
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.249625205677035,
+                    lon: 24.971673084383617
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: '81d1c301-9599-4a14-b16b-bdd70737cfb4',
+                refcollection: 'plots',
+                label: 'P1',
+                labelShort: 'FARM-004 - P1',
+                qrCode: '123',
+                shortCode: '123',
+                type: 'Permanent',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: 'd54966f9-f365-4b74-bd24-2561d6da2b3a',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '36359bf2-2247-4bc5-822c-4bfd693f2678',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062024',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: 'f518938a-6d7e-4899-9b96-3aa5a4ad9659',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: 'd54966f9-f365-4b74-bd24-2561d6da2b3a',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    refcollection: 'farms',
+                    label: 'Leon Thornton',
+                    labelShort: 'FARM-004',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                '81d1c301-9599-4a14-b16b-bdd70737cfb4',
+                'clxn3e2r8002mfmxv5sfmuilz'
+            ],
+            primaryActivityName: 'AddPlotInReviewAudit',
+            primaryActivityLabel: 'AddPlot',
+            workflowName: 'farmPolygonReviewRemote',
+            activityName: 'CreatePlot',
+            activityLabel: 'CreatePlot',
+            method: 'create',
+            type: 'CreatePlot',
+            previewValues: [
+                {
+                    value: 'Leon Thornton',
+                    key: 'Farm'
+                },
+                {
+                    value: 'P1',
+                    key: 'Plot Name'
+                },
+                {
+                    value: 'FARM-004 - P1',
+                    key: 'Code'
+                },
+                {
+                    value: 'Permanent',
+                    key: 'Type'
+                },
+                {
+                    value: 'No',
+                    key: 'Is Organic'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Is Active'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Inter Cropped'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Is plot established before 31 December 2020?'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Do you know the distance to the large/permanent forest/reserve area?'
+                },
+                {
+                    value: '22',
+                    key: 'How far is the plot from athelarge/permanent forest/reserve area (km)?'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Owned by traditional owners?'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Respondent owns plot?'
+                },
+                {
+                    value: 'No',
+                    key: 'Has land title document?'
+                },
+                {
+                    value: '22',
+                    key: 'Estimated area size'
+                },
+                {
+                    value: 'In Transition FRESH Cocoa',
+                    key: 'Varieties'
+                },
+                {
+                    value: '22',
+                    key: 'Maincrop Total Plant Count'
+                },
+                {
+                    value: '22',
+                    key: 'Avarage Age of Maincrop Plants'
+                },
+                {
+                    value: '22',
+                    key: 'Yield Estimate'
+                },
+                {
+                    value: 'Melon, Cucumber',
+                    key: 'Secondary Crops'
+                },
+                {
+                    value: '21/02/2025',
+                    key: 'Cultivation Start'
+                },
+                {
+                    value: '',
+                    key: 'Last Chemical Use'
+                },
+                {
+                    value: '["Horizontal"]',
+                    key: 'Land Inclination'
+                },
+                {
+                    value: '["NoShade"]',
+                    key: 'Shade Amount'
+                },
+                {
+                    value: '',
+                    key: 'Notes'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                farmInspection_farming_weeds: false,
+                farmInspection_farming_buffer: false,
+                farmInspection_farming_disease: false,
+                idLabelShort: 'FARM-004',
+                farmInspection_farming_fertility: false,
+                farmInspection_farming_protect_wetlands: false,
+                farmInspection_farming_pests: false,
+                farmInspection_farming_soil_erosion: false,
+                farmInspection_farming_biodiversity: false,
+                farmInspection_farming_cutting_trees: false,
+                farmInspection_farming_national_parks: false,
+                customId: '3fcd41d8-c8da-45cd-bce2-96a0c7704e76',
+                farmInspection_farming_manure: false,
+                farmInspection_farming_destroy_wetlands: false,
+                id: {
+                    qrCode: '123',
+                    refcollection: 'farms',
+                    labelShort: 'FARM-004',
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    label: 'Leon Thornton',
+                    isPreviousVersion: false,
+                    shortCode: '123'
+                },
+                entity: {
+                    qrCode: '123',
+                    refcollection: 'farms',
+                    labelShort: 'FARM-004',
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    label: 'Leon Thornton',
+                    isPreviousVersion: false,
+                    shortCode: '123'
+                },
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                    id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                    label: 'AUDIT-21062024',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_salla',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '3fcd41d8-c8da-45cd-bce2-96a0c7704e76',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: 'e26b6fe7-a971-4de1-8a1d-41077eeb1047',
+                refcollection: 'surveys',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062024',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    refcollection: 'farms',
+                    label: 'Leon Thornton',
+                    labelShort: 'FARM-004',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                'e26b6fe7-a971-4de1-8a1d-41077eeb1047',
+                'clxn3e2r8002mfmxv5sfmuilz'
+            ],
+            workflowName: 'farmInternalInspectionRemote',
+            activityName: 'AuditSurveyActivity5',
+            activityLabel: 'SurveyFarming',
+            method: 'update',
+            type: 'CreateSurvey',
+            previewValues: [
+                {
+                    value: 'No',
+                    key: 'Has the farmer done anything to improve soil fertility at his/her farm?'
+                },
+                {
+                    value: 'No',
+                    key: 'Has the farmer established a buffer around his farm to prevent any contamination?'
+                },
+                {
+                    value: 'No',
+                    key: 'Cutting down large, native trees during past year?'
+                },
+                {
+                    value: 'No',
+                    key: 'Did the farmer destroy any wetland to establish the cocoa farm?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does the farmer protect wetlands?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does the farmer have soil erosion signs at his/her farm?'
+                },
+                {
+                    value: 'No',
+                    key: 'Is the farmer aware of the importance of biodiversity and has no negative impact on protected and high conservation value areas?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does the farmer encroach on national parks?'
+                },
+                {
+                    value: 'No',
+                    key: 'Has the farmer managed weeds in his/her maincrop farm(s)?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does farmer have any maincrop trees affected with pests?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does the farmer have any diseased maincrop farm(s)?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does farmer use animal manure at his/her farm as soil fertility management measure?'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                idLabelShort: 'FARM-004 - P1',
+                customId: '47bef415-6732-4db8-9081-0810616ed78e',
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                    id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                    label: 'AUDIT-21062024',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_salla',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '47bef415-6732-4db8-9081-0810616ed78e',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: 'eb83b85e-9c3f-4dea-b734-7c5dbfb5fcd1',
+                refcollection: 'plots',
+                label: 'P1',
+                labelShort: 'FARM-004 - P1',
+                qrCode: '123',
+                shortCode: '123',
+                type: 'Permanent',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062024',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    refcollection: 'farms',
+                    label: 'Leon Thornton',
+                    labelShort: 'FARM-004',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                'eb83b85e-9c3f-4dea-b734-7c5dbfb5fcd1',
+                'clxn3e2r8002mfmxv5sfmuilz'
+            ],
+            primaryActivityName: 'AddPlotInReviewAudit',
+            primaryActivityLabel: 'AddPlot',
+            workflowName: 'farmInternalInspectionRemote',
+            activityName: 'CreatePlot',
+            activityLabel: 'CreatePlot',
+            method: 'create',
+            type: 'CreatePlot',
+            previewValues: [
+                {
+                    value: 'Leon Thornton',
+                    key: 'Farm'
+                },
+                {
+                    value: 'P1',
+                    key: 'Plot Name'
+                },
+                {
+                    value: 'FARM-004 - P1',
+                    key: 'Code'
+                },
+                {
+                    value: 'Permanent',
+                    key: 'Type'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Is Organic'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Is Active'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Inter Cropped'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Is plot established before 31 December 2020?'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Do you know the distance to the large/permanent forest/reserve area?'
+                },
+                {
+                    value: '22',
+                    key: 'How far is the plot from athelarge/permanent forest/reserve area (km)?'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Owned by traditional owners?'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Respondent owns plot?'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Has land title document?'
+                },
+                {
+                    value: '22',
+                    key: 'Estimated area size'
+                },
+                {
+                    value: 'In Transition FRESH Cocoa',
+                    key: 'Varieties'
+                },
+                {
+                    value: '22',
+                    key: 'Maincrop Total Plant Count'
+                },
+                {
+                    value: '22',
+                    key: 'Avarage Age of Maincrop Plants'
+                },
+                {
+                    value: '222',
+                    key: 'Yield Estimate'
+                },
+                {
+                    value: 'Cassava',
+                    key: 'Secondary Crops'
+                },
+                {
+                    value: '21/05/2024',
+                    key: 'Cultivation Start'
+                },
+                {
+                    value: '',
+                    key: 'Last Chemical Use'
+                },
+                {
+                    value: '["Horizontal"]',
+                    key: 'Land Inclination'
+                },
+                {
+                    value: '["NoShade"]',
+                    key: 'Shade Amount'
+                },
+                {
+                    value: '',
+                    key: 'Notes'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                farmInspection_general_landuse_rights: false,
+                farmInspection_general_contract_copy: false,
+                farmInspection_general_plot_hiring: false,
+                idLabelShort: 'FARM-004',
+                farmInspection_general_all_maincrop_to_company: false,
+                customId: '4dcba19e-a51f-40ca-ad95-c33f2ae77f4b',
+                farmInspection_general_prices: false,
+                farmInspection_general_sales_receipts: false,
+                farmInspection_general_discrimination: false,
+                id: {
+                    qrCode: '123',
+                    refcollection: 'farms',
+                    labelShort: 'FARM-004',
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    label: 'Leon Thornton',
+                    isPreviousVersion: false,
+                    shortCode: '123'
+                },
+                farmInspection_general_maincrop_pool: false,
+                entity: {
+                    qrCode: '123',
+                    refcollection: 'farms',
+                    labelShort: 'FARM-004',
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    label: 'Leon Thornton',
+                    isPreviousVersion: false,
+                    shortCode: '123'
+                },
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                    id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                    label: 'AUDIT-21062024',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_salla',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '4dcba19e-a51f-40ca-ad95-c33f2ae77f4b',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: 'c04edfc6-dc66-4555-9232-578a4bb21135',
+                refcollection: 'surveys',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062024',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    refcollection: 'farms',
+                    label: 'Leon Thornton',
+                    labelShort: 'FARM-004',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                'c04edfc6-dc66-4555-9232-578a4bb21135',
+                'clxn3e2r8002mfmxv5sfmuilz'
+            ],
+            workflowName: 'farmInternalInspectionRemote',
+            activityName: 'AuditSurveyActivity6',
+            activityLabel: 'SurveyGeneral',
+            method: 'update',
+            type: 'CreateSurvey',
+            previewValues: [
+                {
+                    value: 'No',
+                    key: 'Farmer aware of premium distribution and prices communicated including premium per Kg'
+                },
+                {
+                    value: 'No',
+                    key: 'Does the farmer have a copy of the company contract and the farm entrance form at the farm?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does the farmer have maincrop sales receipts at the farm?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does the farmer have legitimate land use rights?'
+                },
+                {
+                    value: 'No',
+                    key: 'Has the farmer hired maincrop plots from other farmers?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does the farmer belong to any cocoa pool (Kilimbe)?'
+                },
+                {
+                    value: 'No',
+                    key: 'During last year, did farmer deliver all his MAIN CROP to the project?'
+                },
+                {
+                    value: 'No',
+                    key: 'Are there any signs of discrimination, sexual abuse or harrassment towards anyone on the farm ?'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                farmInspection_workers_hired: false,
+                idLabelShort: 'FARM-004',
+                farmInspection_workers_healthsafety: 'Yes',
+                id: {
+                    qrCode: '123',
+                    refcollection: 'farms',
+                    labelShort: 'FARM-004',
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    label: 'Leon Thornton',
+                    isPreviousVersion: false,
+                    shortCode: '123'
+                },
+                farmInspection_workers_restday: true,
+                customId: '516b57ad-96b4-4e55-8e00-f2b734c4ba87',
+                entity: {
+                    qrCode: '123',
+                    refcollection: 'farms',
+                    labelShort: 'FARM-004',
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    label: 'Leon Thornton',
+                    isPreviousVersion: false,
+                    shortCode: '123'
+                },
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                    id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                    label: 'AUDIT-21062024',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                        isPreviousVersion: false
+                    }
+                },
+                farmInspection_workers_organictraining: true
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_salla',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '516b57ad-96b4-4e55-8e00-f2b734c4ba87',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: 'ed125b61-74bc-4a6d-82e9-9ff97190da72',
+                refcollection: 'surveys',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062024',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    refcollection: 'farms',
+                    label: 'Leon Thornton',
+                    labelShort: 'FARM-004',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                'ed125b61-74bc-4a6d-82e9-9ff97190da72',
+                'clxn3e2r8002mfmxv5sfmuilz'
+            ],
+            workflowName: 'farmInternalInspectionRemote',
+            activityName: 'AuditSurveyActivity2',
+            activityLabel: 'SurveyWorkers',
+            method: 'update',
+            type: 'CreateSurvey',
+            previewValues: [
+                {
+                    value: 'No',
+                    key: 'Do you use hired labour?'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Are farmers and workers informed and trained on health & safety risk management and emergency procedures?'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Are workers guaranteed 1 rest day every 7 days and adequate rest throughout the day?'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Have farmers and workers been trained in RA and organic certification standards and requirements?'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: null,
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_salla',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '5aea5531-1224-48ec-9d12-83b8866b951d',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: 'clxn3e2r8002mfmxv5sfmuilz',
+                refcollection: 'farms',
+                label: 'Leon Thornton',
+                labelShort: 'FARM-004',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            },
+            allParentItemsSearchable: [
+                'clxn3e2r8002mfmxv5sfmuilz'
+            ],
+            activityName: 'CompleteReview',
+            activityLabel: 'CompleteReview',
+            type: 'CompleteReview',
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                idLabelShort: 'Polygon - FARM-004 - P1',
+                geoData: [
+                    {
+                        altitude: null,
+                        lng: 24.971673339406202,
+                        lat: 60.249625059250924
+                    }
+                ],
+                customId: '5d97d6d9-3a00-4382-862d-07dd0cfdafca',
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                    id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                    label: 'AUDIT-21062024',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_salla',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '5d97d6d9-3a00-4382-862d-07dd0cfdafca',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: 'b1eafb57-5772-4927-b5a3-b9d6dd2419c5',
+                refcollection: 'geodatas',
+                label: 'Polygon - FARM-004 - P1',
+                labelShort: 'Polygon - FARM-004 - P1',
+                qrCode: '123',
+                shortCode: '123',
+                type: 'Polygon',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062024',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [
+                {
+                    id: 'eb83b85e-9c3f-4dea-b734-7c5dbfb5fcd1',
+                    refcollection: 'plots',
+                    label: 'P1',
+                    labelShort: 'FARM-004 - P1',
+                    qrCode: '123',
+                    shortCode: '123',
+                    type: 'Permanent',
+                    isPreviousVersion: false
+                },
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    refcollection: 'farms',
+                    label: 'Leon Thornton',
+                    labelShort: 'FARM-004',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                'b1eafb57-5772-4927-b5a3-b9d6dd2419c5',
+                'eb83b85e-9c3f-4dea-b734-7c5dbfb5fcd1',
+                'clxn3e2r8002mfmxv5sfmuilz'
+            ],
+            primaryActivityName: 'AddPlotPolygonAtAudit',
+            primaryActivityLabel: 'CreatePlotPolygon',
+            workflowName: 'farmInternalInspectionRemote',
+            activityName: 'CreateGeoData',
+            activityLabel: 'CreateGeoData',
+            method: 'create',
+            type: 'CreateGeoData',
+            previewValues: [
+                {
+                    value: 'Leon Thornton',
+                    key: 'Entity Parent'
+                },
+                {
+                    value: 'P1',
+                    key: 'Plot'
+                },
+                {
+                    value: 'Polygon',
+                    key: 'Type'
+                },
+                {
+                    value: 'Polygon - FARM-004 - P1',
+                    key: 'Code'
+                },
+                {
+                    value: 33,
+                    key: 'Estimated area size'
+                },
+                {
+                    value: '',
+                    key: 'Notes'
+                },
+                {
+                    value: '[{"lat":60.249625059250924,"lng":24.971673339406202,"altitude":null}]',
+                    key: 'Geo Data'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                altitude: 5,
+                idLabelShort: 'FARM-004',
+                id: {
+                    refcollection: 'farms',
+                    labelShort: 'FARM-004',
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    label: 'Leon Thornton',
+                    isPreviousVersion: false
+                },
+                customId: '6439642d-1e1d-4b8a-bf1e-12a6da86fc4b',
+                entity: {
+                    refcollection: 'farms',
+                    labelShort: 'FARM-004',
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    label: 'Leon Thornton',
+                    isPreviousVersion: false
+                },
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: 'f518938a-6d7e-4899-9b96-3aa5a4ad9659',
+                    id: '36359bf2-2247-4bc5-822c-4bfd693f2678',
+                    label: 'AUDIT-21062024',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: 'd54966f9-f365-4b74-bd24-2561d6da2b3a',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_salla',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '6439642d-1e1d-4b8a-bf1e-12a6da86fc4b',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T12:55:29.079Z',
+            updatedDate: '2024-06-21T12:55:29.079Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.249625205677035,
+                    lon: 24.971673084383617
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.249625205677035,
+                    lon: 24.971673084383617
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: 'clxn3e2r8002mfmxv5sfmuilz',
+                refcollection: 'farms',
+                label: 'Leon Thornton',
+                labelShort: 'FARM-004',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: 'd54966f9-f365-4b74-bd24-2561d6da2b3a',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '36359bf2-2247-4bc5-822c-4bfd693f2678',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062024',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: 'f518938a-6d7e-4899-9b96-3aa5a4ad9659',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: 'd54966f9-f365-4b74-bd24-2561d6da2b3a',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [],
+            allParentItemsSearchable: [
+                'clxn3e2r8002mfmxv5sfmuilz'
+            ],
+            primaryActivityName: 'UpdateLocationDetailsInFarmerCreation',
+            primaryActivityLabel: 'UpdateLocation',
+            workflowName: 'farmPolygonReviewRemote',
+            activityName: 'UpdateLocationDetailsInFarmerCreation',
+            activityLabel: 'UpdateLocation',
+            method: 'update',
+            type: 'StandardSubmitViaAuditActivity',
+            previewValues: [
+                {
+                    value: 'BUNDIBUGYO',
+                    key: 'District'
+                },
+                {
+                    value: 'BOMBO',
+                    key: 'Sub County'
+                },
+                {
+                    value: '',
+                    key: 'Parish'
+                },
+                {
+                    value: '',
+                    key: 'Village'
+                },
+                {
+                    value: 'BOBULONGU',
+                    key: 'Collection Point'
+                },
+                {
+                    value: '{"lat":60.24961612971525,"lng":24.971648963554394,"altitude":null}',
+                    key: 'Coordinates'
+                },
+                {
+                    value: 5,
+                    key: 'Altitude'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: null,
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_salla',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '6d19f0e7-b827-475e-a0be-62276130114f',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T12:28:56.148Z',
+            updatedDate: '2024-06-21T12:28:56.148Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers_wip',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            operatedBy: null,
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers_wip',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            parentId: {
+                id: 'clxn3e2r8002mfmxv5sfmuilz',
+                refcollection: 'farms_wip',
+                label: 'Leon Thornton',
+                labelShort: 'FARM-004',
+                isPreviousVersion: false
+            },
+            allParentItemsSearchable: [
+                'clxn3e2r8002mfmxv5sfmuilz'
+            ],
+            activityName: 'ToReview',
+            activityLabel: 'ToReview',
+            type: 'ToReview',
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                farmInspection_demographics_hh_children_count: 1,
+                farmInspection_demographics_hh_children_school_count: 1,
+                farmInspection_demographics_pregnant_breastfeeding: false,
+                farmInspection_demographics_children_farm: false,
+                idLabelShort: 'FARM-004',
+                farmInspection_demographics_hh_member_count: 2,
+                customId: '704a6b88-1132-4253-a0e7-ec204cfc5faa',
+                farmInspection_demographics_childlabor_signs: false,
+                id: {
+                    qrCode: '123',
+                    refcollection: 'farms',
+                    labelShort: 'FARM-004',
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    label: 'Leon Thornton',
+                    isPreviousVersion: false,
+                    shortCode: '123'
+                },
+                farmInspection_demographics_hh_children_list: [
+                    {
+                        farmInspection_demographics_hh_children_name: 'jhgjhg',
+                        farmInspection_demographics_hh_children_age: 7
+                    }
+                ],
+                farmInspection_demographics_yourchildren_schoolage: false,
+                entity: {
+                    qrCode: '123',
+                    refcollection: 'farms',
+                    labelShort: 'FARM-004',
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    label: 'Leon Thornton',
+                    isPreviousVersion: false,
+                    shortCode: '123'
+                },
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                    id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                    label: 'AUDIT-21062024',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_salla',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '704a6b88-1132-4253-a0e7-ec204cfc5faa',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: '01baa45b-2150-4db9-bd45-423de0017f86',
+                refcollection: 'surveys',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062024',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    refcollection: 'farms',
+                    label: 'Leon Thornton',
+                    labelShort: 'FARM-004',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                '01baa45b-2150-4db9-bd45-423de0017f86',
+                'clxn3e2r8002mfmxv5sfmuilz'
+            ],
+            workflowName: 'farmInternalInspectionRemote',
+            activityName: 'AuditSurveyActivity',
+            activityLabel: 'SurveyHousehold',
+            method: 'update',
+            type: 'CreateSurvey',
+            previewValues: [
+                {
+                    value: '2',
+                    key: 'How many adults currently live in the household?'
+                },
+                {
+                    value: '1',
+                    key: 'How many children currently live in household?'
+                },
+                {
+                    value: '(name: jhgjhg, age: 7)',
+                    key: 'Child details'
+                },
+                {
+                    value: '1',
+                    key: 'How many children are at school?'
+                },
+                {
+                    value: 'No',
+                    key: 'Do you have children of school age?'
+                },
+                {
+                    value: 'No',
+                    key: 'Are there children of school going age at the farm?'
+                },
+                {
+                    value: 'No',
+                    key: 'Are there any signs of forced, bonded, trafficked or child labor?'
+                },
+                {
+                    value: 'No',
+                    key: 'Are there any pregnant/breastfeeding mothers on the farm?'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                inspectionConsent: true,
+                targetEntity: 'clxn3e2r8002mfmxv5sfmuilz',
+                auditDefinitionId: 'farmerAudit',
+                season: {
+                    authTag: 'ALL',
+                    qrCode: '123',
+                    refcollection: 'seasons',
+                    labelShort: '2023/24',
+                    id: '0f81d551-e601-4b93-bdb3-5e1258a6bb10',
+                    label: '2023/24',
+                    isPreviousVersion: false,
+                    shortCode: '123'
+                },
+                previousInspectionDate: '2024-06-21T12:59:52.595Z',
+                inspectionDate: '2024-06-21T12:59:52.595Z',
+                hasLiveStock: true,
+                customId: '715d30c2-300e-4599-9699-a301983998dd'
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_salla',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '715d30c2-300e-4599-9699-a301983998dd',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062024',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062024',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            },
+            parentSecondaryItems: [
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    refcollection: 'farms',
+                    label: 'Leon Thornton',
+                    labelShort: 'FARM-004',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                '6609eb13-ab41-43d6-92ab-148260e83c28',
+                'clxn3e2r8002mfmxv5sfmuilz'
+            ],
+            primaryActivityName: 'CreateFarmInspectionActivityV2',
+            primaryActivityLabel: 'FarmInspection',
+            workflowName: 'farmInternalInspectionRemote',
+            activityName: 'CreateFarmInspectionActivityV2',
+            activityLabel: 'FarmInspection',
+            type: 'CreateAuditActivity',
+            previewValues: [
+                {
+                    value: '',
+                    key: 'Farm'
+                },
+                {
+                    value: '21/06/2024',
+                    key: 'Inspection Date'
+                },
+                {
+                    value: '2023/24',
+                    key: 'Season'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Do you accept to be inspected?'
+                },
+                {
+                    value: '21/06/2024',
+                    key: 'Previous Inspection Date'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Do you keep livestock?'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                farmInspection_farmpractises_basins: false,
+                farmInspection_farmpractises_off_farm: false,
+                farmInspection_farmpractises_organic: false,
+                idLabelShort: 'FARM-004',
+                farmInspection_farmpractises_store_packaging_chemicals: false,
+                farmInspection_farmpractises_ripefruit: false,
+                id: {
+                    qrCode: '123',
+                    refcollection: 'farms',
+                    labelShort: 'FARM-004',
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    label: 'Leon Thornton',
+                    isPreviousVersion: false,
+                    shortCode: '123'
+                },
+                farmInspection_farmpractises_drying_tarpaulin: false,
+                customId: '731af9a4-bd29-4194-89a7-a876f9da0268',
+                entity: {
+                    qrCode: '123',
+                    refcollection: 'farms',
+                    labelShort: 'FARM-004',
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    label: 'Leon Thornton',
+                    isPreviousVersion: false,
+                    shortCode: '123'
+                },
+                farmInspection_farmpractises_pruning: false,
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                    id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                    label: 'AUDIT-21062024',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_salla',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '731af9a4-bd29-4194-89a7-a876f9da0268',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: 'b25f9e5d-4704-4713-8aa2-77c33ea2804d',
+                refcollection: 'surveys',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062024',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    refcollection: 'farms',
+                    label: 'Leon Thornton',
+                    labelShort: 'FARM-004',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                'b25f9e5d-4704-4713-8aa2-77c33ea2804d',
+                'clxn3e2r8002mfmxv5sfmuilz'
+            ],
+            workflowName: 'farmInternalInspectionRemote',
+            activityName: 'AuditSurveyActivity4',
+            activityLabel: 'SurveyFarmPractises',
+            method: 'update',
+            type: 'CreateSurvey',
+            previewValues: [
+                {
+                    value: 'No',
+                    key: 'Does the farmer have good understanding of organic agriculture production?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does farmer pick/harvest only ready or ripe fruit?'
+                },
+                {
+                    value: 'No',
+                    key: 'Has farmer pruned his/her maincrop trees?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does the farmer have separate basins for harvesting maincrop from those used for home use?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does the farmer have a tarpaulin or concrete area for drying all maincrops off ground ?'
+                },
+                {
+                    value: 'No',
+                    key: 'Is packaging used to store maincrop free from any chemicals or other contaminants?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does farmer buy off-farm inputs?'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                altitude: 2,
+                idLabelShort: 'FARM-004',
+                id: {
+                    refcollection: 'farms',
+                    labelShort: 'FARM-004',
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    label: 'Leon Thornton',
+                    isPreviousVersion: false
+                },
+                customId: '8016de99-ff47-4883-9aa7-696bf787b5cc',
+                entity: {
+                    refcollection: 'farms',
+                    labelShort: 'FARM-004',
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    label: 'Leon Thornton',
+                    isPreviousVersion: false
+                },
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                    id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                    label: 'AUDIT-21062024',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_salla',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '8016de99-ff47-4883-9aa7-696bf787b5cc',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: 'clxn3e2r8002mfmxv5sfmuilz',
+                refcollection: 'farms',
+                label: 'Leon Thornton',
+                labelShort: 'FARM-004',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062024',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [],
+            allParentItemsSearchable: [
+                'clxn3e2r8002mfmxv5sfmuilz'
+            ],
+            primaryActivityName: 'UpdateLocationDetailsInFarmerCreation',
+            primaryActivityLabel: 'UpdateLocation',
+            workflowName: 'farmInternalInspectionRemote',
+            activityName: 'UpdateFarmFacility',
+            activityLabel: 'UpdateFarmFacility',
+            method: 'update',
+            type: 'UpdateFarmFacility',
+            previewValues: [
+                {
+                    value: 'BUNDIBUGYO',
+                    key: 'District'
+                },
+                {
+                    value: 'BIREMBO',
+                    key: 'Sub County'
+                },
+                {
+                    value: '',
+                    key: 'Parish'
+                },
+                {
+                    value: '',
+                    key: 'Village'
+                },
+                {
+                    value: 'BIIMALA',
+                    key: 'Collection Point'
+                },
+                {
+                    value: '{"lat":60.24962521410096,"lng":24.971673072638996,"altitude":null}',
+                    key: 'Coordinates'
+                },
+                {
+                    value: 2,
+                    key: 'Altitude'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: null,
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_salla',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '86c4e0f1-647b-4439-8939-a9f388f929be',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T12:55:29.079Z',
+            updatedDate: '2024-06-21T12:55:29.079Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.249625205677035,
+                    lon: 24.971673084383617
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.249625205677035,
+                    lon: 24.971673084383617
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: 'clxn3e2r8002mfmxv5sfmuilz',
+                refcollection: 'farms',
+                label: 'Leon Thornton',
+                labelShort: 'FARM-004',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            },
+            allParentItemsSearchable: [
+                'clxn3e2r8002mfmxv5sfmuilz'
+            ],
+            activityName: 'CompleteReview',
+            activityLabel: 'CompleteReview',
+            type: 'CompleteReview',
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                customId: '8d9ec77e-d90b-4496-869a-0becb857080f',
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                    id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                    label: 'AUDIT-21062024',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_salla',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '8d9ec77e-d90b-4496-869a-0becb857080f',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: 'b66085b0-6f86-4d17-ab93-e0fa67909c50',
+                refcollection: 'contacts',
+                label: 'Leon Thornton +2562222233',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062024',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    refcollection: 'farms',
+                    label: 'Leon Thornton',
+                    labelShort: 'FARM-004',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                'b66085b0-6f86-4d17-ab93-e0fa67909c50',
+                'clxn3e2r8002mfmxv5sfmuilz'
+            ],
+            primaryActivityName: 'AddContact',
+            primaryActivityLabel: 'AddContact',
+            workflowName: 'farmInternalInspectionRemote',
+            activityName: 'CreateContact',
+            activityLabel: 'CreateContact',
+            method: 'create',
+            type: 'CreateContact',
+            previewValues: [
+                {
+                    value: 'Leon Thornton',
+                    key: 'Entity'
+                },
+                {
+                    value: '2222233',
+                    key: 'Phone'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Registered Under Farmers Name'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Registered For Mobile Money'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                farmInspection_hygiene_waste_home_hygiene: false,
+                farmInspection_hygiene_waste_crop_residue_use: false,
+                idLabelShort: 'FARM-004',
+                farmInspection_hygiene_waste_pitlatrine_river: false,
+                farmInspection_hygiene_waste_waste_disposal: false,
+                customId: '9da4d5af-39e7-4cd3-a181-0e1668786c11',
+                farmInspection_hygiene_waste_drinking_water: 'YesTested',
+                farmInspection_hygiene_waste_burn_crop_residue: false,
+                farmInspection_hygiene_waste_toilet: false,
+                id: {
+                    qrCode: '123',
+                    refcollection: 'farms',
+                    labelShort: 'FARM-004',
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    label: 'Leon Thornton',
+                    isPreviousVersion: false,
+                    shortCode: '123'
+                },
+                farmInspection_hygiene_waste_waste_hazard: false,
+                entity: {
+                    qrCode: '123',
+                    refcollection: 'farms',
+                    labelShort: 'FARM-004',
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    label: 'Leon Thornton',
+                    isPreviousVersion: false,
+                    shortCode: '123'
+                },
+                farmInspection_hygiene_waste_polluting_waters: false,
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                    id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                    label: 'AUDIT-21062024',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_salla',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '9da4d5af-39e7-4cd3-a181-0e1668786c11',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: '999a1ba4-3f4d-4e10-9cbb-71887dcf0443',
+                refcollection: 'surveys',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062024',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    refcollection: 'farms',
+                    label: 'Leon Thornton',
+                    labelShort: 'FARM-004',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                '999a1ba4-3f4d-4e10-9cbb-71887dcf0443',
+                'clxn3e2r8002mfmxv5sfmuilz'
+            ],
+            workflowName: 'farmInternalInspectionRemote',
+            activityName: 'AuditSurveyActivity3',
+            activityLabel: 'SurveyHygiene',
+            method: 'update',
+            type: 'CreateSurvey',
+            previewValues: [
+                {
+                    value: 'YesTested',
+                    key: 'Does everyone on the farm have access to drinking water?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does the farmer maintain good hygiene and sanitation at their home?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does the farmer have toilet and bathroom at the farm?'
+                },
+                {
+                    value: 'No',
+                    key: 'Pit latrine discharges directly into a stream / river?'
+                },
+                {
+                    value: 'No',
+                    key: 'Is the farmer polluting any natural water sources in any way?'
+                },
+                {
+                    value: 'No',
+                    key: 'Waste disposal? / Plastic or inorganic rubbish and garbage is properly disposed off?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does the farmer burn crop residues at his farm?'
+                },
+                {
+                    value: 'No',
+                    key: 'Are crop residues used by the farmer at the farm?'
+                },
+                {
+                    value: 'No',
+                    key: 'Management of hazardous waste?'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                altitude: 2,
+                idLabelShort: 'FARM-004',
+                id: {
+                    refcollection: 'farms',
+                    labelShort: 'FARM-004',
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    label: 'Leon Thornton',
+                    isPreviousVersion: false
+                },
+                customId: 'a65c75bd-4d51-439c-b434-ff91f088bb05',
+                entity: {
+                    refcollection: 'farms',
+                    labelShort: 'FARM-004',
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    label: 'Leon Thornton',
+                    isPreviousVersion: false
+                },
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                    id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                    label: 'AUDIT-21062024',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_salla',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: 'a65c75bd-4d51-439c-b434-ff91f088bb05',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: 'clxn3e2r8002mfmxv5sfmuilz',
+                refcollection: 'farms',
+                label: 'Leon Thornton',
+                labelShort: 'FARM-004',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062024',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [],
+            allParentItemsSearchable: [
+                'clxn3e2r8002mfmxv5sfmuilz'
+            ],
+            primaryActivityName: 'UpdateLocationDetailsInFarmerCreation',
+            primaryActivityLabel: 'UpdateLocation',
+            workflowName: 'farmInternalInspectionRemote',
+            activityName: 'UpdateLocationDetailsInFarmerCreation',
+            activityLabel: 'UpdateLocation',
+            method: 'update',
+            type: 'StandardSubmitViaAuditActivity',
+            previewValues: [
+                {
+                    value: 'BUNDIBUGYO',
+                    key: 'District'
+                },
+                {
+                    value: 'BIREMBO',
+                    key: 'Sub County'
+                },
+                {
+                    value: '',
+                    key: 'Parish'
+                },
+                {
+                    value: '',
+                    key: 'Village'
+                },
+                {
+                    value: 'BIIMALA',
+                    key: 'Collection Point'
+                },
+                {
+                    value: '{"lat":60.24962521410096,"lng":24.971673072638996,"altitude":null}',
+                    key: 'Coordinates'
+                },
+                {
+                    value: 2,
+                    key: 'Altitude'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                inspectionConsent: true,
+                targetEntity: 'clxn3e2r8002mfmxv5sfmuilz',
+                auditDefinitionId: 'farmerAudit',
+                season: {
+                    authTag: 'ALL',
+                    qrCode: '123',
+                    refcollection: 'seasons',
+                    labelShort: '2023/24',
+                    id: '0f81d551-e601-4b93-bdb3-5e1258a6bb10',
+                    label: '2023/24',
+                    isPreviousVersion: false,
+                    shortCode: '123'
+                },
+                previousInspectionDate: '2024-06-21T12:28:42.732Z',
+                inspectionDate: '2024-06-21T12:28:42.732Z',
+                customId: 'b1b9e856-e1d3-455b-8bed-acafcdcfdf90'
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_salla',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: 'b1b9e856-e1d3-455b-8bed-acafcdcfdf90',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T12:55:29.079Z',
+            updatedDate: '2024-06-21T12:55:29.079Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.249625205677035,
+                    lon: 24.971673084383617
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.249625205677035,
+                    lon: 24.971673084383617
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: '36359bf2-2247-4bc5-822c-4bfd693f2678',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062024',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: 'd54966f9-f365-4b74-bd24-2561d6da2b3a',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '36359bf2-2247-4bc5-822c-4bfd693f2678',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062024',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            },
+            parentSecondaryItems: [
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    refcollection: 'farms',
+                    label: 'Leon Thornton',
+                    labelShort: 'FARM-004',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                '36359bf2-2247-4bc5-822c-4bfd693f2678',
+                'clxn3e2r8002mfmxv5sfmuilz'
+            ],
+            primaryActivityName: 'CreateFarmPolygonReviewActivityV2',
+            primaryActivityLabel: 'FarmDetailsReviewRemote',
+            workflowName: 'farmPolygonReviewRemote',
+            activityName: 'CreateFarmPolygonReviewActivityV2',
+            activityLabel: 'FarmDetailsReviewRemote',
+            type: 'CreateAuditActivity',
+            previewValues: [
+                {
+                    value: '',
+                    key: 'Target'
+                },
+                {
+                    value: '21/06/2024',
+                    key: 'Inspection Date'
+                },
+                {
+                    value: '2023/24',
+                    key: 'Season'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Do you accept to be inspected?'
+                },
+                {
+                    value: '21/06/2024',
+                    key: 'Previous Inspection Date'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                customId: 'b37a6dc8-5c6e-4817-9c53-406c74fddfb0',
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: 'f518938a-6d7e-4899-9b96-3aa5a4ad9659',
+                    id: '36359bf2-2247-4bc5-822c-4bfd693f2678',
+                    label: 'AUDIT-21062024',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: 'd54966f9-f365-4b74-bd24-2561d6da2b3a',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_salla',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: 'b37a6dc8-5c6e-4817-9c53-406c74fddfb0',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T12:55:29.079Z',
+            updatedDate: '2024-06-21T12:55:29.079Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.249625205677035,
+                    lon: 24.971673084383617
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.249625205677035,
+                    lon: 24.971673084383617
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: '7072dcf8-12b8-4c1b-a532-5cd6ff117e15',
+                refcollection: 'contacts',
+                label: 'Leon Thornton +256142424224',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: 'd54966f9-f365-4b74-bd24-2561d6da2b3a',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '36359bf2-2247-4bc5-822c-4bfd693f2678',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062024',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: 'f518938a-6d7e-4899-9b96-3aa5a4ad9659',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: 'd54966f9-f365-4b74-bd24-2561d6da2b3a',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    refcollection: 'farms',
+                    label: 'Leon Thornton',
+                    labelShort: 'FARM-004',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                '7072dcf8-12b8-4c1b-a532-5cd6ff117e15',
+                'clxn3e2r8002mfmxv5sfmuilz'
+            ],
+            primaryActivityName: 'AddContact',
+            primaryActivityLabel: 'AddContact',
+            workflowName: 'farmPolygonReviewRemote',
+            activityName: 'CreateContact',
+            activityLabel: 'CreateContact',
+            method: 'create',
+            type: 'CreateContact',
+            previewValues: [
+                {
+                    value: 'Leon Thornton',
+                    key: 'Entity'
+                },
+                {
+                    value: '142424224',
+                    key: 'Phone'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Registered Under Farmers Name'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Registered For Mobile Money'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                customId: 'b61bff0e-4c89-4654-9184-75f286340993',
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                    id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                    label: 'AUDIT-21062024',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_salla',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: 'b61bff0e-4c89-4654-9184-75f286340993',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: 'd7b4d369-32f0-417c-8e02-17c94130f112',
+                refcollection: 'animalcounts',
+                label: 'Cow',
+                qrCode: '123',
+                shortCode: '123',
+                type: 'Cow',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062024',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    refcollection: 'farms',
+                    label: 'Leon Thornton',
+                    labelShort: 'FARM-004',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                'd7b4d369-32f0-417c-8e02-17c94130f112',
+                'clxn3e2r8002mfmxv5sfmuilz'
+            ],
+            primaryActivityName: 'AddAnimal',
+            primaryActivityLabel: 'AddAnimal',
+            workflowName: 'farmInternalInspectionRemote',
+            activityName: 'CreateAnimal',
+            activityLabel: 'CreateAnimal',
+            method: 'create',
+            type: 'CreateAnimal',
+            previewValues: [
+                {
+                    value: 'Leon Thornton',
+                    key: 'Entity'
+                },
+                {
+                    value: 'Cow',
+                    key: 'Type'
+                },
+                {
+                    value: '2',
+                    key: 'Count'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Is Organic'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Used For Manure'
+                },
+                {
+                    value: '',
+                    key: 'Description'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: null,
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_salla',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: 'c9e6ce9b-3838-470a-83c7-e776a41916d2',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:00:32.087Z',
+            updatedDate: '2024-06-21T13:00:32.087Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers_wip',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            operatedBy: null,
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers_wip',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            parentId: {
+                id: 'clxn3e2r8002mfmxv5sfmuilz',
+                refcollection: 'farms_wip',
+                label: 'Leon Thornton',
+                labelShort: 'FARM-004',
+                isPreviousVersion: false
+            },
+            allParentItemsSearchable: [
+                'clxn3e2r8002mfmxv5sfmuilz'
+            ],
+            activityName: 'ToReview',
+            activityLabel: 'ToReview',
+            type: 'ToReview',
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                altitude: 5,
+                idLabelShort: 'FARM-004',
+                id: {
+                    refcollection: 'farms',
+                    labelShort: 'FARM-004',
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    label: 'Leon Thornton',
+                    isPreviousVersion: false
+                },
+                customId: 'd470954f-0406-46d0-9baf-24d5f6686f5c',
+                entity: {
+                    refcollection: 'farms',
+                    labelShort: 'FARM-004',
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    label: 'Leon Thornton',
+                    isPreviousVersion: false
+                },
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: 'f518938a-6d7e-4899-9b96-3aa5a4ad9659',
+                    id: '36359bf2-2247-4bc5-822c-4bfd693f2678',
+                    label: 'AUDIT-21062024',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: 'd54966f9-f365-4b74-bd24-2561d6da2b3a',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_salla',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: 'd470954f-0406-46d0-9baf-24d5f6686f5c',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T12:55:29.079Z',
+            updatedDate: '2024-06-21T12:55:29.079Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.249625205677035,
+                    lon: 24.971673084383617
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.249625205677035,
+                    lon: 24.971673084383617
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: 'clxn3e2r8002mfmxv5sfmuilz',
+                refcollection: 'farms',
+                label: 'Leon Thornton',
+                labelShort: 'FARM-004',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: 'd54966f9-f365-4b74-bd24-2561d6da2b3a',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '36359bf2-2247-4bc5-822c-4bfd693f2678',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062024',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: 'f518938a-6d7e-4899-9b96-3aa5a4ad9659',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: 'd54966f9-f365-4b74-bd24-2561d6da2b3a',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [],
+            allParentItemsSearchable: [
+                'clxn3e2r8002mfmxv5sfmuilz'
+            ],
+            primaryActivityName: 'UpdateLocationDetailsInFarmerCreation',
+            primaryActivityLabel: 'UpdateLocation',
+            workflowName: 'farmPolygonReviewRemote',
+            activityName: 'UpdateFarmFacility',
+            activityLabel: 'UpdateFarmFacility',
+            method: 'update',
+            type: 'UpdateFarmFacility',
+            previewValues: [
+                {
+                    value: 'BUNDIBUGYO',
+                    key: 'District'
+                },
+                {
+                    value: 'BOMBO',
+                    key: 'Sub County'
+                },
+                {
+                    value: '',
+                    key: 'Parish'
+                },
+                {
+                    value: '',
+                    key: 'Village'
+                },
+                {
+                    value: 'BOBULONGU',
+                    key: 'Collection Point'
+                },
+                {
+                    value: '{"lat":60.24961612971525,"lng":24.971648963554394,"altitude":null}',
+                    key: 'Coordinates'
+                },
+                {
+                    value: 5,
+                    key: 'Altitude'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                idLabelShort: 'Polygon - FARM-004 - P1',
+                geoData: [
+                    {
+                        altitude: null,
+                        lng: 24.971862082249178,
+                        lat: 60.249475935982375
+                    }
+                ],
+                customId: 'e5b761fa-39cf-4e8f-b998-54b77c705de6',
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: 'f518938a-6d7e-4899-9b96-3aa5a4ad9659',
+                    id: '36359bf2-2247-4bc5-822c-4bfd693f2678',
+                    label: 'AUDIT-21062024',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: 'd54966f9-f365-4b74-bd24-2561d6da2b3a',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_salla',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: 'e5b761fa-39cf-4e8f-b998-54b77c705de6',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T12:55:29.079Z',
+            updatedDate: '2024-06-21T12:55:29.079Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.249625205677035,
+                    lon: 24.971673084383617
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.249625205677035,
+                    lon: 24.971673084383617
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: '4a8f2ca7-016e-4aa7-a57e-591fdb3f3a77',
+                refcollection: 'geodatas',
+                label: 'Polygon - FARM-004 - P1',
+                labelShort: 'Polygon - FARM-004 - P1',
+                qrCode: '123',
+                shortCode: '123',
+                type: 'Polygon',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: 'd54966f9-f365-4b74-bd24-2561d6da2b3a',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '36359bf2-2247-4bc5-822c-4bfd693f2678',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062024',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: 'f518938a-6d7e-4899-9b96-3aa5a4ad9659',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: 'd54966f9-f365-4b74-bd24-2561d6da2b3a',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [
+                {
+                    id: '81d1c301-9599-4a14-b16b-bdd70737cfb4',
+                    refcollection: 'plots',
+                    label: 'P1',
+                    labelShort: 'FARM-004 - P1',
+                    qrCode: '123',
+                    shortCode: '123',
+                    type: 'Permanent',
+                    isPreviousVersion: false
+                },
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    refcollection: 'farms',
+                    label: 'Leon Thornton',
+                    labelShort: 'FARM-004',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                '4a8f2ca7-016e-4aa7-a57e-591fdb3f3a77',
+                '81d1c301-9599-4a14-b16b-bdd70737cfb4',
+                'clxn3e2r8002mfmxv5sfmuilz'
+            ],
+            primaryActivityName: 'AddPlotPolygonAtAudit',
+            primaryActivityLabel: 'CreatePlotPolygon',
+            workflowName: 'farmPolygonReviewRemote',
+            activityName: 'CreateGeoData',
+            activityLabel: 'CreateGeoData',
+            method: 'create',
+            type: 'CreateGeoData',
+            previewValues: [
+                {
+                    value: 'Leon Thornton',
+                    key: 'Entity Parent'
+                },
+                {
+                    value: 'P1',
+                    key: 'Plot'
+                },
+                {
+                    value: 'Polygon',
+                    key: 'Type'
+                },
+                {
+                    value: 'Polygon - FARM-004 - P1',
+                    key: 'Code'
+                },
+                {
+                    value: 22,
+                    key: 'Estimated area size'
+                },
+                {
+                    value: '',
+                    key: 'Notes'
+                },
+                {
+                    value: '[{"lat":60.249475935982375,"lng":24.971862082249178,"altitude":null}]',
+                    key: 'Geo Data'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        }
+    ],
+    entity: {
+        properties: {
+            altitude: 2,
+            targetEntity: 'clxn3e2r8002mfmxv5sfmuilz',
+            idLabelShort: 'FARM-004',
+            customId: 'clxn3e2r8002mfmxv5sfmuilz',
+            hasLiveStock: true,
+            inspectionConsent: true,
+            previousInspectionDate: '2024-06-21T12:59:52.595Z',
+            auditDefinitionId: 'farmerAudit',
+            season: {
+                qrCode: '123',
+                authTag: 'ALL',
+                refcollection: 'seasons',
+                labelShort: '2023/24',
+                isPreviousVersion: false,
+                id: '0f81d551-e601-4b93-bdb3-5e1258a6bb10',
+                label: '2023/24',
+                shortCode: '123'
+            },
+            id: {
+                refcollection: 'farms',
+                labelShort: 'FARM-004',
+                id: 'clxn3e2r8002mfmxv5sfmuilz',
+                label: 'Leon Thornton',
+                isPreviousVersion: false
+            },
+            inspectionDate: '2024-06-21T12:59:52.595Z',
+            entity: {
+                refcollection: 'farms',
+                labelShort: 'FARM-004',
+                id: 'clxn3e2r8002mfmxv5sfmuilz',
+                label: 'Leon Thornton',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                qrCode: '123',
+                refcollection: 'auditactivities',
+                chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                label: 'AUDIT-21062024',
+                isPreviousVersion: false,
+                shortCode: '123',
+                workflowId: {
+                    refcollection: 'workflowscopes_wip',
+                    id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                    isPreviousVersion: false
+                }
+            }
+        },
+        isDeleted: false,
+        approvalStatus: 'NotSet',
+        reviewStatus: 'Approved',
+        creationStatus: 'NotSet',
+        reviewEntityId: null,
+        previousVersionId: {
+            refcollection: 'farms',
+            id: '34537c28-c0cb-4de2-a0da-79246cc40ef5',
+            isPreviousVersion: false
+        },
+        systemStatus: null,
+        isArchived: false,
+        enabled: true,
+        sourceSystem: 'V2',
+        meta_workspace: 'master_latitude_salla',
+        meta_organisation: 'latitude',
+        meta_configkey: 'ltc',
+        id: {
+            id: 'clxn3e2r8002mfmxv5sfmuilz',
+            refcollection: 'farms',
+            label: 'Leon Thornton',
+            labelShort: 'FARM-004',
+            qrCode: '123',
+            shortCode: '123',
+            isPreviousVersion: false
+        },
+        createdDate: '2024-06-21T13:25:22.592Z',
+        updatedDate: '2024-06-21T13:25:22.592Z',
+        lastActivityDate: null,
+        createdBy: {
+            id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+            refcollection: 'platformusers',
+            label: 'salla@orijin.io',
+            labelShort: 'salla@orijin.io',
+            isPreviousVersion: false
+        },
+        updatedBy: {
+            id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+            refcollection: 'platformusers',
+            label: 'salla@orijin.io',
+            labelShort: 'salla@orijin.io',
+            isPreviousVersion: false
+        },
+        createdLocation: {
+            latLong: {
+                lat: 60.24962529560727,
+                lon: 24.97167293249805
+            },
+            altitude: null,
+            accuracy: 62,
+            altitudeAccuracy: null,
+            speed: null,
+            altitudeMin: null,
+            altitudeMax: null,
+            name: null
+        },
+        updatedLocation: {
+            latLong: {
+                lat: 60.24962529560727,
+                lon: 24.97167293249805
+            },
+            altitude: null,
+            accuracy: 62,
+            altitudeAccuracy: null,
+            speed: null,
+            altitudeMin: null,
+            altitudeMax: null,
+            name: null
+        },
+        surveys: [
+            {
+                id: '01baa45b-2150-4db9-bd45-423de0017f86',
+                refcollection: 'surveys',
+                isPreviousVersion: false
+            },
+            {
+                id: 'ed125b61-74bc-4a6d-82e9-9ff97190da72',
+                refcollection: 'surveys',
+                isPreviousVersion: false
+            },
+            {
+                id: 'c04edfc6-dc66-4555-9232-578a4bb21135',
+                refcollection: 'surveys',
+                isPreviousVersion: false
+            },
+            {
+                id: 'e26b6fe7-a971-4de1-8a1d-41077eeb1047',
+                refcollection: 'surveys',
+                isPreviousVersion: false
+            },
+            {
+                id: 'b25f9e5d-4704-4713-8aa2-77c33ea2804d',
+                refcollection: 'surveys',
+                isPreviousVersion: false
+            },
+            {
+                id: '999a1ba4-3f4d-4e10-9cbb-71887dcf0443',
+                refcollection: 'surveys',
+                isPreviousVersion: false
+            }
+        ],
+        surveysFull: [
+            {
+                properties: {
+                    customId: '01baa45b-2150-4db9-bd45-423de0017f86'
+                },
+                isDeleted: false,
+                approvalStatus: 'NotSet',
+                reviewStatus: 'NotSet',
+                creationStatus: 'NotSet',
+                systemStatus: null,
+                isArchived: false,
+                enabled: true,
+                sourceSystem: null,
+                meta_workspace: 'master_latitude_salla',
+                meta_organisation: 'latitude',
+                meta_configkey: 'ltc',
+                id: {
+                    id: '01baa45b-2150-4db9-bd45-423de0017f86',
+                    refcollection: 'surveys',
+                    isPreviousVersion: false
+                },
+                createdDate: '2024-06-21T13:25:22.592Z',
+                updatedDate: '2024-06-21T13:25:22.592Z',
+                lastActivityDate: null,
+                createdBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                    refcollection: 'platformusers',
+                    label: 'salla@orijin.io',
+                    labelShort: 'salla@orijin.io',
+                    isPreviousVersion: false
+                },
+                updatedBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                    refcollection: 'platformusers',
+                    label: 'salla@orijin.io',
+                    labelShort: 'salla@orijin.io',
+                    isPreviousVersion: false
+                },
+                createdLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                updatedLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                activityName: 'AuditSurveyActivity',
+                activityLabel: 'SurveyHousehold',
+                tags: [],
+                name: 'SurveyHousehold',
+                entityType: 'farm',
+                description: null,
+                notes: null,
+                entity: {
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    refcollection: 'farms',
+                    label: 'Leon Thornton',
+                    labelShort: 'FARM-004',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                },
+                entityParent: null,
+                values: [
+                    {
+                        widget: null,
+                        name: 'farmInspection_demographics_hh_member_count',
+                        section: 'demographics',
+                        label: 'farmInspection_demographics_hh_member_count',
+                        value: 2
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_demographics_hh_children_count',
+                        section: 'demographics',
+                        label: 'farmInspection_demographics_hh_children_count',
+                        value: 1
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_demographics_hh_children_list',
+                        valueJsonata: "$join($map(value, function($v) {'(name: ' & $v.farmInspection_demographics_hh_children_name & ', age: ' & $v.farmInspection_demographics_hh_children_age &')'}), \", \")",
+                        section: 'demographics',
+                        label: 'farmInspection_demographics_hh_children_list',
+                        value: [
+                            {
+                                farmInspection_demographics_hh_children_name: 'jhgjhg',
+                                farmInspection_demographics_hh_children_age: 7
+                            }
+                        ]
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_demographics_hh_children_school_count',
+                        section: 'demographics',
+                        label: 'farmInspection_demographics_hh_children_school_count',
+                        value: 1
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_demographics_yourchildren_schoolage',
+                        section: 'demographics',
+                        label: 'farmInspection_demographics_yourchildren_schoolage',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_demographics_yourchildren_schoolage_school',
+                        section: 'demographics',
+                        label: 'farmInspection_demographics_yourchildren_schoolage_school'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_demographics_children_farm',
+                        section: 'demographics',
+                        label: 'farmInspection_demographics_children_farm',
+                        value: false
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_demographics_children_farm_conditions',
+                        valueJsonata: "$translate(value,'lists.childLaborFarmConditions')",
+                        section: 'demographics',
+                        label: 'farmInspection_demographics_children_farm_conditions'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_demographics_childlabor_signs',
+                        section: 'demographics',
+                        label: 'farmInspection_demographics_childlabor_signs',
+                        value: false
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_demographics_childlabor_types',
+                        valueJsonata: "$join($map(value, function($v) { $translate($v,'lists.childLaborTypes') }), ', ')",
+                        section: 'demographics',
+                        label: 'farmInspection_demographics_childlabor_types'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_demographics_pregnant_breastfeeding',
+                        section: 'demographics',
+                        label: 'farmInspection_demographics_pregnant_breastfeeding',
+                        value: false
+                    }
+                ],
+                parentAuditActivity: null
+            },
+            {
+                properties: {
+                    customId: 'ed125b61-74bc-4a6d-82e9-9ff97190da72'
+                },
+                isDeleted: false,
+                approvalStatus: 'NotSet',
+                reviewStatus: 'NotSet',
+                creationStatus: 'NotSet',
+                systemStatus: null,
+                isArchived: false,
+                enabled: true,
+                sourceSystem: null,
+                meta_workspace: 'master_latitude_salla',
+                meta_organisation: 'latitude',
+                meta_configkey: 'ltc',
+                id: {
+                    id: 'ed125b61-74bc-4a6d-82e9-9ff97190da72',
+                    refcollection: 'surveys',
+                    isPreviousVersion: false
+                },
+                createdDate: '2024-06-21T13:25:22.592Z',
+                updatedDate: '2024-06-21T13:25:22.592Z',
+                lastActivityDate: null,
+                createdBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                    refcollection: 'platformusers',
+                    label: 'salla@orijin.io',
+                    labelShort: 'salla@orijin.io',
+                    isPreviousVersion: false
+                },
+                updatedBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                    refcollection: 'platformusers',
+                    label: 'salla@orijin.io',
+                    labelShort: 'salla@orijin.io',
+                    isPreviousVersion: false
+                },
+                createdLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                updatedLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                activityName: 'AuditSurveyActivity2',
+                activityLabel: 'SurveyWorkers',
+                tags: [],
+                name: 'SurveyWorkers',
+                entityType: 'farm',
+                description: null,
+                notes: null,
+                entity: {
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    refcollection: 'farms',
+                    label: 'Leon Thornton',
+                    labelShort: 'FARM-004',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                },
+                entityParent: null,
+                values: [
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_hired',
+                        section: 'workers',
+                        label: 'farmInspection_workers_hired',
+                        value: false
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_workers_hired_type',
+                        valueJsonata: "$join($map(value, function($v) { $translate($v,'lists.permanencyType') }), ', ')",
+                        section: 'workers',
+                        label: 'farmInspection_workers_hired_type'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_hired_housing',
+                        section: 'workers',
+                        label: 'farmInspection_workers_hired_housing'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_hired_housing_condition',
+                        section: 'workers',
+                        label: 'farmInspection_workers_hired_housing_condition'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_drinking_water',
+                        section: 'workers',
+                        label: 'farmInspection_workers_drinking_water'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_contract',
+                        section: 'workers',
+                        label: 'farmInspection_workers_contract'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_wages_recorded',
+                        section: 'workers',
+                        label: 'farmInspection_workers_wages_recorded'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_wages_minimum',
+                        section: 'workers',
+                        label: 'farmInspection_workers_wages_minimum'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_other_benefits',
+                        section: 'workers',
+                        label: 'farmInspection_workers_other_benefits'
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_workers_other_benefits_what',
+                        section: 'workers',
+                        label: 'farmInspection_workers_other_benefits_what'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_working_hours_regulated',
+                        section: 'workers',
+                        label: 'farmInspection_workers_working_hours_regulated'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_associations',
+                        section: 'workers',
+                        label: 'farmInspection_workers_associations'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_avoids_regular',
+                        section: 'workers',
+                        label: 'farmInspection_workers_avoids_regular'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_grievances',
+                        section: 'workers',
+                        label: 'farmInspection_workers_grievances'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_grievances_aware',
+                        section: 'workers',
+                        label: 'farmInspection_workers_grievances_aware'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_taxes',
+                        section: 'workers',
+                        label: 'farmInspection_workers_taxes'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_adults',
+                        section: 'workers',
+                        label: 'farmInspection_workers_adults'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_age_limit',
+                        section: 'workers',
+                        label: 'farmInspection_workers_age_limit'
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_workers_minimum_age',
+                        section: 'workers',
+                        label: 'farmInspection_workers_minimum_age'
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_workers_minimum_salary',
+                        section: 'workers',
+                        label: 'farmInspection_workers_minimum_salary'
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_workers_healthsafety',
+                        valueJsonata: "$translate(value,'lists.YesNoYesButNotRecently')",
+                        section: 'workers',
+                        label: 'farmInspection_workers_healthsafety',
+                        value: 'Yes'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_restday',
+                        section: 'workers',
+                        label: 'farmInspection_workers_restday',
+                        value: true
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_organictraining',
+                        section: 'workers',
+                        label: 'farmInspection_workers_organictraining',
+                        value: true
+                    }
+                ],
+                parentAuditActivity: null
+            },
+            {
+                properties: {
+                    customId: 'c04edfc6-dc66-4555-9232-578a4bb21135'
+                },
+                isDeleted: false,
+                approvalStatus: 'NotSet',
+                reviewStatus: 'NotSet',
+                creationStatus: 'NotSet',
+                systemStatus: null,
+                isArchived: false,
+                enabled: true,
+                sourceSystem: null,
+                meta_workspace: 'master_latitude_salla',
+                meta_organisation: 'latitude',
+                meta_configkey: 'ltc',
+                id: {
+                    id: 'c04edfc6-dc66-4555-9232-578a4bb21135',
+                    refcollection: 'surveys',
+                    isPreviousVersion: false
+                },
+                createdDate: '2024-06-21T13:25:22.592Z',
+                updatedDate: '2024-06-21T13:25:22.592Z',
+                lastActivityDate: null,
+                createdBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                    refcollection: 'platformusers',
+                    label: 'salla@orijin.io',
+                    labelShort: 'salla@orijin.io',
+                    isPreviousVersion: false
+                },
+                updatedBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                    refcollection: 'platformusers',
+                    label: 'salla@orijin.io',
+                    labelShort: 'salla@orijin.io',
+                    isPreviousVersion: false
+                },
+                createdLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                updatedLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                activityName: 'AuditSurveyActivity6',
+                activityLabel: 'SurveyGeneral',
+                tags: [],
+                name: 'SurveyGeneral',
+                entityType: 'farm',
+                description: null,
+                notes: null,
+                entity: {
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    refcollection: 'farms',
+                    label: 'Leon Thornton',
+                    labelShort: 'FARM-004',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                },
+                entityParent: null,
+                values: [
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_general_prices',
+                        section: 'general',
+                        label: 'farmInspection_general_prices',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_general_contract_copy',
+                        section: 'general',
+                        label: 'farmInspection_general_contract_copy',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_general_sales_receipts',
+                        section: 'general',
+                        label: 'farmInspection_general_sales_receipts',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_general_landuse_rights',
+                        section: 'general',
+                        label: 'farmInspection_general_landuse_rights',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_general_plot_hiring',
+                        section: 'general',
+                        label: 'farmInspection_general_plot_hiring',
+                        value: false
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_general_plot_hiring_count',
+                        section: 'general',
+                        label: 'farmInspection_general_plot_hiring_count'
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_general_plot_hiring_size',
+                        section: 'general',
+                        label: 'farmInspection_general_plot_hiring_size'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_general_maincrop_pool',
+                        section: 'general',
+                        label: 'farmInspection_general_maincrop_pool',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_general_maincrop_pool_not_allowed',
+                        section: 'general',
+                        label: 'farmInspection_general_maincrop_pool_not_allowed'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_general_all_maincrop_to_company',
+                        section: 'general',
+                        label: 'farmInspection_general_all_maincrop_to_company',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_general_discrimination',
+                        section: 'general',
+                        label: 'farmInspection_general_discrimination',
+                        value: false
+                    }
+                ],
+                parentAuditActivity: null
+            },
+            {
+                properties: {
+                    customId: 'e26b6fe7-a971-4de1-8a1d-41077eeb1047'
+                },
+                isDeleted: false,
+                approvalStatus: 'NotSet',
+                reviewStatus: 'NotSet',
+                creationStatus: 'NotSet',
+                systemStatus: null,
+                isArchived: false,
+                enabled: true,
+                sourceSystem: null,
+                meta_workspace: 'master_latitude_salla',
+                meta_organisation: 'latitude',
+                meta_configkey: 'ltc',
+                id: {
+                    id: 'e26b6fe7-a971-4de1-8a1d-41077eeb1047',
+                    refcollection: 'surveys',
+                    isPreviousVersion: false
+                },
+                createdDate: '2024-06-21T13:25:22.592Z',
+                updatedDate: '2024-06-21T13:25:22.592Z',
+                lastActivityDate: null,
+                createdBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                    refcollection: 'platformusers',
+                    label: 'salla@orijin.io',
+                    labelShort: 'salla@orijin.io',
+                    isPreviousVersion: false
+                },
+                updatedBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                    refcollection: 'platformusers',
+                    label: 'salla@orijin.io',
+                    labelShort: 'salla@orijin.io',
+                    isPreviousVersion: false
+                },
+                createdLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                updatedLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                activityName: 'AuditSurveyActivity5',
+                activityLabel: 'SurveyFarming',
+                tags: [],
+                name: 'SurveyFarming',
+                entityType: 'farm',
+                description: null,
+                notes: null,
+                entity: {
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    refcollection: 'farms',
+                    label: 'Leon Thornton',
+                    labelShort: 'FARM-004',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                },
+                entityParent: null,
+                values: [
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farming_fertility',
+                        section: 'farming',
+                        label: 'farmInspection_farming_fertility',
+                        value: false
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_farming_fertility_what',
+                        valueJsonata: "$join($map(value, function($v) { $translate($v,'lists.organicManagementSoilFertilityMeasures') }), ', ')",
+                        section: 'farming',
+                        label: 'farmInspection_farming_fertility_what'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farming_buffer',
+                        section: 'farming',
+                        label: 'farmInspection_farming_buffer',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farming_cutting_trees',
+                        section: 'farming',
+                        label: 'farmInspection_farming_cutting_trees',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farming_destroy_wetlands',
+                        section: 'farming',
+                        label: 'farmInspection_farming_destroy_wetlands',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farming_protect_wetlands',
+                        section: 'farming',
+                        label: 'farmInspection_farming_protect_wetlands',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farming_soil_erosion',
+                        section: 'farming',
+                        label: 'farmInspection_farming_soil_erosion',
+                        value: false
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_farming_soil_erosion_measures',
+                        valueJsonata: "$join($map(value, function($v) { $translate($v,'lists.organicManagementSoilErosionMeasures') }), ', ')",
+                        section: 'farming',
+                        label: 'farmInspection_farming_soil_erosion_measures'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farming_biodiversity',
+                        section: 'farming',
+                        label: 'farmInspection_farming_biodiversity',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farming_national_parks',
+                        section: 'farming',
+                        label: 'farmInspection_farming_national_parks',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farming_weeds',
+                        section: 'farming',
+                        label: 'farmInspection_farming_weeds',
+                        value: false
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_farming_weeds_what',
+                        valueJsonata: "$join($map(value, function($v) { $translate($v,'lists.organicManagementWeedsManagement') }), ', ')",
+                        section: 'farming',
+                        label: 'farmInspection_farming_weeds_what'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farming_pests',
+                        section: 'farming',
+                        label: 'farmInspection_farming_pests',
+                        value: false
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_farming_pests_what',
+                        valueJsonata: "$join($map(value, function($v) { $translate($v,'lists.organicManagementPestsManagement') }), ', ')",
+                        section: 'farming',
+                        label: 'farmInspection_farming_pests_what'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farming_disease',
+                        section: 'farming',
+                        label: 'farmInspection_farming_disease',
+                        value: false
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_farming_disease_what',
+                        valueJsonata: "$join($map(value, function($v) { $translate($v,'lists.organicManagementDiseaseManagement') }), ', ')",
+                        section: 'farming',
+                        label: 'farmInspection_farming_disease_what'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farming_manure',
+                        section: 'farming',
+                        label: 'farmInspection_farming_manure',
+                        value: false
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_farming_manure_details',
+                        valueJsonata: "$join($map(properties.farmInspection_farming_manure_details, function($v) {'(type: ' & $v.farmInspection_farming_manure_type & ', quantity: ' & $v.farmInspection_farming_manure_quantity& ', decomposition: ' & $v.farmInspection_farming_manure_decomposition_time& ', turning: ' & $v.farmInspection_farming_manure_turning &')'}), \", \")",
+                        section: 'farming',
+                        label: 'farmInspection_farming_manure_details'
+                    }
+                ],
+                parentAuditActivity: null
+            },
+            {
+                properties: {
+                    customId: 'b25f9e5d-4704-4713-8aa2-77c33ea2804d'
+                },
+                isDeleted: false,
+                approvalStatus: 'NotSet',
+                reviewStatus: 'NotSet',
+                creationStatus: 'NotSet',
+                systemStatus: null,
+                isArchived: false,
+                enabled: true,
+                sourceSystem: null,
+                meta_workspace: 'master_latitude_salla',
+                meta_organisation: 'latitude',
+                meta_configkey: 'ltc',
+                id: {
+                    id: 'b25f9e5d-4704-4713-8aa2-77c33ea2804d',
+                    refcollection: 'surveys',
+                    isPreviousVersion: false
+                },
+                createdDate: '2024-06-21T13:25:22.592Z',
+                updatedDate: '2024-06-21T13:25:22.592Z',
+                lastActivityDate: null,
+                createdBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                    refcollection: 'platformusers',
+                    label: 'salla@orijin.io',
+                    labelShort: 'salla@orijin.io',
+                    isPreviousVersion: false
+                },
+                updatedBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                    refcollection: 'platformusers',
+                    label: 'salla@orijin.io',
+                    labelShort: 'salla@orijin.io',
+                    isPreviousVersion: false
+                },
+                createdLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                updatedLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                activityName: 'AuditSurveyActivity4',
+                activityLabel: 'SurveyFarmPractises',
+                tags: [],
+                name: 'SurveyFarmPractises',
+                entityType: 'farm',
+                description: null,
+                notes: null,
+                entity: {
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    refcollection: 'farms',
+                    label: 'Leon Thornton',
+                    labelShort: 'FARM-004',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                },
+                entityParent: null,
+                values: [
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farmpractises_organic',
+                        section: 'farmpractises',
+                        label: 'farmInspection_farmpractises_organic',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farmpractises_ripefruit',
+                        section: 'farmpractises',
+                        label: 'farmInspection_farmpractises_ripefruit',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farmpractises_pruning',
+                        section: 'farmpractises',
+                        label: 'farmInspection_farmpractises_pruning',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farmpractises_basins',
+                        section: 'farmpractises',
+                        label: 'farmInspection_farmpractises_basins',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farmpractises_basins_hygiene',
+                        section: 'farmpractises',
+                        label: 'farmInspection_farmpractises_basins_hygiene'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farmpractises_drying_tarpaulin',
+                        section: 'farmpractises',
+                        label: 'farmInspection_farmpractises_drying_tarpaulin',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farmpractises_store_packaging_chemicals',
+                        section: 'farmpractises',
+                        label: 'farmInspection_farmpractises_store_packaging_chemicals',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farmpractises_off_farm',
+                        section: 'farmpractises',
+                        label: 'farmInspection_farmpractises_off_farm',
+                        value: false
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_farmpractises_off_farm_inputs',
+                        valueJsonata: "$join($map(value, function($v) {'(type: ' & $v.farmInspection_farmpractises_off_farm_input_type & ', auth: ' & $v.farmInspection_farmpractises_off_farm_input_authorisation &')'}), \", \")",
+                        section: 'farmpractises',
+                        label: 'farmInspection_farmpractises_off_farm_inputs'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farmpractises_off_farm_treated',
+                        section: 'farmpractises',
+                        label: 'farmInspection_farmpractises_off_farm_treated'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farmpractises_off_farm_proof',
+                        section: 'farmpractises',
+                        label: 'farmInspection_farmpractises_off_farm_proof'
+                    }
+                ],
+                parentAuditActivity: null
+            },
+            {
+                properties: {
+                    customId: '999a1ba4-3f4d-4e10-9cbb-71887dcf0443'
+                },
+                isDeleted: false,
+                approvalStatus: 'NotSet',
+                reviewStatus: 'NotSet',
+                creationStatus: 'NotSet',
+                systemStatus: null,
+                isArchived: false,
+                enabled: true,
+                sourceSystem: null,
+                meta_workspace: 'master_latitude_salla',
+                meta_organisation: 'latitude',
+                meta_configkey: 'ltc',
+                id: {
+                    id: '999a1ba4-3f4d-4e10-9cbb-71887dcf0443',
+                    refcollection: 'surveys',
+                    isPreviousVersion: false
+                },
+                createdDate: '2024-06-21T13:25:22.592Z',
+                updatedDate: '2024-06-21T13:25:22.592Z',
+                lastActivityDate: null,
+                createdBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                    refcollection: 'platformusers',
+                    label: 'salla@orijin.io',
+                    labelShort: 'salla@orijin.io',
+                    isPreviousVersion: false
+                },
+                updatedBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                    refcollection: 'platformusers',
+                    label: 'salla@orijin.io',
+                    labelShort: 'salla@orijin.io',
+                    isPreviousVersion: false
+                },
+                createdLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                updatedLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                activityName: 'AuditSurveyActivity3',
+                activityLabel: 'SurveyHygiene',
+                tags: [],
+                name: 'SurveyHygiene',
+                entityType: 'farm',
+                description: null,
+                notes: null,
+                entity: {
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    refcollection: 'farms',
+                    label: 'Leon Thornton',
+                    labelShort: 'FARM-004',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                },
+                entityParent: null,
+                values: [
+                    {
+                        widget: null,
+                        name: 'farmInspection_hygiene_waste_drinking_water',
+                        valueJsonata: "$translate(value,'lists.waterAccessTypes')",
+                        section: 'hygiene_waste',
+                        label: 'farmInspection_hygiene_waste_drinking_water',
+                        value: 'YesTested'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_hygiene_waste_home_hygiene',
+                        section: 'hygiene_waste',
+                        label: 'farmInspection_hygiene_waste_home_hygiene',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_hygiene_waste_toilet',
+                        section: 'hygiene_waste',
+                        label: 'farmInspection_hygiene_waste_toilet',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_hygiene_waste_toilet_soap',
+                        section: 'hygiene_waste',
+                        label: 'farmInspection_hygiene_waste_toilet_soap'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_hygiene_waste_pitlatrine_river',
+                        section: 'hygiene_waste',
+                        label: 'farmInspection_hygiene_waste_pitlatrine_river',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_hygiene_waste_polluting_waters',
+                        section: 'hygiene_waste',
+                        label: 'farmInspection_hygiene_waste_polluting_waters',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_hygiene_waste_waste_disposal',
+                        section: 'hygiene_waste',
+                        label: 'farmInspection_hygiene_waste_waste_disposal',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_hygiene_waste_burn_crop_residue',
+                        section: 'hygiene_waste',
+                        label: 'farmInspection_hygiene_waste_burn_crop_residue',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_hygiene_waste_crop_residue_use',
+                        section: 'hygiene_waste',
+                        label: 'farmInspection_hygiene_waste_crop_residue_use',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_hygiene_waste_waste_hazard',
+                        section: 'hygiene_waste',
+                        label: 'farmInspection_hygiene_waste_waste_hazard',
+                        value: false
+                    }
+                ],
+                parentAuditActivity: null
+            }
+        ],
+        name: 'Leon Thornton',
+        type: null,
+        parentFacility: {
+            id: 'b6d7aabb-7268-449e-b755-eae819ade700',
+            refcollection: 'facilities',
+            label: 'BIIMALA',
+            labelShort: 'BTO-BML',
+            authTag: 'ALL',
+            qrCode: '123',
+            shortCode: '123',
+            type: 'CollectionPoint',
+            isPreviousVersion: false
+        },
+        parentFacilityParent: null,
+        parentFacilityParentParent: null,
+        parentFacilityFull: {
+            properties: {
+                idAuthTag: 'ALL',
+                idLabelShort: 'BTO-BML',
+                id: {
+                    authTag: 'ALL',
+                    qrCode: '123',
+                    refcollection: 'facilities',
+                    labelShort: 'BTO-BML',
+                    id: 'b6d7aabb-7268-449e-b755-eae819ade700',
+                    label: 'BIIMALA',
+                    isPreviousVersion: false,
+                    type: 'CollectionPoint',
+                    shortCode: '123'
+                },
+                customId: 'b6d7aabb-7268-449e-b755-eae819ade700'
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_salla',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: 'b6d7aabb-7268-449e-b755-eae819ade700',
+                refcollection: 'facilities',
+                label: 'BIIMALA',
+                labelShort: 'BTO-BML',
+                authTag: 'ALL',
+                qrCode: '123',
+                shortCode: '123',
+                type: 'CollectionPoint',
+                isPreviousVersion: false
+            },
+            createdDate: '2023-12-03T08:40:30.581Z',
+            updatedDate: '2024-03-30T15:26:50.547Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.1882624,
+                    lon: 24.8774656
+                },
+                altitude: 0,
+                accuracy: null,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            name: 'BIIMALA',
+            type: 'CollectionPoint',
+            parentFacility: null,
+            parentFacilityParent: null,
+            parentFacilityParentParent: null,
+            parentFacilityFull: null,
+            parentLocation: null,
+            parentLocationCode: null,
+            parentLocationName: null,
+            parentLocationParent: null,
+            parentLocationParentCode: null,
+            parentLocationParentName: null,
+            parentLocationParentParent: {
+                id: '774362bf-2334-400f-b74b-bf9706dc416b',
+                refcollection: 'locations',
+                label: 'BUNDIBUGYO TOWN COUNCIL',
+                labelShort: 'BTO',
+                authTag: 'ALL',
+                qrCode: '123',
+                shortCode: '123',
+                type: 'SubCounty',
+                isPreviousVersion: false
+            },
+            parentLocationParentParentCode: null,
+            parentLocationParentParentName: null,
+            parentLocationParentParentParent: {
+                id: '606e1d79-1178-45ed-b713-47b9c6a34ebd',
+                refcollection: 'locations',
+                label: 'BUNDIBUGYO',
+                labelShort: 'BDG',
+                authTag: 'BDG',
+                qrCode: '123',
+                shortCode: '123',
+                type: 'District',
+                isPreviousVersion: false
+            },
+            parentLocationParentParentParentCode: null,
+            parentLocationParentParentParentName: null,
+            parentLocationFull: null,
+            mainContactPersonFull: null,
+            location: null,
+            address: null,
+            polygon: null,
+            polygonFull: null,
+            contactFirstName: null,
+            contactIdentificationNumber: null,
+            contactDobApproximate: null,
+            contactMaritalStatus: null,
+            contactIdentificationNumberType: null,
+            contactDob: null,
+            nickName: null,
+            contactEducation: null,
+            contactHouseHoldMemberCount: null,
+            contactLastName: null,
+            contactMiddleName: null,
+            contactGender: null
+        },
+        parentLocation: null,
+        parentLocationCode: null,
+        parentLocationName: null,
+        parentLocationParent: null,
+        parentLocationParentCode: null,
+        parentLocationParentName: null,
+        parentLocationParentParent: {
+            id: '1ce86ef5-7e7a-489e-aa8f-ea9c9edbe620',
+            refcollection: 'locations',
+            label: 'BIREMBO',
+            labelShort: 'BII',
+            authTag: 'ALL',
+            qrCode: '123',
+            shortCode: '123',
+            type: 'SubCounty',
+            isPreviousVersion: false
+        },
+        parentLocationParentParentCode: 'BBD',
+        parentLocationParentParentName: 'BUBANDI',
+        parentLocationParentParentParent: {
+            id: '606e1d79-1178-45ed-b713-47b9c6a34ebd',
+            refcollection: 'locations',
+            label: 'BUNDIBUGYO',
+            labelShort: 'BDG',
+            authTag: 'BDG',
+            qrCode: '123',
+            shortCode: '123',
+            type: 'District',
+            isPreviousVersion: false
+        },
+        parentLocationParentParentParentCode: 'BDG',
+        parentLocationParentParentParentName: 'BUNDIBUGYO',
+        parentLocationFull: null,
+        mainContactPerson: {
+            id: 'clxn3e2qm001kfmxv5kgk0cap',
+            refcollection: 'users',
+            label: 'Leon Thornton',
+            labelShort: 'FARM-004',
+            qrCode: '123',
+            shortCode: '123',
+            isPreviousVersion: false
+        },
+        mainContactPersonFull: {
+            properties: {
+                idLabelShort: 'FARM-004',
+                id: {
+                    refcollection: 'users',
+                    labelShort: 'FARM-004',
+                    id: 'clxn3e2qm001kfmxv5kgk0cap',
+                    label: 'Leon Thornton',
+                    isPreviousVersion: false
+                },
+                customId: 'clxn3e2qm001kfmxv5kgk0cap',
+                picture: [],
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                    id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                    label: 'AUDIT-21062024',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: 'V2',
+            meta_workspace: 'master_latitude_salla',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: 'clxn3e2qm001kfmxv5kgk0cap',
+                refcollection: 'users',
+                label: 'Leon Thornton',
+                labelShort: 'FARM-004',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                refcollection: 'platformusers',
+                label: 'salla@orijin.io',
+                labelShort: 'salla@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            type: 'Farmer',
+            email: null,
+            phone: '778434715',
+            phone2: null,
+            name: 'Leon Thornton',
+            firstName: 'Leon',
+            middleName: null,
+            lastName: 'Thornton',
+            nickName: null,
+            gender: 'Female',
+            dob: '1980-12-10T00:00:00.000Z',
+            dobApproximate: false,
+            identificationNumber: 'CF800011111',
+            identificationNumberType: 'NationalId',
+            education: 'Secondary',
+            maritalStatus: 'Married',
+            houseHoldMemberCount: null,
+            picture: {
+                id: '6eef896b-955b-4669-a949-a5d60f98f0e7',
+                refcollection: 'documents',
+                isPreviousVersion: false
+            },
+            pictureFull: {
+                properties: {
+                    customId: '6eef896b-955b-4669-a949-a5d60f98f0e7'
+                },
+                isDeleted: false,
+                approvalStatus: 'NotSet',
+                reviewStatus: 'NotSet',
+                creationStatus: 'NotSet',
+                systemStatus: null,
+                isArchived: false,
+                enabled: true,
+                sourceSystem: null,
+                meta_workspace: 'master_latitude_salla',
+                meta_organisation: 'latitude',
+                meta_configkey: 'ltc',
+                id: {
+                    id: '6eef896b-955b-4669-a949-a5d60f98f0e7',
+                    refcollection: 'documents',
+                    isPreviousVersion: false
+                },
+                createdDate: '2024-06-21T13:00:58.287Z',
+                updatedDate: '2024-06-21T13:00:58.287Z',
+                lastActivityDate: null,
+                createdBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                    refcollection: 'platformusers',
+                    label: 'salla@orijin.io',
+                    labelShort: 'salla@orijin.io',
+                    isPreviousVersion: false
+                },
+                operatedBy: null,
+                updatedBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                    refcollection: 'platformusers',
+                    label: 'salla@orijin.io',
+                    labelShort: 'salla@orijin.io',
+                    isPreviousVersion: false
+                },
+                name: 'Screenshot 2024-05-11 at 14.01.44.png',
+                type: 'image/png',
+                url: '/o',
+                originalUploadName: 'Screenshot 2024-05-11 at 14.01.44.png',
+                storagePath: 'gs://orijin-dev.appspot.com/workspaces/master_latitude_salla/files/documents/6eef896b-955b-4669-a949-a5d60f98f0e7-24-06-21-13:01-0f96253f-36a4-4bbe-ac3b-29ec7f892aeeScreenshot%202024-05-11%20at%2014.01.44.png',
+                publicUrl: 'https://storage.googleapis.com/orijin-dev.appspot.com/workspaces%2Fmaster_latitude_salla%2Ffiles%2Fdocuments%2F6eef896b-955b-4669-a949-a5d60f98f0e7-24-06-21-13%3A01-0f96253f-36a4-4bbe-ac3b-29ec7f892aeeScreenshot%202024-05-11%20at%2014.01.44.png',
+                lastModified: '2024-05-11T11:01:49.756Z',
+                targetProperty: 'picture',
+                sourceProperty: 'picture',
+                uid: '0d8baef1-635a-4ae0-a80f-a832e3d100be',
+                index: 0,
+                size: 495719,
+                data: null,
+                isSliced: false,
+                chunks: null
+            },
+            contactPersonForFacility: {
+                id: 'clxn3e2r8002mfmxv5sfmuilz',
+                refcollection: 'farms',
+                label: 'Leon Thornton',
+                labelShort: 'FARM-004',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            },
+            parentFacility: null,
+            parentFacilityParent: null,
+            parentFacilityParentParent: null,
+            parentLocation: null,
+            parentLocationCode: null,
+            parentLocationName: null,
+            parentLocationParent: null,
+            parentLocationParentCode: null,
+            parentLocationParentName: null,
+            parentLocationParentParent: null,
+            parentLocationParentParentCode: null,
+            parentLocationParentParentName: null,
+            parentLocationParentParentParent: null,
+            parentLocationParentParentParentCode: null,
+            parentLocationParentParentParentName: null
+        },
+        location: {
+            latLong: {
+                lat: 60.24962521410096,
+                lon: 24.971673072638996
+            },
+            altitude: 2,
+            accuracy: null,
+            altitudeAccuracy: null,
+            speed: null,
+            altitudeMin: null,
+            altitudeMax: null,
+            name: null
+        },
+        address: null,
+        geodatas: null,
+        polygon: null,
+        polygonFull: null,
+        areaTotal: 4.11,
+        certificationStatus: 'NotSet',
+        isOrganic: true,
+        complianceImplementationDeadline: null,
+        numberOfPlantsTotal: 22,
+        areaOrganic: 0,
+        areaNonOrganic: 0,
+        areaPermanentCrop: 0,
+        areaAnnualCrop: 0,
+        cultivationStartDate: null,
+        varieties: [
+            {
+                id: '340e527e-f17c-436d-beff-40e83cfbb8df',
+                refcollection: 'varieties',
+                label: 'In Transition FRESH Cocoa',
+                labelShort: 'ITC',
+                authTag: 'ALL',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            }
+        ],
+        varietiesFull: [
+            {
+                properties: {
+                    idAuthTag: 'ALL',
+                    idLabelShort: 'ITC',
+                    id: {
+                        authTag: 'ALL',
+                        qrCode: '123',
+                        refcollection: 'varieties',
+                        labelShort: 'ITC',
+                        id: '340e527e-f17c-436d-beff-40e83cfbb8df',
+                        label: 'In Transition Dry Cocoa',
+                        isPreviousVersion: false,
+                        shortCode: '123'
+                    },
+                    customId: '340e527e-f17c-436d-beff-40e83cfbb8df'
+                },
+                isDeleted: false,
+                approvalStatus: 'NotSet',
+                reviewStatus: 'NotSet',
+                creationStatus: 'NotSet',
+                systemStatus: null,
+                isArchived: false,
+                enabled: true,
+                sourceSystem: null,
+                meta_workspace: 'master_latitude_salla',
+                meta_organisation: 'latitude',
+                meta_configkey: 'ltc',
+                id: {
+                    id: '340e527e-f17c-436d-beff-40e83cfbb8df',
+                    refcollection: 'varieties',
+                    label: 'In Transition FRESH Cocoa',
+                    labelShort: 'ITC',
+                    authTag: 'ALL',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                },
+                createdDate: '2023-12-02T19:45:35.160Z',
+                updatedDate: '2024-06-18T11:11:06.462Z',
+                lastActivityDate: null,
+                createdBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                    refcollection: 'platformusers',
+                    label: 'salla@orijin.io',
+                    labelShort: 'salla@orijin.io',
+                    isPreviousVersion: false
+                },
+                updatedBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                    refcollection: 'platformusers',
+                    label: 'salla@orijin.io',
+                    labelShort: 'salla@orijin.io',
+                    isPreviousVersion: false
+                },
+                updatedLocation: {
+                    latLong: {
+                        lat: 60.1849856,
+                        lon: 24.8741888
+                    },
+                    altitude: 0,
+                    accuracy: null,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                name: 'In Transition FRESH Cocoa',
+                grade: null,
+                organic: false,
+                dry: false
+            }
+        ],
+        primaryCrops: [],
+        secondaryCrops: [
+            'Cassava'
+        ],
+        yieldEstimateRaw: 222,
+        season: {
+            id: '0f81d551-e601-4b93-bdb3-5e1258a6bb10',
+            refcollection: 'seasons',
+            label: '2023/24',
+            labelShort: '2023/24',
+            authTag: 'ALL',
+            qrCode: '123',
+            shortCode: '123',
+            isPreviousVersion: false
+        },
+        contractDate: null,
+        registrationDate: null,
+        certificationStartDate: null,
+        lastChemicalUseDate: null,
+        lastInspectionDate: null,
+        firstVisitDate: null,
+        trainings: null,
+        contacts: [
+            {
+                id: 'b66085b0-6f86-4d17-ab93-e0fa67909c50',
+                refcollection: 'contacts',
+                label: 'Leon Thornton +2562222233',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            }
+        ],
+        contactsFull: [
+            {
+                properties: {
+                    customId: 'b66085b0-6f86-4d17-ab93-e0fa67909c50',
+                    auditActivityId: {
+                        qrCode: '123',
+                        refcollection: 'auditactivities',
+                        chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                        id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                        label: 'AUDIT-21062024',
+                        isPreviousVersion: false,
+                        shortCode: '123',
+                        workflowId: {
+                            refcollection: 'workflowscopes_wip',
+                            id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                            isPreviousVersion: false
+                        }
+                    }
+                },
+                isDeleted: false,
+                approvalStatus: 'NotSet',
+                reviewStatus: 'NotSet',
+                creationStatus: 'NotSet',
+                systemStatus: null,
+                isArchived: false,
+                enabled: true,
+                sourceSystem: null,
+                meta_workspace: 'master_latitude_salla',
+                meta_organisation: 'latitude',
+                meta_configkey: 'ltc',
+                id: {
+                    id: 'b66085b0-6f86-4d17-ab93-e0fa67909c50',
+                    refcollection: 'contacts',
+                    label: 'Leon Thornton +2562222233',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                },
+                createdDate: '2024-06-21T13:25:22.592Z',
+                updatedDate: '2024-06-21T13:25:22.592Z',
+                lastActivityDate: null,
+                createdBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                    refcollection: 'platformusers',
+                    label: 'salla@orijin.io',
+                    labelShort: 'salla@orijin.io',
+                    isPreviousVersion: false
+                },
+                updatedBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                    refcollection: 'platformusers',
+                    label: 'salla@orijin.io',
+                    labelShort: 'salla@orijin.io',
+                    isPreviousVersion: false
+                },
+                createdLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                updatedLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                firstName: 'Leon',
+                lastName: 'Thornton',
+                phone: '+2562222233',
+                registeredUnderPrincipalsName: true,
+                registeredForMobileMoney: true,
+                entity: {
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    refcollection: 'farms',
+                    label: 'Leon Thornton',
+                    labelShort: 'FARM-004',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                },
+                wallet: null
+            }
+        ],
+        certifications: null,
+        animalCounts: [
+            {
+                id: 'd7b4d369-32f0-417c-8e02-17c94130f112',
+                refcollection: 'animalcounts',
+                label: 'Cow',
+                qrCode: '123',
+                shortCode: '123',
+                type: 'Cow',
+                isPreviousVersion: false
+            }
+        ],
+        animalCountsFull: [
+            {
+                properties: {
+                    customId: 'd7b4d369-32f0-417c-8e02-17c94130f112',
+                    auditActivityId: {
+                        qrCode: '123',
+                        refcollection: 'auditactivities',
+                        chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                        id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                        label: 'AUDIT-21062024',
+                        isPreviousVersion: false,
+                        shortCode: '123',
+                        workflowId: {
+                            refcollection: 'workflowscopes_wip',
+                            id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                            isPreviousVersion: false
+                        }
+                    }
+                },
+                isDeleted: false,
+                approvalStatus: 'NotSet',
+                reviewStatus: 'NotSet',
+                creationStatus: 'NotSet',
+                systemStatus: null,
+                isArchived: false,
+                enabled: true,
+                sourceSystem: null,
+                meta_workspace: 'master_latitude_salla',
+                meta_organisation: 'latitude',
+                meta_configkey: 'ltc',
+                id: {
+                    id: 'd7b4d369-32f0-417c-8e02-17c94130f112',
+                    refcollection: 'animalcounts',
+                    label: 'Cow',
+                    qrCode: '123',
+                    shortCode: '123',
+                    type: 'Cow',
+                    isPreviousVersion: false
+                },
+                createdDate: '2024-06-21T13:25:22.592Z',
+                updatedDate: '2024-06-21T13:25:22.592Z',
+                lastActivityDate: null,
+                createdBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                    refcollection: 'platformusers',
+                    label: 'salla@orijin.io',
+                    labelShort: 'salla@orijin.io',
+                    isPreviousVersion: false
+                },
+                updatedBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                    refcollection: 'platformusers',
+                    label: 'salla@orijin.io',
+                    labelShort: 'salla@orijin.io',
+                    isPreviousVersion: false
+                },
+                createdLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                updatedLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                type: 'Cow',
+                count: 2,
+                isOrganic: true,
+                usedForManure: true,
+                description: null,
+                notes: null,
+                entity: {
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    refcollection: 'farms',
+                    label: 'Leon Thornton',
+                    labelShort: 'FARM-004',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                }
+            }
+        ],
+        complianceItems: null,
+        plots: [
+            {
+                id: 'eb83b85e-9c3f-4dea-b734-7c5dbfb5fcd1',
+                refcollection: 'plots',
+                label: 'P1',
+                labelShort: 'FARM-004 - P1',
+                qrCode: '123',
+                shortCode: '123',
+                type: 'Permanent',
+                isPreviousVersion: false
+            }
+        ],
+        plotsFull: [
+            {
+                properties: {
+                    idLabelShort: 'FARM-004 - P1',
+                    customId: 'eb83b85e-9c3f-4dea-b734-7c5dbfb5fcd1',
+                    auditActivityId: {
+                        qrCode: '123',
+                        refcollection: 'auditactivities',
+                        chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                        id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                        label: 'AUDIT-21062024',
+                        isPreviousVersion: false,
+                        shortCode: '123',
+                        workflowId: {
+                            refcollection: 'workflowscopes_wip',
+                            id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                            isPreviousVersion: false
+                        }
+                    }
+                },
+                isDeleted: false,
+                approvalStatus: 'NotSet',
+                reviewStatus: 'NotSet',
+                creationStatus: 'NotSet',
+                systemStatus: null,
+                isArchived: false,
+                enabled: true,
+                sourceSystem: null,
+                meta_workspace: 'master_latitude_salla',
+                meta_organisation: 'latitude',
+                meta_configkey: 'ltc',
+                id: {
+                    id: 'eb83b85e-9c3f-4dea-b734-7c5dbfb5fcd1',
+                    refcollection: 'plots',
+                    label: 'P1',
+                    labelShort: 'FARM-004 - P1',
+                    qrCode: '123',
+                    shortCode: '123',
+                    type: 'Permanent',
+                    isPreviousVersion: false
+                },
+                createdDate: '2024-06-21T13:25:22.592Z',
+                updatedDate: '2024-06-21T13:25:22.592Z',
+                lastActivityDate: null,
+                createdBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                    refcollection: 'platformusers',
+                    label: 'salla@orijin.io',
+                    labelShort: 'salla@orijin.io',
+                    isPreviousVersion: false
+                },
+                updatedBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                    refcollection: 'platformusers',
+                    label: 'salla@orijin.io',
+                    labelShort: 'salla@orijin.io',
+                    isPreviousVersion: false
+                },
+                createdLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                updatedLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                surveys: [
+                    {
+                        id: '441756e5-b718-413a-a7bf-6b782411503b',
+                        refcollection: 'surveys',
+                        isPreviousVersion: false
+                    }
+                ],
+                surveysFull: [
+                    {
+                        properties: {
+                            customId: '441756e5-b718-413a-a7bf-6b782411503b'
+                        },
+                        isDeleted: false,
+                        approvalStatus: 'NotSet',
+                        reviewStatus: 'NotSet',
+                        creationStatus: 'NotSet',
+                        systemStatus: null,
+                        isArchived: false,
+                        enabled: true,
+                        sourceSystem: null,
+                        meta_workspace: 'master_latitude_salla',
+                        meta_organisation: 'latitude',
+                        meta_configkey: 'ltc',
+                        id: {
+                            id: '441756e5-b718-413a-a7bf-6b782411503b',
+                            refcollection: 'surveys',
+                            isPreviousVersion: false
+                        },
+                        createdDate: '2024-06-21T13:25:22.592Z',
+                        updatedDate: '2024-06-21T13:25:22.592Z',
+                        lastActivityDate: null,
+                        createdBy: {
+                            id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                            refcollection: 'platformusers',
+                            label: 'salla@orijin.io',
+                            labelShort: 'salla@orijin.io',
+                            isPreviousVersion: false
+                        },
+                        updatedBy: {
+                            id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                            refcollection: 'platformusers',
+                            label: 'salla@orijin.io',
+                            labelShort: 'salla@orijin.io',
+                            isPreviousVersion: false
+                        },
+                        createdLocation: {
+                            latLong: {
+                                lat: 60.24962529560727,
+                                lon: 24.97167293249805
+                            },
+                            altitude: null,
+                            accuracy: 62,
+                            altitudeAccuracy: null,
+                            speed: null,
+                            altitudeMin: null,
+                            altitudeMax: null,
+                            name: null
+                        },
+                        updatedLocation: {
+                            latLong: {
+                                lat: 60.24962529560727,
+                                lon: 24.97167293249805
+                            },
+                            altitude: null,
+                            accuracy: 62,
+                            altitudeAccuracy: null,
+                            speed: null,
+                            altitudeMin: null,
+                            altitudeMax: null,
+                            name: null
+                        },
+                        activityName: 'PlotSurvey',
+                        activityLabel: 'PlotSurvey',
+                        name: 'PlotSurvey',
+                        entityType: 'Plot',
+                        description: null,
+                        notes: null,
+                        entity: {
+                            id: 'eb83b85e-9c3f-4dea-b734-7c5dbfb5fcd1',
+                            refcollection: 'plots',
+                            label: 'P1',
+                            labelShort: 'FARM-004 - P1',
+                            qrCode: '123',
+                            shortCode: '123',
+                            type: 'Permanent',
+                            isPreviousVersion: false
+                        },
+                        entityParent: {
+                            id: 'clxn3e2r8002mfmxv5sfmuilz',
+                            refcollection: 'farms',
+                            label: 'Leon Thornton',
+                            labelShort: 'FARM-004',
+                            qrCode: '123',
+                            shortCode: '123',
+                            isPreviousVersion: false
+                        },
+                        values: [
+                            {
+                                widget: 'boolean',
+                                name: 'farmInspection_plotsurvey_lastyear_sell',
+                                section: 'plotsurvey',
+                                label: 'farmInspection_plotsurvey_lastyear_sell',
+                                value: true
+                            },
+                            {
+                                widget: null,
+                                name: 'farmInspection_plotsurvey_previous_year_sell_quantity',
+                                section: 'plotsurvey',
+                                label: 'farmInspection_plotsurvey_previous_year_sell_quantity',
+                                value: 2
+                            },
+                            {
+                                widget: 'boolean',
+                                name: 'farmInspection_plotsurvey_stumping',
+                                section: 'plotsurvey',
+                                label: 'farmInspection_plotsurvey_stumping',
+                                value: true
+                            },
+                            {
+                                widget: 'boolean',
+                                name: 'farmInspection_plotsurvey_pests_yesno',
+                                section: 'plotsurvey',
+                                label: 'farmInspection_plotsurvey_pests_yesno',
+                                value: false
+                            },
+                            {
+                                widget: null,
+                                name: 'farmInspection_plotsurvey_pests',
+                                valueJsonata: "$join($map(value, function($v) { $translate($v,'lists.organicManagementPests') }), ', ')",
+                                section: 'plotsurvey',
+                                label: 'farmInspection_plotsurvey_pests'
+                            },
+                            {
+                                widget: 'boolean',
+                                name: 'farmInspection_plotsurvey_inorganic_fertilisers_yesno',
+                                section: 'plotsurvey',
+                                label: 'farmInspection_plotsurvey_inorganic_fertilisers_yesno',
+                                value: false
+                            },
+                            {
+                                widget: null,
+                                name: 'farmInspection_plotsurvey_inorganic_fertilisers',
+                                valueJsonata: "$join($map(value, function($v) { $translate($v,'lists.organicManagementInorganicFertilizers') }), ', ')",
+                                section: 'plotsurvey',
+                                label: 'farmInspection_plotsurvey_inorganic_fertilisers'
+                            },
+                            {
+                                widget: 'boolean',
+                                name: 'farmInspection_plotsurvey_herbicides_yesno',
+                                section: 'plotsurvey',
+                                label: 'farmInspection_plotsurvey_herbicides_yesno',
+                                value: false
+                            },
+                            {
+                                widget: null,
+                                name: 'farmInspection_plotsurvey_herbicides',
+                                valueJsonata: "$join($map(value, function($v) { $translate($v,'lists.organicManagementHerbicides') }), ', ')",
+                                section: 'plotsurvey',
+                                label: 'farmInspection_plotsurvey_herbicides'
+                            },
+                            {
+                                widget: 'boolean',
+                                name: 'farmInspection_plotsurvey_pesticides_yesno',
+                                section: 'plotsurvey',
+                                label: 'farmInspection_plotsurvey_pesticides_yesno',
+                                value: false
+                            },
+                            {
+                                widget: null,
+                                name: 'farmInspection_plotsurvey_pesticides',
+                                valueJsonata: "$join($map(value, function($v) { $translate($v,'lists.organicManagementPesticides') }), ', ')",
+                                section: 'plotsurvey',
+                                label: 'farmInspection_plotsurvey_pesticides'
+                            },
+                            {
+                                widget: 'boolean',
+                                name: 'farmInspection_plotsurvey_fungicides_yesno',
+                                section: 'plotsurvey',
+                                label: 'farmInspection_plotsurvey_fungicides_yesno',
+                                value: false
+                            },
+                            {
+                                widget: null,
+                                name: 'farmInspection_plotsurvey_fungicides',
+                                valueJsonata: "$join($map(value, function($v) { $translate($v,'lists.organicManagementFungicides') }), ', ')",
+                                section: 'plotsurvey',
+                                label: 'farmInspection_plotsurvey_fungicides'
+                            }
+                        ],
+                        parentAuditActivity: null
+                    }
+                ],
+                isOrganic: true,
+                interCropped: true,
+                isActive: true,
+                principalOwnsLand: true,
+                principalLeasesLand: null,
+                hasRightToLand: null,
+                hasLandTitle: 'true',
+                ownerName: null,
+                establishedBefore2020: true,
+                hasShadeTrees: null,
+                distanceToForestKnown: true,
+                distanceToForest: '22',
+                traditionalOwners: true,
+                isDecifientOfNutrition: null,
+                shadeAmount: [
+                    'NoShade'
+                ],
+                landInclination: [
+                    'Horizontal'
+                ],
+                shannonIndex: null,
+                evennessIndex: null,
+                name: 'P1',
+                type: 'Permanent',
+                numberOfPlants: null,
+                numberOfPlantsProductive: null,
+                numberOfPlantsNonProductive: null,
+                numberOfPlantsYoung: null,
+                numberOfPlantsStumped: null,
+                numberOfPlantsTotal: 22,
+                numberOfPlantsShade: null,
+                averageAgeOfPlants: 22,
+                minAgeOfPlants: null,
+                maxAgeOfPlants: null,
+                areaCrop: null,
+                areaOrganic: null,
+                areaSanctioned: null,
+                areaInConversion: null,
+                areaTotal: null,
+                areaTotalManual: 33,
+                notes: null,
+                cultivationStartDate: '2024-05-20T21:00:00.000Z',
+                registrationDate: null,
+                lastChemicalUseDate: null,
+                lastInspectionDate: null,
+                varieties: [
+                    {
+                        id: '340e527e-f17c-436d-beff-40e83cfbb8df',
+                        refcollection: 'varieties',
+                        label: 'In Transition FRESH Cocoa',
+                        labelShort: 'ITC',
+                        authTag: 'ALL',
+                        qrCode: '123',
+                        shortCode: '123',
+                        isPreviousVersion: false
+                    }
+                ],
+                varietiesFull: [
+                    {
+                        properties: {
+                            idAuthTag: 'ALL',
+                            idLabelShort: 'ITC',
+                            id: {
+                                authTag: 'ALL',
+                                qrCode: '123',
+                                refcollection: 'varieties',
+                                labelShort: 'ITC',
+                                id: '340e527e-f17c-436d-beff-40e83cfbb8df',
+                                label: 'In Transition Dry Cocoa',
+                                isPreviousVersion: false,
+                                shortCode: '123'
+                            },
+                            customId: '340e527e-f17c-436d-beff-40e83cfbb8df'
+                        },
+                        isDeleted: false,
+                        approvalStatus: 'NotSet',
+                        reviewStatus: 'NotSet',
+                        creationStatus: 'NotSet',
+                        systemStatus: null,
+                        isArchived: false,
+                        enabled: true,
+                        sourceSystem: null,
+                        meta_workspace: 'master_latitude_salla',
+                        meta_organisation: 'latitude',
+                        meta_configkey: 'ltc',
+                        id: {
+                            id: '340e527e-f17c-436d-beff-40e83cfbb8df',
+                            refcollection: 'varieties',
+                            label: 'In Transition FRESH Cocoa',
+                            labelShort: 'ITC',
+                            authTag: 'ALL',
+                            qrCode: '123',
+                            shortCode: '123',
+                            isPreviousVersion: false
+                        },
+                        createdDate: '2023-12-02T19:45:35.160Z',
+                        updatedDate: '2024-06-18T11:11:06.462Z',
+                        lastActivityDate: null,
+                        createdBy: {
+                            id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                            refcollection: 'platformusers',
+                            label: 'salla@orijin.io',
+                            labelShort: 'salla@orijin.io',
+                            isPreviousVersion: false
+                        },
+                        updatedBy: {
+                            id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                            refcollection: 'platformusers',
+                            label: 'salla@orijin.io',
+                            labelShort: 'salla@orijin.io',
+                            isPreviousVersion: false
+                        },
+                        updatedLocation: {
+                            latLong: {
+                                lat: 60.1849856,
+                                lon: 24.8741888
+                            },
+                            altitude: 0,
+                            accuracy: null,
+                            altitudeAccuracy: null,
+                            speed: null,
+                            altitudeMin: null,
+                            altitudeMax: null,
+                            name: null
+                        },
+                        name: 'In Transition FRESH Cocoa',
+                        grade: null,
+                        organic: false,
+                        dry: false
+                    }
+                ],
+                polygon: {
+                    id: 'b1eafb57-5772-4927-b5a3-b9d6dd2419c5',
+                    refcollection: 'geodatas',
+                    label: 'Polygon - FARM-004 - P1',
+                    labelShort: 'Polygon - FARM-004 - P1',
+                    qrCode: '123',
+                    shortCode: '123',
+                    type: 'Polygon',
+                    isPreviousVersion: false
+                },
+                polygonFull: {
+                    properties: {
+                        idLabelShort: 'Polygon - FARM-004 - P1',
+                        customId: 'b1eafb57-5772-4927-b5a3-b9d6dd2419c5',
+                        auditActivityId: {
+                            qrCode: '123',
+                            refcollection: 'auditactivities',
+                            chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                            id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                            label: 'AUDIT-21062024',
+                            isPreviousVersion: false,
+                            shortCode: '123',
+                            workflowId: {
+                                refcollection: 'workflowscopes_wip',
+                                id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                                isPreviousVersion: false
+                            }
+                        }
+                    },
+                    isDeleted: false,
+                    approvalStatus: 'NotSet',
+                    reviewStatus: 'NotSet',
+                    creationStatus: 'NotSet',
+                    systemStatus: null,
+                    isArchived: false,
+                    enabled: true,
+                    sourceSystem: null,
+                    meta_workspace: 'master_latitude_salla',
+                    meta_organisation: 'latitude',
+                    meta_configkey: 'ltc',
+                    id: {
+                        id: 'b1eafb57-5772-4927-b5a3-b9d6dd2419c5',
+                        refcollection: 'geodatas',
+                        label: 'Polygon - FARM-004 - P1',
+                        labelShort: 'Polygon - FARM-004 - P1',
+                        qrCode: '123',
+                        shortCode: '123',
+                        type: 'Polygon',
+                        isPreviousVersion: false
+                    },
+                    createdDate: '2024-06-21T13:25:22.592Z',
+                    updatedDate: '2024-06-21T13:25:22.592Z',
+                    lastActivityDate: null,
+                    createdBy: {
+                        id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                        refcollection: 'platformusers',
+                        label: 'salla@orijin.io',
+                        labelShort: 'salla@orijin.io',
+                        isPreviousVersion: false
+                    },
+                    updatedBy: {
+                        id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                        refcollection: 'platformusers',
+                        label: 'salla@orijin.io',
+                        labelShort: 'salla@orijin.io',
+                        isPreviousVersion: false
+                    },
+                    createdLocation: {
+                        latLong: {
+                            lat: 60.24962529560727,
+                            lon: 24.97167293249805
+                        },
+                        altitude: null,
+                        accuracy: 62,
+                        altitudeAccuracy: null,
+                        speed: null,
+                        altitudeMin: null,
+                        altitudeMax: null,
+                        name: null
+                    },
+                    updatedLocation: {
+                        latLong: {
+                            lat: 60.24962529560727,
+                            lon: 24.97167293249805
+                        },
+                        altitude: null,
+                        accuracy: 62,
+                        altitudeAccuracy: null,
+                        speed: null,
+                        altitudeMin: null,
+                        altitudeMax: null,
+                        name: null
+                    },
+                    type: 'Polygon',
+                    targetType: null,
+                    name: 'Polygon - FARM-004 - P1',
+                    data: [
+                        {
+                            altitude: null,
+                            lng: 24.971673339406202,
+                            lat: 60.249625059250924
+                        }
+                    ],
+                    areaCalculated: null,
+                    areaManual: 33,
+                    notes: null,
+                    season: {
+                        id: '0f81d551-e601-4b93-bdb3-5e1258a6bb10',
+                        refcollection: 'seasons',
+                        label: '2023/24',
+                        labelShort: '2023/24',
+                        authTag: 'ALL',
+                        qrCode: '123',
+                        shortCode: '123',
+                        isPreviousVersion: false
+                    },
+                    entity: {
+                        id: 'eb83b85e-9c3f-4dea-b734-7c5dbfb5fcd1',
+                        refcollection: 'plots',
+                        label: 'P1',
+                        labelShort: 'FARM-004 - P1',
+                        qrCode: '123',
+                        shortCode: '123',
+                        type: 'Permanent',
+                        isPreviousVersion: false
+                    },
+                    entityParent: {
+                        id: 'clxn3e2r8002mfmxv5sfmuilz',
+                        refcollection: 'farms',
+                        label: 'Leon Thornton',
+                        labelShort: 'FARM-004',
+                        qrCode: '123',
+                        shortCode: '123',
+                        isPreviousVersion: false
+                    }
+                },
+                geodatas: [
+                    {
+                        id: 'b1eafb57-5772-4927-b5a3-b9d6dd2419c5',
+                        refcollection: 'geodatas',
+                        label: 'Polygon - FARM-004 - P1',
+                        labelShort: 'Polygon - FARM-004 - P1',
+                        qrCode: '123',
+                        shortCode: '123',
+                        type: 'Polygon',
+                        isPreviousVersion: false
+                    }
+                ],
+                geodatasFull: [
+                    {
+                        properties: {
+                            idLabelShort: 'Polygon - FARM-004 - P1',
+                            customId: 'b1eafb57-5772-4927-b5a3-b9d6dd2419c5',
+                            auditActivityId: {
+                                qrCode: '123',
+                                refcollection: 'auditactivities',
+                                chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                                label: 'AUDIT-21062024',
+                                isPreviousVersion: false,
+                                shortCode: '123',
+                                workflowId: {
+                                    refcollection: 'workflowscopes_wip',
+                                    id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                                    isPreviousVersion: false
+                                }
+                            }
+                        },
+                        isDeleted: false,
+                        approvalStatus: 'NotSet',
+                        reviewStatus: 'NotSet',
+                        creationStatus: 'NotSet',
+                        systemStatus: null,
+                        isArchived: false,
+                        enabled: true,
+                        sourceSystem: null,
+                        meta_workspace: 'master_latitude_salla',
+                        meta_organisation: 'latitude',
+                        meta_configkey: 'ltc',
+                        id: {
+                            id: 'b1eafb57-5772-4927-b5a3-b9d6dd2419c5',
+                            refcollection: 'geodatas',
+                            label: 'Polygon - FARM-004 - P1',
+                            labelShort: 'Polygon - FARM-004 - P1',
+                            qrCode: '123',
+                            shortCode: '123',
+                            type: 'Polygon',
+                            isPreviousVersion: false
+                        },
+                        createdDate: '2024-06-21T13:25:22.592Z',
+                        updatedDate: '2024-06-21T13:25:22.592Z',
+                        lastActivityDate: null,
+                        createdBy: {
+                            id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                            refcollection: 'platformusers',
+                            label: 'salla@orijin.io',
+                            labelShort: 'salla@orijin.io',
+                            isPreviousVersion: false
+                        },
+                        updatedBy: {
+                            id: 'TQL1bwid2MQJDwUiyz9FaeuzpwC2',
+                            refcollection: 'platformusers',
+                            label: 'salla@orijin.io',
+                            labelShort: 'salla@orijin.io',
+                            isPreviousVersion: false
+                        },
+                        createdLocation: {
+                            latLong: {
+                                lat: 60.24962529560727,
+                                lon: 24.97167293249805
+                            },
+                            altitude: null,
+                            accuracy: 62,
+                            altitudeAccuracy: null,
+                            speed: null,
+                            altitudeMin: null,
+                            altitudeMax: null,
+                            name: null
+                        },
+                        updatedLocation: {
+                            latLong: {
+                                lat: 60.24962529560727,
+                                lon: 24.97167293249805
+                            },
+                            altitude: null,
+                            accuracy: 62,
+                            altitudeAccuracy: null,
+                            speed: null,
+                            altitudeMin: null,
+                            altitudeMax: null,
+                            name: null
+                        },
+                        type: 'Polygon',
+                        targetType: null,
+                        name: 'Polygon - FARM-004 - P1',
+                        data: [
+                            {
+                                altitude: null,
+                                lng: 24.9716733394062,
+                                lat: 60.2496250592509
+                            },
+                            {
+                                altitude: null,
+                                lng: 24.9717733394062,
+                                lat: 60.2497250592509
+                            },
+                            {
+                                altitude: null,
+                                lng: 24.9718733394062,
+                                lat: 60.2498250592509
+                            },
+                            {
+                                altitude: null,
+                                lng: 24.9719733394062,
+                                lat: 60.2499250592509
+                            }
+                        ],
+                        areaCalculated: null,
+                        areaManual: 33,
+                        notes: null,
+                        season: {
+                            id: '0f81d551-e601-4b93-bdb3-5e1258a6bb10',
+                            refcollection: 'seasons',
+                            label: '2023/24',
+                            labelShort: '2023/24',
+                            authTag: 'ALL',
+                            qrCode: '123',
+                            shortCode: '123',
+                            isPreviousVersion: false
+                        },
+                        entity: {
+                            id: 'eb83b85e-9c3f-4dea-b734-7c5dbfb5fcd1',
+                            refcollection: 'plots',
+                            label: 'P1',
+                            labelShort: 'FARM-004 - P1',
+                            qrCode: '123',
+                            shortCode: '123',
+                            type: 'Permanent',
+                            isPreviousVersion: false
+                        },
+                        entityParent: {
+                            id: 'clxn3e2r8002mfmxv5sfmuilz',
+                            refcollection: 'farms',
+                            label: 'Leon Thornton',
+                            labelShort: 'FARM-004',
+                            qrCode: '123',
+                            shortCode: '123',
+                            isPreviousVersion: false
+                        }
+                    }
+                ],
+                primaryCrops: null,
+                secondaryCrops: [
+                    'Cassava'
+                ],
+                cropHistory: [],
+                yieldEstimateRaw: 222,
+                yieldEstimateProcessed: null,
+                location: null,
+                bioDiversityData: {},
+                season: null,
+                seasons: [],
+                facility: null,
+                farm: {
+                    id: 'clxn3e2r8002mfmxv5sfmuilz',
+                    refcollection: 'farms',
+                    label: 'Leon Thornton',
+                    labelShort: 'FARM-004',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                },
+                traditionalOwnersPresent: null
+            }
+        ],
+        mobilePayWalletsFullIds: [],
+        mobilePayRegistrationStatus: 'NotSet',
+        identityVerificationStatus: 'NotSet',
+        contactFirstName: null,
+        contactDobApproximate: null,
+        contactIdentificationNumberType: null,
+        nickName: null,
+        contactEducation: null,
+        contactLastName: null,
+        contactMiddleName: null,
+        contactIdentificationNumber: null,
+        contactMaritalStatus: null,
+        contactHouseHoldMemberCount: null,
+        contactGender: null,
+        contractsFull: []
+    }
+};
+const farmInspectionResultFromV2 = {
+    logs: [
+        {
+            properties: {
+                idLabelShort: 'FARM-007 - P1',
+                customId: '02cb6a91-f799-4598-a14d-b2d122f5a7a9',
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: 'f518938a-6d7e-4899-9b96-3aa5a4ad96853',
+                    id: '36359bf2-2247-4bc5-822c-4bfd693f2578',
+                    label: 'AUDIT-21062022',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: 'd54966f9-f365-4b74-bd24-2561d6da2b8l',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_waqar',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '02cb6a91-f799-4598-a14d-b2d122f5a7a9',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T12:55:29.079Z',
+            updatedDate: '2024-06-21T12:55:29.079Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.249625205677035,
+                    lon: 24.971673084383617
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.249625205677035,
+                    lon: 24.971673084383617
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: '81d1c301-9599-4a14-b16b-bdd70737chi4',
+                refcollection: 'plots',
+                label: 'P1',
+                labelShort: 'FARM-007 - P1',
+                qrCode: '123',
+                shortCode: '123',
+                type: 'Permanent',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: 'd54966f9-f365-4b74-bd24-2561d6da2b8l',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '36359bf2-2247-4bc5-822c-4bfd693f2578',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062022',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: 'f518938a-6d7e-4899-9b96-3aa5a4ad96853',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: 'd54966f9-f365-4b74-bd24-2561d6da2b8l',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    refcollection: 'farms',
+                    label: 'SEASON HISTORY',
+                    labelShort: 'FARM-007',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                '81d1c301-9599-4a14-b16b-bdd70737chi4',
+                'clxn3e2r8002mfmxv5sfmuopu'
+            ],
+            primaryActivityName: 'AddPlotInReviewAudit',
+            primaryActivityLabel: 'AddPlot',
+            workflowName: 'farmPolygonReviewRemote',
+            activityName: 'CreatePlot',
+            activityLabel: 'CreatePlot',
+            method: 'create',
+            type: 'CreatePlot',
+            previewValues: [
+                {
+                    value: 'SEASON HISTORY',
+                    key: 'Farm'
+                },
+                {
+                    value: 'P1',
+                    key: 'Plot Name'
+                },
+                {
+                    value: 'FARM-007 - P1',
+                    key: 'Code'
+                },
+                {
+                    value: 'Permanent',
+                    key: 'Type'
+                },
+                {
+                    value: 'No',
+                    key: 'Is Organic'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Is Active'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Inter Cropped'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Is plot established before 31 December 2020?'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Do you know the distance to the large/permanent forest/reserve area?'
+                },
+                {
+                    value: '22',
+                    key: 'How far is the plot from athelarge/permanent forest/reserve area (km)?'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Owned by traditional owners?'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Respondent owns plot?'
+                },
+                {
+                    value: 'No',
+                    key: 'Has land title document?'
+                },
+                {
+                    value: '22',
+                    key: 'Estimated area size'
+                },
+                {
+                    value: 'In Transition FRESH Cocoa',
+                    key: 'Varieties'
+                },
+                {
+                    value: '22',
+                    key: 'Maincrop Total Plant Count'
+                },
+                {
+                    value: '22',
+                    key: 'Avarage Age of Maincrop Plants'
+                },
+                {
+                    value: '22',
+                    key: 'Yield Estimate'
+                },
+                {
+                    value: 'Melon, Cucumber',
+                    key: 'Secondary Crops'
+                },
+                {
+                    value: '21/02/2025',
+                    key: 'Cultivation Start'
+                },
+                {
+                    value: '',
+                    key: 'Last Chemical Use'
+                },
+                {
+                    value: '["Horizontal"]',
+                    key: 'Land Inclination'
+                },
+                {
+                    value: '["NoShade"]',
+                    key: 'Shade Amount'
+                },
+                {
+                    value: '',
+                    key: 'Notes'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                farmInspection_farming_weeds: false,
+                farmInspection_farming_buffer: false,
+                farmInspection_farming_disease: false,
+                idLabelShort: 'FARM-007',
+                farmInspection_farming_fertility: false,
+                farmInspection_farming_protect_wetlands: false,
+                farmInspection_farming_pests: false,
+                farmInspection_farming_soil_erosion: false,
+                farmInspection_farming_biodiversity: false,
+                farmInspection_farming_cutting_trees: false,
+                farmInspection_farming_national_parks: false,
+                customId: '3fcd41d8-c8da-45cd-bce2-96a0c7704e76',
+                farmInspection_farming_manure: false,
+                farmInspection_farming_destroy_wetlands: false,
+                id: {
+                    qrCode: '123',
+                    refcollection: 'farms',
+                    labelShort: 'FARM-007',
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    label: 'SEASON HISTORY',
+                    isPreviousVersion: false,
+                    shortCode: '123'
+                },
+                entity: {
+                    qrCode: '123',
+                    refcollection: 'farms',
+                    labelShort: 'FARM-007',
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    label: 'SEASON HISTORY',
+                    isPreviousVersion: false,
+                    shortCode: '123'
+                },
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                    id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                    label: 'AUDIT-21062022',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_waqar',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '3fcd41d8-c8da-45cd-bce2-96a0c7704e76',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: 'e26b6fe7-a971-4de1-8a1d-41077eeb1047',
+                refcollection: 'surveys',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062022',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    refcollection: 'farms',
+                    label: 'SEASON HISTORY',
+                    labelShort: 'FARM-007',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                'e26b6fe7-a971-4de1-8a1d-41077eeb1047',
+                'clxn3e2r8002mfmxv5sfmuopu'
+            ],
+            workflowName: 'farmInternalInspectionRemote',
+            activityName: 'AuditSurveyActivity5',
+            activityLabel: 'SurveyFarming',
+            method: 'update',
+            type: 'CreateSurvey',
+            previewValues: [
+                {
+                    value: 'No',
+                    key: 'Has the farmer done anything to improve soil fertility at his/her farm?'
+                },
+                {
+                    value: 'No',
+                    key: 'Has the farmer established a buffer around his farm to prevent any contamination?'
+                },
+                {
+                    value: 'No',
+                    key: 'Cutting down large, native trees during past year?'
+                },
+                {
+                    value: 'No',
+                    key: 'Did the farmer destroy any wetland to establish the cocoa farm?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does the farmer protect wetlands?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does the farmer have soil erosion signs at his/her farm?'
+                },
+                {
+                    value: 'No',
+                    key: 'Is the farmer aware of the importance of biodiversity and has no negative impact on protected and high conservation value areas?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does the farmer encroach on national parks?'
+                },
+                {
+                    value: 'No',
+                    key: 'Has the farmer managed weeds in his/her maincrop farm(s)?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does farmer have any maincrop trees affected with pests?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does the farmer have any diseased maincrop farm(s)?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does farmer use animal manure at his/her farm as soil fertility management measure?'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                idLabelShort: 'FARM-007 - P1',
+                customId: '47bef415-6732-4db8-9081-0810616ed78e',
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                    id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                    label: 'AUDIT-21062022',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_waqar',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '47bef415-6732-4db8-9081-0810616ed78e',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: 'eb83b85e-9c3f-4dea-b734-7c5dbfb5fcd1',
+                refcollection: 'plots',
+                label: 'P1',
+                labelShort: 'FARM-007 - P1',
+                qrCode: '123',
+                shortCode: '123',
+                type: 'Permanent',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062022',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    refcollection: 'farms',
+                    label: 'SEASON HISTORY',
+                    labelShort: 'FARM-007',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                'eb83b85e-9c3f-4dea-b734-7c5dbfb5fcd1',
+                'clxn3e2r8002mfmxv5sfmuopu'
+            ],
+            primaryActivityName: 'AddPlotInReviewAudit',
+            primaryActivityLabel: 'AddPlot',
+            workflowName: 'farmInternalInspectionRemote',
+            activityName: 'CreatePlot',
+            activityLabel: 'CreatePlot',
+            method: 'create',
+            type: 'CreatePlot',
+            previewValues: [
+                {
+                    value: 'SEASON HISTORY',
+                    key: 'Farm'
+                },
+                {
+                    value: 'P1',
+                    key: 'Plot Name'
+                },
+                {
+                    value: 'FARM-007 - P1',
+                    key: 'Code'
+                },
+                {
+                    value: 'Permanent',
+                    key: 'Type'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Is Organic'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Is Active'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Inter Cropped'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Is plot established before 31 December 2020?'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Do you know the distance to the large/permanent forest/reserve area?'
+                },
+                {
+                    value: '22',
+                    key: 'How far is the plot from athelarge/permanent forest/reserve area (km)?'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Owned by traditional owners?'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Respondent owns plot?'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Has land title document?'
+                },
+                {
+                    value: '22',
+                    key: 'Estimated area size'
+                },
+                {
+                    value: 'In Transition FRESH Cocoa',
+                    key: 'Varieties'
+                },
+                {
+                    value: '22',
+                    key: 'Maincrop Total Plant Count'
+                },
+                {
+                    value: '22',
+                    key: 'Avarage Age of Maincrop Plants'
+                },
+                {
+                    value: '222',
+                    key: 'Yield Estimate'
+                },
+                {
+                    value: 'Cassava',
+                    key: 'Secondary Crops'
+                },
+                {
+                    value: '21/05/2024',
+                    key: 'Cultivation Start'
+                },
+                {
+                    value: '',
+                    key: 'Last Chemical Use'
+                },
+                {
+                    value: '["Horizontal"]',
+                    key: 'Land Inclination'
+                },
+                {
+                    value: '["NoShade"]',
+                    key: 'Shade Amount'
+                },
+                {
+                    value: '',
+                    key: 'Notes'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                farmInspection_general_landuse_rights: false,
+                farmInspection_general_contract_copy: false,
+                farmInspection_general_plot_hiring: false,
+                idLabelShort: 'FARM-007',
+                farmInspection_general_all_maincrop_to_company: false,
+                customId: '4dcba19e-a51f-40ca-ad95-c33f2ae77f4b',
+                farmInspection_general_prices: false,
+                farmInspection_general_sales_receipts: false,
+                farmInspection_general_discrimination: false,
+                id: {
+                    qrCode: '123',
+                    refcollection: 'farms',
+                    labelShort: 'FARM-007',
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    label: 'SEASON HISTORY',
+                    isPreviousVersion: false,
+                    shortCode: '123'
+                },
+                farmInspection_general_maincrop_pool: false,
+                entity: {
+                    qrCode: '123',
+                    refcollection: 'farms',
+                    labelShort: 'FARM-007',
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    label: 'SEASON HISTORY',
+                    isPreviousVersion: false,
+                    shortCode: '123'
+                },
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                    id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                    label: 'AUDIT-21062022',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_waqar',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '4dcba19e-a51f-40ca-ad95-c33f2ae77f4b',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: 'c04edfc6-dc66-4555-9232-578a4bb21135',
+                refcollection: 'surveys',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062022',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    refcollection: 'farms',
+                    label: 'SEASON HISTORY',
+                    labelShort: 'FARM-007',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                'c04edfc6-dc66-4555-9232-578a4bb21135',
+                'clxn3e2r8002mfmxv5sfmuopu'
+            ],
+            workflowName: 'farmInternalInspectionRemote',
+            activityName: 'AuditSurveyActivity6',
+            activityLabel: 'SurveyGeneral',
+            method: 'update',
+            type: 'CreateSurvey',
+            previewValues: [
+                {
+                    value: 'No',
+                    key: 'Farmer aware of premium distribution and prices communicated including premium per Kg'
+                },
+                {
+                    value: 'No',
+                    key: 'Does the farmer have a copy of the company contract and the farm entrance form at the farm?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does the farmer have maincrop sales receipts at the farm?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does the farmer have legitimate land use rights?'
+                },
+                {
+                    value: 'No',
+                    key: 'Has the farmer hired maincrop plots from other farmers?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does the farmer belong to any cocoa pool (Kilimbe)?'
+                },
+                {
+                    value: 'No',
+                    key: 'During last year, did farmer deliver all his MAIN CROP to the project?'
+                },
+                {
+                    value: 'No',
+                    key: 'Are there any signs of discrimination, sexual abuse or harrassment towards anyone on the farm ?'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                farmInspection_workers_hired: false,
+                idLabelShort: 'FARM-007',
+                farmInspection_workers_healthsafety: 'Yes',
+                id: {
+                    qrCode: '123',
+                    refcollection: 'farms',
+                    labelShort: 'FARM-007',
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    label: 'SEASON HISTORY',
+                    isPreviousVersion: false,
+                    shortCode: '123'
+                },
+                farmInspection_workers_restday: true,
+                customId: '516b57ad-96b4-4e55-8e00-f2b734c4ba87',
+                entity: {
+                    qrCode: '123',
+                    refcollection: 'farms',
+                    labelShort: 'FARM-007',
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    label: 'SEASON HISTORY',
+                    isPreviousVersion: false,
+                    shortCode: '123'
+                },
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                    id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                    label: 'AUDIT-21062022',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                        isPreviousVersion: false
+                    }
+                },
+                farmInspection_workers_organictraining: true
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_waqar',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '516b57ad-96b4-4e55-8e00-f2b734c4ba87',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: 'ed125b61-74bc-4a6d-82e9-9ff97190da72',
+                refcollection: 'surveys',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062022',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    refcollection: 'farms',
+                    label: 'SEASON HISTORY',
+                    labelShort: 'FARM-007',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                'ed125b61-74bc-4a6d-82e9-9ff97190da72',
+                'clxn3e2r8002mfmxv5sfmuopu'
+            ],
+            workflowName: 'farmInternalInspectionRemote',
+            activityName: 'AuditSurveyActivity2',
+            activityLabel: 'SurveyWorkers',
+            method: 'update',
+            type: 'CreateSurvey',
+            previewValues: [
+                {
+                    value: 'No',
+                    key: 'Do you use hired labour?'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Are farmers and workers informed and trained on health & safety risk management and emergency procedures?'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Are workers guaranteed 1 rest day every 7 days and adequate rest throughout the day?'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Have farmers and workers been trained in RA and organic certification standards and requirements?'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: null,
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_waqar',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '5aea5531-1224-48ec-9d12-83b8866b951d',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: 'clxn3e2r8002mfmxv5sfmuopu',
+                refcollection: 'farms',
+                label: 'SEASON HISTORY',
+                labelShort: 'FARM-007',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            },
+            allParentItemsSearchable: [
+                'clxn3e2r8002mfmxv5sfmuopu'
+            ],
+            activityName: 'CompleteReview',
+            activityLabel: 'CompleteReview',
+            type: 'CompleteReview',
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                idLabelShort: 'Polygon - FARM-007 - P1',
+                geoData: [
+                    {
+                        altitude: null,
+                        lng: 24.971673339406202,
+                        lat: 60.249625059250924
+                    }
+                ],
+                customId: '5d97d6d9-3a00-4382-862d-07dd0cfdafca',
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                    id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                    label: 'AUDIT-21062022',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_waqar',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '5d97d6d9-3a00-4382-862d-07dd0cfdafca',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: 'b1eafb57-5772-4927-b5a3-b9d6dd2419c5',
+                refcollection: 'geodatas',
+                label: 'Polygon - FARM-007 - P1',
+                labelShort: 'Polygon - FARM-007 - P1',
+                qrCode: '123',
+                shortCode: '123',
+                type: 'Polygon',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062022',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [
+                {
+                    id: 'eb83b85e-9c3f-4dea-b734-7c5dbfb5fcd1',
+                    refcollection: 'plots',
+                    label: 'P1',
+                    labelShort: 'FARM-007 - P1',
+                    qrCode: '123',
+                    shortCode: '123',
+                    type: 'Permanent',
+                    isPreviousVersion: false
+                },
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    refcollection: 'farms',
+                    label: 'SEASON HISTORY',
+                    labelShort: 'FARM-007',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                'b1eafb57-5772-4927-b5a3-b9d6dd2419c5',
+                'eb83b85e-9c3f-4dea-b734-7c5dbfb5fcd1',
+                'clxn3e2r8002mfmxv5sfmuopu'
+            ],
+            primaryActivityName: 'AddPlotPolygonAtAudit',
+            primaryActivityLabel: 'CreatePlotPolygon',
+            workflowName: 'farmInternalInspectionRemote',
+            activityName: 'CreateGeoData',
+            activityLabel: 'CreateGeoData',
+            method: 'create',
+            type: 'CreateGeoData',
+            previewValues: [
+                {
+                    value: 'SEASON HISTORY',
+                    key: 'Entity Parent'
+                },
+                {
+                    value: 'P1',
+                    key: 'Plot'
+                },
+                {
+                    value: 'Polygon',
+                    key: 'Type'
+                },
+                {
+                    value: 'Polygon - FARM-007 - P1',
+                    key: 'Code'
+                },
+                {
+                    value: 33,
+                    key: 'Estimated area size'
+                },
+                {
+                    value: '',
+                    key: 'Notes'
+                },
+                {
+                    value: '[{"lat":60.249625059250924,"lng":24.971673339406202,"altitude":null}]',
+                    key: 'Geo Data'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                altitude: 5,
+                idLabelShort: 'FARM-007',
+                id: {
+                    refcollection: 'farms',
+                    labelShort: 'FARM-007',
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    label: 'SEASON HISTORY',
+                    isPreviousVersion: false
+                },
+                customId: '6439642d-1e1d-4b8a-bf1e-12a6da86fc4b',
+                entity: {
+                    refcollection: 'farms',
+                    labelShort: 'FARM-007',
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    label: 'SEASON HISTORY',
+                    isPreviousVersion: false
+                },
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: 'f518938a-6d7e-4899-9b96-3aa5a4ad96853',
+                    id: '36359bf2-2247-4bc5-822c-4bfd693f2578',
+                    label: 'AUDIT-21062022',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: 'd54966f9-f365-4b74-bd24-2561d6da2b8l',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_waqar',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '6439642d-1e1d-4b8a-bf1e-12a6da86fc4b',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T12:55:29.079Z',
+            updatedDate: '2024-06-21T12:55:29.079Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.249625205677035,
+                    lon: 24.971673084383617
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.249625205677035,
+                    lon: 24.971673084383617
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: 'clxn3e2r8002mfmxv5sfmuopu',
+                refcollection: 'farms',
+                label: 'SEASON HISTORY',
+                labelShort: 'FARM-007',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: 'd54966f9-f365-4b74-bd24-2561d6da2b8l',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '36359bf2-2247-4bc5-822c-4bfd693f2578',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062022',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: 'f518938a-6d7e-4899-9b96-3aa5a4ad96853',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: 'd54966f9-f365-4b74-bd24-2561d6da2b8l',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [],
+            allParentItemsSearchable: [
+                'clxn3e2r8002mfmxv5sfmuopu'
+            ],
+            primaryActivityName: 'UpdateLocationDetailsInFarmerCreation',
+            primaryActivityLabel: 'UpdateLocation',
+            workflowName: 'farmPolygonReviewRemote',
+            activityName: 'UpdateLocationDetailsInFarmerCreation',
+            activityLabel: 'UpdateLocation',
+            method: 'update',
+            type: 'StandardSubmitViaAuditActivity',
+            previewValues: [
+                {
+                    value: 'BUNDIBUGYO',
+                    key: 'District'
+                },
+                {
+                    value: 'BOMBO',
+                    key: 'Sub County'
+                },
+                {
+                    value: '',
+                    key: 'Parish'
+                },
+                {
+                    value: '',
+                    key: 'Village'
+                },
+                {
+                    value: 'BOBULONGU',
+                    key: 'Collection Point'
+                },
+                {
+                    value: '{"lat":60.24961612971525,"lng":24.971648963554394,"altitude":null}',
+                    key: 'Coordinates'
+                },
+                {
+                    value: 5,
+                    key: 'Altitude'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: null,
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_waqar',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '6d19f0e7-b827-475e-a0be-62276130114f',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T12:28:56.148Z',
+            updatedDate: '2024-06-21T12:28:56.148Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers_wip',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            operatedBy: null,
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers_wip',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            parentId: {
+                id: 'clxn3e2r8002mfmxv5sfmuopu',
+                refcollection: 'farms_wip',
+                label: 'SEASON HISTORY',
+                labelShort: 'FARM-007',
+                isPreviousVersion: false
+            },
+            allParentItemsSearchable: [
+                'clxn3e2r8002mfmxv5sfmuopu'
+            ],
+            activityName: 'ToReview',
+            activityLabel: 'ToReview',
+            type: 'ToReview',
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                farmInspection_demographics_hh_children_count: 1,
+                farmInspection_demographics_hh_children_school_count: 1,
+                farmInspection_demographics_pregnant_breastfeeding: false,
+                farmInspection_demographics_children_farm: false,
+                idLabelShort: 'FARM-007',
+                farmInspection_demographics_hh_member_count: 2,
+                customId: '704a6b88-1132-4253-a0e7-ec204cfc5faa',
+                farmInspection_demographics_childlabor_signs: false,
+                id: {
+                    qrCode: '123',
+                    refcollection: 'farms',
+                    labelShort: 'FARM-007',
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    label: 'SEASON HISTORY',
+                    isPreviousVersion: false,
+                    shortCode: '123'
+                },
+                farmInspection_demographics_hh_children_list: [
+                    {
+                        farmInspection_demographics_hh_children_name: 'jhgjhg',
+                        farmInspection_demographics_hh_children_age: 7
+                    }
+                ],
+                farmInspection_demographics_yourchildren_schoolage: false,
+                entity: {
+                    qrCode: '123',
+                    refcollection: 'farms',
+                    labelShort: 'FARM-007',
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    label: 'SEASON HISTORY',
+                    isPreviousVersion: false,
+                    shortCode: '123'
+                },
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                    id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                    label: 'AUDIT-21062022',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_waqar',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '704a6b88-1132-4253-a0e7-ec204cfc5faa',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: '01baa45b-2150-4db9-bd45-423de0017f86',
+                refcollection: 'surveys',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062022',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    refcollection: 'farms',
+                    label: 'SEASON HISTORY',
+                    labelShort: 'FARM-007',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                '01baa45b-2150-4db9-bd45-423de0017f86',
+                'clxn3e2r8002mfmxv5sfmuopu'
+            ],
+            workflowName: 'farmInternalInspectionRemote',
+            activityName: 'AuditSurveyActivity',
+            activityLabel: 'SurveyHousehold',
+            method: 'update',
+            type: 'CreateSurvey',
+            previewValues: [
+                {
+                    value: '2',
+                    key: 'How many adults currently live in the household?'
+                },
+                {
+                    value: '1',
+                    key: 'How many children currently live in household?'
+                },
+                {
+                    value: '(name: jhgjhg, age: 7)',
+                    key: 'Child details'
+                },
+                {
+                    value: '1',
+                    key: 'How many children are at school?'
+                },
+                {
+                    value: 'No',
+                    key: 'Do you have children of school age?'
+                },
+                {
+                    value: 'No',
+                    key: 'Are there children of school going age at the farm?'
+                },
+                {
+                    value: 'No',
+                    key: 'Are there any signs of forced, bonded, trafficked or child labor?'
+                },
+                {
+                    value: 'No',
+                    key: 'Are there any pregnant/breastfeeding mothers on the farm?'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                inspectionConsent: true,
+                targetEntity: 'clxn3e2r8002mfmxv5sfmuopu',
+                auditDefinitionId: 'farmerAudit',
+                season: {
+                    authTag: 'ALL',
+                    qrCode: '123',
+                    refcollection: 'seasons',
+                    labelShort: '2023/24',
+                    id: '0f81d551-e601-4b93-bdb3-5e1258a6bb10',
+                    label: '2023/24',
+                    isPreviousVersion: false,
+                    shortCode: '123'
+                },
+                previousInspectionDate: '2024-06-21T12:59:52.595Z',
+                inspectionDate: '2024-06-21T12:59:52.595Z',
+                hasLiveStock: true,
+                customId: '715d30c2-300e-4599-9699-a301983998dd'
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_waqar',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '715d30c2-300e-4599-9699-a301983998dd',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062022',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062022',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            },
+            parentSecondaryItems: [
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    refcollection: 'farms',
+                    label: 'SEASON HISTORY',
+                    labelShort: 'FARM-007',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                '6609eb13-ab41-43d6-92ab-148260e83c28',
+                'clxn3e2r8002mfmxv5sfmuopu'
+            ],
+            primaryActivityName: 'CreateFarmInspectionActivityV2',
+            primaryActivityLabel: 'FarmInspection',
+            workflowName: 'farmInternalInspectionRemote',
+            activityName: 'CreateFarmInspectionActivityV2',
+            activityLabel: 'FarmInspection',
+            type: 'CreateAuditActivity',
+            previewValues: [
+                {
+                    value: '',
+                    key: 'Farm'
+                },
+                {
+                    value: '21/06/2024',
+                    key: 'Inspection Date'
+                },
+                {
+                    value: '2023/24',
+                    key: 'Season'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Do you accept to be inspected?'
+                },
+                {
+                    value: '21/06/2024',
+                    key: 'Previous Inspection Date'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Do you keep livestock?'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                farmInspection_farmpractises_basins: false,
+                farmInspection_farmpractises_off_farm: false,
+                farmInspection_farmpractises_organic: false,
+                idLabelShort: 'FARM-007',
+                farmInspection_farmpractises_store_packaging_chemicals: false,
+                farmInspection_farmpractises_ripefruit: false,
+                id: {
+                    qrCode: '123',
+                    refcollection: 'farms',
+                    labelShort: 'FARM-007',
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    label: 'SEASON HISTORY',
+                    isPreviousVersion: false,
+                    shortCode: '123'
+                },
+                farmInspection_farmpractises_drying_tarpaulin: false,
+                customId: '731af9a4-bd29-4194-89a7-a876f9da0268',
+                entity: {
+                    qrCode: '123',
+                    refcollection: 'farms',
+                    labelShort: 'FARM-007',
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    label: 'SEASON HISTORY',
+                    isPreviousVersion: false,
+                    shortCode: '123'
+                },
+                farmInspection_farmpractises_pruning: false,
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                    id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                    label: 'AUDIT-21062022',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_waqar',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '731af9a4-bd29-4194-89a7-a876f9da0268',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: 'b25f9e5d-4704-4713-8aa2-77c33ea2804d',
+                refcollection: 'surveys',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062022',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    refcollection: 'farms',
+                    label: 'SEASON HISTORY',
+                    labelShort: 'FARM-007',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                'b25f9e5d-4704-4713-8aa2-77c33ea2804d',
+                'clxn3e2r8002mfmxv5sfmuopu'
+            ],
+            workflowName: 'farmInternalInspectionRemote',
+            activityName: 'AuditSurveyActivity4',
+            activityLabel: 'SurveyFarmPractises',
+            method: 'update',
+            type: 'CreateSurvey',
+            previewValues: [
+                {
+                    value: 'No',
+                    key: 'Does the farmer have good understanding of organic agriculture production?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does farmer pick/harvest only ready or ripe fruit?'
+                },
+                {
+                    value: 'No',
+                    key: 'Has farmer pruned his/her maincrop trees?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does the farmer have separate basins for harvesting maincrop from those used for home use?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does the farmer have a tarpaulin or concrete area for drying all maincrops off ground ?'
+                },
+                {
+                    value: 'No',
+                    key: 'Is packaging used to store maincrop free from any chemicals or other contaminants?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does farmer buy off-farm inputs?'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                altitude: 2,
+                idLabelShort: 'FARM-007',
+                id: {
+                    refcollection: 'farms',
+                    labelShort: 'FARM-007',
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    label: 'SEASON HISTORY',
+                    isPreviousVersion: false
+                },
+                customId: '8016de99-ff47-4883-9aa7-696bf787b5cc',
+                entity: {
+                    refcollection: 'farms',
+                    labelShort: 'FARM-007',
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    label: 'SEASON HISTORY',
+                    isPreviousVersion: false
+                },
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                    id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                    label: 'AUDIT-21062022',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_waqar',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '8016de99-ff47-4883-9aa7-696bf787b5cc',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: 'clxn3e2r8002mfmxv5sfmuopu',
+                refcollection: 'farms',
+                label: 'SEASON HISTORY',
+                labelShort: 'FARM-007',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062022',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [],
+            allParentItemsSearchable: [
+                'clxn3e2r8002mfmxv5sfmuopu'
+            ],
+            primaryActivityName: 'UpdateLocationDetailsInFarmerCreation',
+            primaryActivityLabel: 'UpdateLocation',
+            workflowName: 'farmInternalInspectionRemote',
+            activityName: 'UpdateFarmFacility',
+            activityLabel: 'UpdateFarmFacility',
+            method: 'update',
+            type: 'UpdateFarmFacility',
+            previewValues: [
+                {
+                    value: 'BUNDIBUGYO',
+                    key: 'District'
+                },
+                {
+                    value: 'BIREMBO',
+                    key: 'Sub County'
+                },
+                {
+                    value: '',
+                    key: 'Parish'
+                },
+                {
+                    value: '',
+                    key: 'Village'
+                },
+                {
+                    value: 'BIIMALA',
+                    key: 'Collection Point'
+                },
+                {
+                    value: '{"lat":60.24962521410096,"lng":24.971673072638996,"altitude":null}',
+                    key: 'Coordinates'
+                },
+                {
+                    value: 2,
+                    key: 'Altitude'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: null,
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_waqar',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '86c4e0f1-647b-4439-8939-a9f388f929be',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T12:55:29.079Z',
+            updatedDate: '2024-06-21T12:55:29.079Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.249625205677035,
+                    lon: 24.971673084383617
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.249625205677035,
+                    lon: 24.971673084383617
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: 'clxn3e2r8002mfmxv5sfmuopu',
+                refcollection: 'farms',
+                label: 'SEASON HISTORY',
+                labelShort: 'FARM-007',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            },
+            allParentItemsSearchable: [
+                'clxn3e2r8002mfmxv5sfmuopu'
+            ],
+            activityName: 'CompleteReview',
+            activityLabel: 'CompleteReview',
+            type: 'CompleteReview',
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                customId: '8d9ec77e-d90b-4496-869a-0becb857080f',
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                    id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                    label: 'AUDIT-21062022',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_waqar',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '8d9ec77e-d90b-4496-869a-0becb857080f',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: 'b66085b0-6f86-4d17-ab93-e0fa67909c50',
+                refcollection: 'contacts',
+                label: 'SEASON HISTORY +2562222233',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062022',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    refcollection: 'farms',
+                    label: 'SEASON HISTORY',
+                    labelShort: 'FARM-007',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                'b66085b0-6f86-4d17-ab93-e0fa67909c50',
+                'clxn3e2r8002mfmxv5sfmuopu'
+            ],
+            primaryActivityName: 'AddContact',
+            primaryActivityLabel: 'AddContact',
+            workflowName: 'farmInternalInspectionRemote',
+            activityName: 'CreateContact',
+            activityLabel: 'CreateContact',
+            method: 'create',
+            type: 'CreateContact',
+            previewValues: [
+                {
+                    value: 'SEASON HISTORY',
+                    key: 'Entity'
+                },
+                {
+                    value: '2222233',
+                    key: 'Phone'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Registered Under Farmers Name'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Registered For Mobile Money'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                farmInspection_hygiene_waste_home_hygiene: false,
+                farmInspection_hygiene_waste_crop_residue_use: false,
+                idLabelShort: 'FARM-007',
+                farmInspection_hygiene_waste_pitlatrine_river: false,
+                farmInspection_hygiene_waste_waste_disposal: false,
+                customId: '9da4d5af-39e7-4cd3-a181-0e1668786c11',
+                farmInspection_hygiene_waste_drinking_water: 'YesTested',
+                farmInspection_hygiene_waste_burn_crop_residue: false,
+                farmInspection_hygiene_waste_toilet: false,
+                id: {
+                    qrCode: '123',
+                    refcollection: 'farms',
+                    labelShort: 'FARM-007',
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    label: 'SEASON HISTORY',
+                    isPreviousVersion: false,
+                    shortCode: '123'
+                },
+                farmInspection_hygiene_waste_waste_hazard: false,
+                entity: {
+                    qrCode: '123',
+                    refcollection: 'farms',
+                    labelShort: 'FARM-007',
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    label: 'SEASON HISTORY',
+                    isPreviousVersion: false,
+                    shortCode: '123'
+                },
+                farmInspection_hygiene_waste_polluting_waters: false,
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                    id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                    label: 'AUDIT-21062022',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_waqar',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: '9da4d5af-39e7-4cd3-a181-0e1668786c11',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: '999a1ba4-3f4d-4e10-9cbb-71887dcf0443',
+                refcollection: 'surveys',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062022',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    refcollection: 'farms',
+                    label: 'SEASON HISTORY',
+                    labelShort: 'FARM-007',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                '999a1ba4-3f4d-4e10-9cbb-71887dcf0443',
+                'clxn3e2r8002mfmxv5sfmuopu'
+            ],
+            workflowName: 'farmInternalInspectionRemote',
+            activityName: 'AuditSurveyActivity3',
+            activityLabel: 'SurveyHygiene',
+            method: 'update',
+            type: 'CreateSurvey',
+            previewValues: [
+                {
+                    value: 'YesTested',
+                    key: 'Does everyone on the farm have access to drinking water?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does the farmer maintain good hygiene and sanitation at their home?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does the farmer have toilet and bathroom at the farm?'
+                },
+                {
+                    value: 'No',
+                    key: 'Pit latrine discharges directly into a stream / river?'
+                },
+                {
+                    value: 'No',
+                    key: 'Is the farmer polluting any natural water sources in any way?'
+                },
+                {
+                    value: 'No',
+                    key: 'Waste disposal? / Plastic or inorganic rubbish and garbage is properly disposed off?'
+                },
+                {
+                    value: 'No',
+                    key: 'Does the farmer burn crop residues at his farm?'
+                },
+                {
+                    value: 'No',
+                    key: 'Are crop residues used by the farmer at the farm?'
+                },
+                {
+                    value: 'No',
+                    key: 'Management of hazardous waste?'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                altitude: 2,
+                idLabelShort: 'FARM-007',
+                id: {
+                    refcollection: 'farms',
+                    labelShort: 'FARM-007',
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    label: 'SEASON HISTORY',
+                    isPreviousVersion: false
+                },
+                customId: 'a65c75bd-4d51-439c-b434-ff91f088bb05',
+                entity: {
+                    refcollection: 'farms',
+                    labelShort: 'FARM-007',
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    label: 'SEASON HISTORY',
+                    isPreviousVersion: false
+                },
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                    id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                    label: 'AUDIT-21062022',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_waqar',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: 'a65c75bd-4d51-439c-b434-ff91f088bb05',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: 'clxn3e2r8002mfmxv5sfmuopu',
+                refcollection: 'farms',
+                label: 'SEASON HISTORY',
+                labelShort: 'FARM-007',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062022',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [],
+            allParentItemsSearchable: [
+                'clxn3e2r8002mfmxv5sfmuopu'
+            ],
+            primaryActivityName: 'UpdateLocationDetailsInFarmerCreation',
+            primaryActivityLabel: 'UpdateLocation',
+            workflowName: 'farmInternalInspectionRemote',
+            activityName: 'UpdateLocationDetailsInFarmerCreation',
+            activityLabel: 'UpdateLocation',
+            method: 'update',
+            type: 'StandardSubmitViaAuditActivity',
+            previewValues: [
+                {
+                    value: 'BUNDIBUGYO',
+                    key: 'District'
+                },
+                {
+                    value: 'BIREMBO',
+                    key: 'Sub County'
+                },
+                {
+                    value: '',
+                    key: 'Parish'
+                },
+                {
+                    value: '',
+                    key: 'Village'
+                },
+                {
+                    value: 'BIIMALA',
+                    key: 'Collection Point'
+                },
+                {
+                    value: '{"lat":60.24962521410096,"lng":24.971673072638996,"altitude":null}',
+                    key: 'Coordinates'
+                },
+                {
+                    value: 2,
+                    key: 'Altitude'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                inspectionConsent: true,
+                targetEntity: 'clxn3e2r8002mfmxv5sfmuopu',
+                auditDefinitionId: 'farmerAudit',
+                season: {
+                    authTag: 'ALL',
+                    qrCode: '123',
+                    refcollection: 'seasons',
+                    labelShort: '2023/24',
+                    id: '0f81d551-e601-4b93-bdb3-5e1258a6bb10',
+                    label: '2023/24',
+                    isPreviousVersion: false,
+                    shortCode: '123'
+                },
+                previousInspectionDate: '2024-06-21T12:28:42.732Z',
+                inspectionDate: '2024-06-21T12:28:42.732Z',
+                customId: 'b1b9e856-e1d3-455b-8bed-acafcdcfdf90'
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_waqar',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: 'b1b9e856-e1d3-455b-8bed-acafcdcfdf90',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T12:55:29.079Z',
+            updatedDate: '2024-06-21T12:55:29.079Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.249625205677035,
+                    lon: 24.971673084383617
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.249625205677035,
+                    lon: 24.971673084383617
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: '36359bf2-2247-4bc5-822c-4bfd693f2578',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062022',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: 'd54966f9-f365-4b74-bd24-2561d6da2b8l',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '36359bf2-2247-4bc5-822c-4bfd693f2578',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062022',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            },
+            parentSecondaryItems: [
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    refcollection: 'farms',
+                    label: 'SEASON HISTORY',
+                    labelShort: 'FARM-007',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                '36359bf2-2247-4bc5-822c-4bfd693f2578',
+                'clxn3e2r8002mfmxv5sfmuopu'
+            ],
+            primaryActivityName: 'CreateFarmPolygonReviewActivityV2',
+            primaryActivityLabel: 'FarmDetailsReviewRemote',
+            workflowName: 'farmPolygonReviewRemote',
+            activityName: 'CreateFarmPolygonReviewActivityV2',
+            activityLabel: 'FarmDetailsReviewRemote',
+            type: 'CreateAuditActivity',
+            previewValues: [
+                {
+                    value: '',
+                    key: 'Target'
+                },
+                {
+                    value: '21/06/2024',
+                    key: 'Inspection Date'
+                },
+                {
+                    value: '2023/24',
+                    key: 'Season'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Do you accept to be inspected?'
+                },
+                {
+                    value: '21/06/2024',
+                    key: 'Previous Inspection Date'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                customId: 'b37a6dc8-5c6e-4817-9c53-406c74fddfb0',
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: 'f518938a-6d7e-4899-9b96-3aa5a4ad96853',
+                    id: '36359bf2-2247-4bc5-822c-4bfd693f2578',
+                    label: 'AUDIT-21062022',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: 'd54966f9-f365-4b74-bd24-2561d6da2b8l',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_waqar',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: 'b37a6dc8-5c6e-4817-9c53-406c74fddfb0',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T12:55:29.079Z',
+            updatedDate: '2024-06-21T12:55:29.079Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.249625205677035,
+                    lon: 24.971673084383617
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.249625205677035,
+                    lon: 24.971673084383617
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: '7072dcf8-12b8-4c1b-a532-5cd6ff117e15',
+                refcollection: 'contacts',
+                label: 'SEASON HISTORY +256142424224',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: 'd54966f9-f365-4b74-bd24-2561d6da2b8l',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '36359bf2-2247-4bc5-822c-4bfd693f2578',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062022',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: 'f518938a-6d7e-4899-9b96-3aa5a4ad96853',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: 'd54966f9-f365-4b74-bd24-2561d6da2b8l',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    refcollection: 'farms',
+                    label: 'SEASON HISTORY',
+                    labelShort: 'FARM-007',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                '7072dcf8-12b8-4c1b-a532-5cd6ff117e15',
+                'clxn3e2r8002mfmxv5sfmuopu'
+            ],
+            primaryActivityName: 'AddContact',
+            primaryActivityLabel: 'AddContact',
+            workflowName: 'farmPolygonReviewRemote',
+            activityName: 'CreateContact',
+            activityLabel: 'CreateContact',
+            method: 'create',
+            type: 'CreateContact',
+            previewValues: [
+                {
+                    value: 'SEASON HISTORY',
+                    key: 'Entity'
+                },
+                {
+                    value: '142424224',
+                    key: 'Phone'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Registered Under Farmers Name'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Registered For Mobile Money'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                customId: 'b61bff0e-4c89-4654-9184-75f286340993',
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                    id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                    label: 'AUDIT-21062022',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_waqar',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: 'b61bff0e-4c89-4654-9184-75f286340993',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: 'd7b4d369-32f0-417c-8e02-17c94130f112',
+                refcollection: 'animalcounts',
+                label: 'Cow',
+                qrCode: '123',
+                shortCode: '123',
+                type: 'Cow',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062022',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    refcollection: 'farms',
+                    label: 'SEASON HISTORY',
+                    labelShort: 'FARM-007',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                'd7b4d369-32f0-417c-8e02-17c94130f112',
+                'clxn3e2r8002mfmxv5sfmuopu'
+            ],
+            primaryActivityName: 'AddAnimal',
+            primaryActivityLabel: 'AddAnimal',
+            workflowName: 'farmInternalInspectionRemote',
+            activityName: 'CreateAnimal',
+            activityLabel: 'CreateAnimal',
+            method: 'create',
+            type: 'CreateAnimal',
+            previewValues: [
+                {
+                    value: 'SEASON HISTORY',
+                    key: 'Entity'
+                },
+                {
+                    value: 'Cow',
+                    key: 'Type'
+                },
+                {
+                    value: '2',
+                    key: 'Count'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Is Organic'
+                },
+                {
+                    value: 'Yes',
+                    key: 'Used For Manure'
+                },
+                {
+                    value: '',
+                    key: 'Description'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: null,
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_waqar',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: 'c9e6ce9b-3838-470a-83c7-e776a41916d2',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:00:32.087Z',
+            updatedDate: '2024-06-21T13:00:32.087Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers_wip',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            operatedBy: null,
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers_wip',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            parentId: {
+                id: 'clxn3e2r8002mfmxv5sfmuopu',
+                refcollection: 'farms_wip',
+                label: 'SEASON HISTORY',
+                labelShort: 'FARM-007',
+                isPreviousVersion: false
+            },
+            allParentItemsSearchable: [
+                'clxn3e2r8002mfmxv5sfmuopu'
+            ],
+            activityName: 'ToReview',
+            activityLabel: 'ToReview',
+            type: 'ToReview',
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                altitude: 5,
+                idLabelShort: 'FARM-007',
+                id: {
+                    refcollection: 'farms',
+                    labelShort: 'FARM-007',
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    label: 'SEASON HISTORY',
+                    isPreviousVersion: false
+                },
+                customId: 'd470954f-0406-46d0-9baf-24d5f6686f5c',
+                entity: {
+                    refcollection: 'farms',
+                    labelShort: 'FARM-007',
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    label: 'SEASON HISTORY',
+                    isPreviousVersion: false
+                },
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: 'f518938a-6d7e-4899-9b96-3aa5a4ad96853',
+                    id: '36359bf2-2247-4bc5-822c-4bfd693f2578',
+                    label: 'AUDIT-21062022',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: 'd54966f9-f365-4b74-bd24-2561d6da2b8l',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_waqar',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: 'd470954f-0406-46d0-9baf-24d5f6686f5c',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T12:55:29.079Z',
+            updatedDate: '2024-06-21T12:55:29.079Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.249625205677035,
+                    lon: 24.971673084383617
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.249625205677035,
+                    lon: 24.971673084383617
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: 'clxn3e2r8002mfmxv5sfmuopu',
+                refcollection: 'farms',
+                label: 'SEASON HISTORY',
+                labelShort: 'FARM-007',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: 'd54966f9-f365-4b74-bd24-2561d6da2b8l',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '36359bf2-2247-4bc5-822c-4bfd693f2578',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062022',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: 'f518938a-6d7e-4899-9b96-3aa5a4ad96853',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: 'd54966f9-f365-4b74-bd24-2561d6da2b8l',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [],
+            allParentItemsSearchable: [
+                'clxn3e2r8002mfmxv5sfmuopu'
+            ],
+            primaryActivityName: 'UpdateLocationDetailsInFarmerCreation',
+            primaryActivityLabel: 'UpdateLocation',
+            workflowName: 'farmPolygonReviewRemote',
+            activityName: 'UpdateFarmFacility',
+            activityLabel: 'UpdateFarmFacility',
+            method: 'update',
+            type: 'UpdateFarmFacility',
+            previewValues: [
+                {
+                    value: 'BUNDIBUGYO',
+                    key: 'District'
+                },
+                {
+                    value: 'BOMBO',
+                    key: 'Sub County'
+                },
+                {
+                    value: '',
+                    key: 'Parish'
+                },
+                {
+                    value: '',
+                    key: 'Village'
+                },
+                {
+                    value: 'BOBULONGU',
+                    key: 'Collection Point'
+                },
+                {
+                    value: '{"lat":60.24961612971525,"lng":24.971648963554394,"altitude":null}',
+                    key: 'Coordinates'
+                },
+                {
+                    value: 5,
+                    key: 'Altitude'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        },
+        {
+            properties: {
+                idLabelShort: 'Polygon - FARM-007 - P1',
+                geoData: [
+                    {
+                        altitude: null,
+                        lng: 24.971862082249178,
+                        lat: 60.249475935982375
+                    }
+                ],
+                customId: 'e5b761fa-39cf-4e8f-b998-54b77c705de6',
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: 'f518938a-6d7e-4899-9b96-3aa5a4ad96853',
+                    id: '36359bf2-2247-4bc5-822c-4bfd693f2578',
+                    label: 'AUDIT-21062022',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: 'd54966f9-f365-4b74-bd24-2561d6da2b8l',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_waqar',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: 'e5b761fa-39cf-4e8f-b998-54b77c705de6',
+                refcollection: 'activitylogs',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T12:55:29.079Z',
+            updatedDate: '2024-06-21T12:55:29.079Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.249625205677035,
+                    lon: 24.971673084383617
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.249625205677035,
+                    lon: 24.971673084383617
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            parentId: {
+                id: '4a8f2ca7-016e-4aa7-a57e-591fdb3f3a77',
+                refcollection: 'geodatas',
+                label: 'Polygon - FARM-007 - P1',
+                labelShort: 'Polygon - FARM-007 - P1',
+                qrCode: '123',
+                shortCode: '123',
+                type: 'Polygon',
+                isPreviousVersion: false
+            },
+            workflowScopeId: {
+                id: 'd54966f9-f365-4b74-bd24-2561d6da2b8l',
+                refcollection: 'workflowscopes',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                id: '36359bf2-2247-4bc5-822c-4bfd693f2578',
+                refcollection: 'auditactivities',
+                label: 'AUDIT-21062022',
+                qrCode: '123',
+                shortCode: '123',
+                chainId: 'f518938a-6d7e-4899-9b96-3aa5a4ad96853',
+                isPreviousVersion: false,
+                workflowId: {
+                    id: 'd54966f9-f365-4b74-bd24-2561d6da2b8l',
+                    refcollection: 'workflowscopes_wip',
+                    isPreviousVersion: false
+                }
+            },
+            parentSecondaryItems: [
+                {
+                    id: '81d1c301-9599-4a14-b16b-bdd70737chi4',
+                    refcollection: 'plots',
+                    label: 'P1',
+                    labelShort: 'FARM-007 - P1',
+                    qrCode: '123',
+                    shortCode: '123',
+                    type: 'Permanent',
+                    isPreviousVersion: false
+                },
+                {
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    refcollection: 'farms',
+                    label: 'SEASON HISTORY',
+                    labelShort: 'FARM-007',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                }
+            ],
+            allParentItemsSearchable: [
+                '4a8f2ca7-016e-4aa7-a57e-591fdb3f3a77',
+                '81d1c301-9599-4a14-b16b-bdd70737chi4',
+                'clxn3e2r8002mfmxv5sfmuopu'
+            ],
+            primaryActivityName: 'AddPlotPolygonAtAudit',
+            primaryActivityLabel: 'CreatePlotPolygon',
+            workflowName: 'farmPolygonReviewRemote',
+            activityName: 'CreateGeoData',
+            activityLabel: 'CreateGeoData',
+            method: 'create',
+            type: 'CreateGeoData',
+            previewValues: [
+                {
+                    value: 'SEASON HISTORY',
+                    key: 'Entity Parent'
+                },
+                {
+                    value: 'P1',
+                    key: 'Plot'
+                },
+                {
+                    value: 'Polygon',
+                    key: 'Type'
+                },
+                {
+                    value: 'Polygon - FARM-007 - P1',
+                    key: 'Code'
+                },
+                {
+                    value: 22,
+                    key: 'Estimated area size'
+                },
+                {
+                    value: '',
+                    key: 'Notes'
+                },
+                {
+                    value: '[{"lat":60.249475935982375,"lng":24.971862082249178,"altitude":null}]',
+                    key: 'Geo Data'
+                }
+            ],
+            oldProperties: {
+                activityStartDateTime: null,
+                activityEndDateTime: null,
+                properties: {}
+            }
+        }
+    ],
+    entity: {
+        properties: {
+            altitude: 2,
+            targetEntity: 'clxn3e2r8002mfmxv5sfmuopu',
+            idLabelShort: 'FARM-007',
+            customId: 'clxn3e2r8002mfmxv5sfmuopu',
+            hasLiveStock: true,
+            inspectionConsent: true,
+            previousInspectionDate: '2024-06-21T12:59:52.595Z',
+            auditDefinitionId: 'farmerAudit',
+            season: {
+                qrCode: '123',
+                authTag: 'ALL',
+                refcollection: 'seasons',
+                labelShort: '2023/24',
+                isPreviousVersion: false,
+                id: '0f81d551-e601-4b93-bdb3-5e1258a6bb10',
+                label: '2023/24',
+                shortCode: '123'
+            },
+            id: {
+                refcollection: 'farms',
+                labelShort: 'FARM-007',
+                id: 'clxn3e2r8002mfmxv5sfmuopu',
+                label: 'SEASON HISTORY',
+                isPreviousVersion: false
+            },
+            inspectionDate: '2024-06-21T12:59:52.595Z',
+            entity: {
+                refcollection: 'farms',
+                labelShort: 'FARM-007',
+                id: 'clxn3e2r8002mfmxv5sfmuopu',
+                label: 'SEASON HISTORY',
+                isPreviousVersion: false
+            },
+            auditActivityId: {
+                qrCode: '123',
+                refcollection: 'auditactivities',
+                chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                label: 'AUDIT-21062022',
+                isPreviousVersion: false,
+                shortCode: '123',
+                workflowId: {
+                    refcollection: 'workflowscopes_wip',
+                    id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                    isPreviousVersion: false
+                }
+            }
+        },
+        isDeleted: false,
+        approvalStatus: 'NotSet',
+        reviewStatus: 'Approved',
+        creationStatus: 'NotSet',
+        reviewEntityId: null,
+        previousVersionId: {
+            refcollection: 'farms',
+            id: '34537c28-c0cb-4de2-a0da-79246cc40ef5',
+            isPreviousVersion: false
+        },
+        systemStatus: null,
+        isArchived: false,
+        enabled: true,
+        sourceSystem: 'V2',
+        meta_workspace: 'master_latitude_waqar',
+        meta_organisation: 'latitude',
+        meta_configkey: 'ltc',
+        id: {
+            id: 'clxn3e2r8002mfmxv5sfmuopu',
+            refcollection: 'farms',
+            label: 'SEASON HISTORY',
+            labelShort: 'FARM-007',
+            qrCode: '123',
+            shortCode: '123',
+            isPreviousVersion: false
+        },
+        createdDate: '2024-06-21T13:25:22.592Z',
+        updatedDate: '2024-06-21T13:25:22.592Z',
+        lastActivityDate: null,
+        createdBy: {
+            id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+            refcollection: 'platformusers',
+            label: 'waqar@orijin.io',
+            labelShort: 'waqar@orijin.io',
+            isPreviousVersion: false
+        },
+        updatedBy: {
+            id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+            refcollection: 'platformusers',
+            label: 'waqar@orijin.io',
+            labelShort: 'waqar@orijin.io',
+            isPreviousVersion: false
+        },
+        createdLocation: {
+            latLong: {
+                lat: 60.24962529560727,
+                lon: 24.97167293249805
+            },
+            altitude: null,
+            accuracy: 62,
+            altitudeAccuracy: null,
+            speed: null,
+            altitudeMin: null,
+            altitudeMax: null,
+            name: null
+        },
+        updatedLocation: {
+            latLong: {
+                lat: 60.24962529560727,
+                lon: 24.97167293249805
+            },
+            altitude: null,
+            accuracy: 62,
+            altitudeAccuracy: null,
+            speed: null,
+            altitudeMin: null,
+            altitudeMax: null,
+            name: null
+        },
+        surveys: [
+            {
+                id: '01baa45b-2150-4db9-bd45-423de0017f86',
+                refcollection: 'surveys',
+                isPreviousVersion: false
+            },
+            {
+                id: 'ed125b61-74bc-4a6d-82e9-9ff97190da72',
+                refcollection: 'surveys',
+                isPreviousVersion: false
+            },
+            {
+                id: 'c04edfc6-dc66-4555-9232-578a4bb21135',
+                refcollection: 'surveys',
+                isPreviousVersion: false
+            },
+            {
+                id: 'e26b6fe7-a971-4de1-8a1d-41077eeb1047',
+                refcollection: 'surveys',
+                isPreviousVersion: false
+            },
+            {
+                id: 'b25f9e5d-4704-4713-8aa2-77c33ea2804d',
+                refcollection: 'surveys',
+                isPreviousVersion: false
+            },
+            {
+                id: '999a1ba4-3f4d-4e10-9cbb-71887dcf0443',
+                refcollection: 'surveys',
+                isPreviousVersion: false
+            }
+        ],
+        surveysFull: [
+            {
+                properties: {
+                    customId: '01baa45b-2150-4db9-bd45-423de0017f86'
+                },
+                isDeleted: false,
+                approvalStatus: 'NotSet',
+                reviewStatus: 'NotSet',
+                creationStatus: 'NotSet',
+                systemStatus: null,
+                isArchived: false,
+                enabled: true,
+                sourceSystem: null,
+                meta_workspace: 'master_latitude_waqar',
+                meta_organisation: 'latitude',
+                meta_configkey: 'ltc',
+                id: {
+                    id: '01baa45b-2150-4db9-bd45-423de0017f86',
+                    refcollection: 'surveys',
+                    isPreviousVersion: false
+                },
+                createdDate: '2024-06-21T13:25:22.592Z',
+                updatedDate: '2024-06-21T13:25:22.592Z',
+                lastActivityDate: null,
+                createdBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                    refcollection: 'platformusers',
+                    label: 'waqar@orijin.io',
+                    labelShort: 'waqar@orijin.io',
+                    isPreviousVersion: false
+                },
+                updatedBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                    refcollection: 'platformusers',
+                    label: 'waqar@orijin.io',
+                    labelShort: 'waqar@orijin.io',
+                    isPreviousVersion: false
+                },
+                createdLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                updatedLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                activityName: 'AuditSurveyActivity',
+                activityLabel: 'SurveyHousehold',
+                tags: [],
+                name: 'SurveyHousehold',
+                entityType: 'farm',
+                description: null,
+                notes: null,
+                entity: {
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    refcollection: 'farms',
+                    label: 'SEASON HISTORY',
+                    labelShort: 'FARM-007',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                },
+                entityParent: null,
+                values: [
+                    {
+                        widget: null,
+                        name: 'farmInspection_demographics_hh_member_count',
+                        section: 'demographics',
+                        label: 'farmInspection_demographics_hh_member_count',
+                        value: 2
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_demographics_hh_children_count',
+                        section: 'demographics',
+                        label: 'farmInspection_demographics_hh_children_count',
+                        value: 1
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_demographics_hh_children_list',
+                        valueJsonata: "$join($map(value, function($v) {'(name: ' & $v.farmInspection_demographics_hh_children_name & ', age: ' & $v.farmInspection_demographics_hh_children_age &')'}), \", \")",
+                        section: 'demographics',
+                        label: 'farmInspection_demographics_hh_children_list',
+                        value: [
+                            {
+                                farmInspection_demographics_hh_children_name: 'jhgjhg',
+                                farmInspection_demographics_hh_children_age: 7
+                            }
+                        ]
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_demographics_hh_children_school_count',
+                        section: 'demographics',
+                        label: 'farmInspection_demographics_hh_children_school_count',
+                        value: 1
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_demographics_yourchildren_schoolage',
+                        section: 'demographics',
+                        label: 'farmInspection_demographics_yourchildren_schoolage',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_demographics_yourchildren_schoolage_school',
+                        section: 'demographics',
+                        label: 'farmInspection_demographics_yourchildren_schoolage_school'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_demographics_children_farm',
+                        section: 'demographics',
+                        label: 'farmInspection_demographics_children_farm',
+                        value: false
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_demographics_children_farm_conditions',
+                        valueJsonata: "$translate(value,'lists.childLaborFarmConditions')",
+                        section: 'demographics',
+                        label: 'farmInspection_demographics_children_farm_conditions'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_demographics_childlabor_signs',
+                        section: 'demographics',
+                        label: 'farmInspection_demographics_childlabor_signs',
+                        value: false
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_demographics_childlabor_types',
+                        valueJsonata: "$join($map(value, function($v) { $translate($v,'lists.childLaborTypes') }), ', ')",
+                        section: 'demographics',
+                        label: 'farmInspection_demographics_childlabor_types'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_demographics_pregnant_breastfeeding',
+                        section: 'demographics',
+                        label: 'farmInspection_demographics_pregnant_breastfeeding',
+                        value: false
+                    }
+                ],
+                parentAuditActivity: null
+            },
+            {
+                properties: {
+                    customId: 'ed125b61-74bc-4a6d-82e9-9ff97190da72'
+                },
+                isDeleted: false,
+                approvalStatus: 'NotSet',
+                reviewStatus: 'NotSet',
+                creationStatus: 'NotSet',
+                systemStatus: null,
+                isArchived: false,
+                enabled: true,
+                sourceSystem: null,
+                meta_workspace: 'master_latitude_waqar',
+                meta_organisation: 'latitude',
+                meta_configkey: 'ltc',
+                id: {
+                    id: 'ed125b61-74bc-4a6d-82e9-9ff97190da72',
+                    refcollection: 'surveys',
+                    isPreviousVersion: false
+                },
+                createdDate: '2024-06-21T13:25:22.592Z',
+                updatedDate: '2024-06-21T13:25:22.592Z',
+                lastActivityDate: null,
+                createdBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                    refcollection: 'platformusers',
+                    label: 'waqar@orijin.io',
+                    labelShort: 'waqar@orijin.io',
+                    isPreviousVersion: false
+                },
+                updatedBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                    refcollection: 'platformusers',
+                    label: 'waqar@orijin.io',
+                    labelShort: 'waqar@orijin.io',
+                    isPreviousVersion: false
+                },
+                createdLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                updatedLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                activityName: 'AuditSurveyActivity2',
+                activityLabel: 'SurveyWorkers',
+                tags: [],
+                name: 'SurveyWorkers',
+                entityType: 'farm',
+                description: null,
+                notes: null,
+                entity: {
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    refcollection: 'farms',
+                    label: 'SEASON HISTORY',
+                    labelShort: 'FARM-007',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                },
+                entityParent: null,
+                values: [
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_hired',
+                        section: 'workers',
+                        label: 'farmInspection_workers_hired',
+                        value: false
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_workers_hired_type',
+                        valueJsonata: "$join($map(value, function($v) { $translate($v,'lists.permanencyType') }), ', ')",
+                        section: 'workers',
+                        label: 'farmInspection_workers_hired_type'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_hired_housing',
+                        section: 'workers',
+                        label: 'farmInspection_workers_hired_housing'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_hired_housing_condition',
+                        section: 'workers',
+                        label: 'farmInspection_workers_hired_housing_condition'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_drinking_water',
+                        section: 'workers',
+                        label: 'farmInspection_workers_drinking_water'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_contract',
+                        section: 'workers',
+                        label: 'farmInspection_workers_contract'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_wages_recorded',
+                        section: 'workers',
+                        label: 'farmInspection_workers_wages_recorded'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_wages_minimum',
+                        section: 'workers',
+                        label: 'farmInspection_workers_wages_minimum'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_other_benefits',
+                        section: 'workers',
+                        label: 'farmInspection_workers_other_benefits'
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_workers_other_benefits_what',
+                        section: 'workers',
+                        label: 'farmInspection_workers_other_benefits_what'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_working_hours_regulated',
+                        section: 'workers',
+                        label: 'farmInspection_workers_working_hours_regulated'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_associations',
+                        section: 'workers',
+                        label: 'farmInspection_workers_associations'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_avoids_regular',
+                        section: 'workers',
+                        label: 'farmInspection_workers_avoids_regular'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_grievances',
+                        section: 'workers',
+                        label: 'farmInspection_workers_grievances'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_grievances_aware',
+                        section: 'workers',
+                        label: 'farmInspection_workers_grievances_aware'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_taxes',
+                        section: 'workers',
+                        label: 'farmInspection_workers_taxes'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_adults',
+                        section: 'workers',
+                        label: 'farmInspection_workers_adults'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_age_limit',
+                        section: 'workers',
+                        label: 'farmInspection_workers_age_limit'
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_workers_minimum_age',
+                        section: 'workers',
+                        label: 'farmInspection_workers_minimum_age'
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_workers_minimum_salary',
+                        section: 'workers',
+                        label: 'farmInspection_workers_minimum_salary'
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_workers_healthsafety',
+                        valueJsonata: "$translate(value,'lists.YesNoYesButNotRecently')",
+                        section: 'workers',
+                        label: 'farmInspection_workers_healthsafety',
+                        value: 'Yes'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_restday',
+                        section: 'workers',
+                        label: 'farmInspection_workers_restday',
+                        value: true
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_workers_organictraining',
+                        section: 'workers',
+                        label: 'farmInspection_workers_organictraining',
+                        value: true
+                    }
+                ],
+                parentAuditActivity: null
+            },
+            {
+                properties: {
+                    customId: 'c04edfc6-dc66-4555-9232-578a4bb21135'
+                },
+                isDeleted: false,
+                approvalStatus: 'NotSet',
+                reviewStatus: 'NotSet',
+                creationStatus: 'NotSet',
+                systemStatus: null,
+                isArchived: false,
+                enabled: true,
+                sourceSystem: null,
+                meta_workspace: 'master_latitude_waqar',
+                meta_organisation: 'latitude',
+                meta_configkey: 'ltc',
+                id: {
+                    id: 'c04edfc6-dc66-4555-9232-578a4bb21135',
+                    refcollection: 'surveys',
+                    isPreviousVersion: false
+                },
+                createdDate: '2024-06-21T13:25:22.592Z',
+                updatedDate: '2024-06-21T13:25:22.592Z',
+                lastActivityDate: null,
+                createdBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                    refcollection: 'platformusers',
+                    label: 'waqar@orijin.io',
+                    labelShort: 'waqar@orijin.io',
+                    isPreviousVersion: false
+                },
+                updatedBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                    refcollection: 'platformusers',
+                    label: 'waqar@orijin.io',
+                    labelShort: 'waqar@orijin.io',
+                    isPreviousVersion: false
+                },
+                createdLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                updatedLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                activityName: 'AuditSurveyActivity6',
+                activityLabel: 'SurveyGeneral',
+                tags: [],
+                name: 'SurveyGeneral',
+                entityType: 'farm',
+                description: null,
+                notes: null,
+                entity: {
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    refcollection: 'farms',
+                    label: 'SEASON HISTORY',
+                    labelShort: 'FARM-007',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                },
+                entityParent: null,
+                values: [
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_general_prices',
+                        section: 'general',
+                        label: 'farmInspection_general_prices',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_general_contract_copy',
+                        section: 'general',
+                        label: 'farmInspection_general_contract_copy',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_general_sales_receipts',
+                        section: 'general',
+                        label: 'farmInspection_general_sales_receipts',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_general_landuse_rights',
+                        section: 'general',
+                        label: 'farmInspection_general_landuse_rights',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_general_plot_hiring',
+                        section: 'general',
+                        label: 'farmInspection_general_plot_hiring',
+                        value: false
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_general_plot_hiring_count',
+                        section: 'general',
+                        label: 'farmInspection_general_plot_hiring_count'
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_general_plot_hiring_size',
+                        section: 'general',
+                        label: 'farmInspection_general_plot_hiring_size'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_general_maincrop_pool',
+                        section: 'general',
+                        label: 'farmInspection_general_maincrop_pool',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_general_maincrop_pool_not_allowed',
+                        section: 'general',
+                        label: 'farmInspection_general_maincrop_pool_not_allowed'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_general_all_maincrop_to_company',
+                        section: 'general',
+                        label: 'farmInspection_general_all_maincrop_to_company',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_general_discrimination',
+                        section: 'general',
+                        label: 'farmInspection_general_discrimination',
+                        value: false
+                    }
+                ],
+                parentAuditActivity: null
+            },
+            {
+                properties: {
+                    customId: 'e26b6fe7-a971-4de1-8a1d-41077eeb1047'
+                },
+                isDeleted: false,
+                approvalStatus: 'NotSet',
+                reviewStatus: 'NotSet',
+                creationStatus: 'NotSet',
+                systemStatus: null,
+                isArchived: false,
+                enabled: true,
+                sourceSystem: null,
+                meta_workspace: 'master_latitude_waqar',
+                meta_organisation: 'latitude',
+                meta_configkey: 'ltc',
+                id: {
+                    id: 'e26b6fe7-a971-4de1-8a1d-41077eeb1047',
+                    refcollection: 'surveys',
+                    isPreviousVersion: false
+                },
+                createdDate: '2024-06-21T13:25:22.592Z',
+                updatedDate: '2024-06-21T13:25:22.592Z',
+                lastActivityDate: null,
+                createdBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                    refcollection: 'platformusers',
+                    label: 'waqar@orijin.io',
+                    labelShort: 'waqar@orijin.io',
+                    isPreviousVersion: false
+                },
+                updatedBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                    refcollection: 'platformusers',
+                    label: 'waqar@orijin.io',
+                    labelShort: 'waqar@orijin.io',
+                    isPreviousVersion: false
+                },
+                createdLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                updatedLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                activityName: 'AuditSurveyActivity5',
+                activityLabel: 'SurveyFarming',
+                tags: [],
+                name: 'SurveyFarming',
+                entityType: 'farm',
+                description: null,
+                notes: null,
+                entity: {
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    refcollection: 'farms',
+                    label: 'SEASON HISTORY',
+                    labelShort: 'FARM-007',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                },
+                entityParent: null,
+                values: [
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farming_fertility',
+                        section: 'farming',
+                        label: 'farmInspection_farming_fertility',
+                        value: false
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_farming_fertility_what',
+                        valueJsonata: "$join($map(value, function($v) { $translate($v,'lists.organicManagementSoilFertilityMeasures') }), ', ')",
+                        section: 'farming',
+                        label: 'farmInspection_farming_fertility_what'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farming_buffer',
+                        section: 'farming',
+                        label: 'farmInspection_farming_buffer',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farming_cutting_trees',
+                        section: 'farming',
+                        label: 'farmInspection_farming_cutting_trees',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farming_destroy_wetlands',
+                        section: 'farming',
+                        label: 'farmInspection_farming_destroy_wetlands',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farming_protect_wetlands',
+                        section: 'farming',
+                        label: 'farmInspection_farming_protect_wetlands',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farming_soil_erosion',
+                        section: 'farming',
+                        label: 'farmInspection_farming_soil_erosion',
+                        value: false
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_farming_soil_erosion_measures',
+                        valueJsonata: "$join($map(value, function($v) { $translate($v,'lists.organicManagementSoilErosionMeasures') }), ', ')",
+                        section: 'farming',
+                        label: 'farmInspection_farming_soil_erosion_measures'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farming_biodiversity',
+                        section: 'farming',
+                        label: 'farmInspection_farming_biodiversity',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farming_national_parks',
+                        section: 'farming',
+                        label: 'farmInspection_farming_national_parks',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farming_weeds',
+                        section: 'farming',
+                        label: 'farmInspection_farming_weeds',
+                        value: false
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_farming_weeds_what',
+                        valueJsonata: "$join($map(value, function($v) { $translate($v,'lists.organicManagementWeedsManagement') }), ', ')",
+                        section: 'farming',
+                        label: 'farmInspection_farming_weeds_what'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farming_pests',
+                        section: 'farming',
+                        label: 'farmInspection_farming_pests',
+                        value: false
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_farming_pests_what',
+                        valueJsonata: "$join($map(value, function($v) { $translate($v,'lists.organicManagementPestsManagement') }), ', ')",
+                        section: 'farming',
+                        label: 'farmInspection_farming_pests_what'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farming_disease',
+                        section: 'farming',
+                        label: 'farmInspection_farming_disease',
+                        value: false
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_farming_disease_what',
+                        valueJsonata: "$join($map(value, function($v) { $translate($v,'lists.organicManagementDiseaseManagement') }), ', ')",
+                        section: 'farming',
+                        label: 'farmInspection_farming_disease_what'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farming_manure',
+                        section: 'farming',
+                        label: 'farmInspection_farming_manure',
+                        value: false
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_farming_manure_details',
+                        valueJsonata: "$join($map(properties.farmInspection_farming_manure_details, function($v) {'(type: ' & $v.farmInspection_farming_manure_type & ', quantity: ' & $v.farmInspection_farming_manure_quantity& ', decomposition: ' & $v.farmInspection_farming_manure_decomposition_time& ', turning: ' & $v.farmInspection_farming_manure_turning &')'}), \", \")",
+                        section: 'farming',
+                        label: 'farmInspection_farming_manure_details'
+                    }
+                ],
+                parentAuditActivity: null
+            },
+            {
+                properties: {
+                    customId: 'b25f9e5d-4704-4713-8aa2-77c33ea2804d'
+                },
+                isDeleted: false,
+                approvalStatus: 'NotSet',
+                reviewStatus: 'NotSet',
+                creationStatus: 'NotSet',
+                systemStatus: null,
+                isArchived: false,
+                enabled: true,
+                sourceSystem: null,
+                meta_workspace: 'master_latitude_waqar',
+                meta_organisation: 'latitude',
+                meta_configkey: 'ltc',
+                id: {
+                    id: 'b25f9e5d-4704-4713-8aa2-77c33ea2804d',
+                    refcollection: 'surveys',
+                    isPreviousVersion: false
+                },
+                createdDate: '2024-06-21T13:25:22.592Z',
+                updatedDate: '2024-06-21T13:25:22.592Z',
+                lastActivityDate: null,
+                createdBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                    refcollection: 'platformusers',
+                    label: 'waqar@orijin.io',
+                    labelShort: 'waqar@orijin.io',
+                    isPreviousVersion: false
+                },
+                updatedBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                    refcollection: 'platformusers',
+                    label: 'waqar@orijin.io',
+                    labelShort: 'waqar@orijin.io',
+                    isPreviousVersion: false
+                },
+                createdLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                updatedLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                activityName: 'AuditSurveyActivity4',
+                activityLabel: 'SurveyFarmPractises',
+                tags: [],
+                name: 'SurveyFarmPractises',
+                entityType: 'farm',
+                description: null,
+                notes: null,
+                entity: {
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    refcollection: 'farms',
+                    label: 'SEASON HISTORY',
+                    labelShort: 'FARM-007',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                },
+                entityParent: null,
+                values: [
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farmpractises_organic',
+                        section: 'farmpractises',
+                        label: 'farmInspection_farmpractises_organic',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farmpractises_ripefruit',
+                        section: 'farmpractises',
+                        label: 'farmInspection_farmpractises_ripefruit',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farmpractises_pruning',
+                        section: 'farmpractises',
+                        label: 'farmInspection_farmpractises_pruning',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farmpractises_basins',
+                        section: 'farmpractises',
+                        label: 'farmInspection_farmpractises_basins',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farmpractises_basins_hygiene',
+                        section: 'farmpractises',
+                        label: 'farmInspection_farmpractises_basins_hygiene'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farmpractises_drying_tarpaulin',
+                        section: 'farmpractises',
+                        label: 'farmInspection_farmpractises_drying_tarpaulin',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farmpractises_store_packaging_chemicals',
+                        section: 'farmpractises',
+                        label: 'farmInspection_farmpractises_store_packaging_chemicals',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farmpractises_off_farm',
+                        section: 'farmpractises',
+                        label: 'farmInspection_farmpractises_off_farm',
+                        value: false
+                    },
+                    {
+                        widget: null,
+                        name: 'farmInspection_farmpractises_off_farm_inputs',
+                        valueJsonata: "$join($map(value, function($v) {'(type: ' & $v.farmInspection_farmpractises_off_farm_input_type & ', auth: ' & $v.farmInspection_farmpractises_off_farm_input_authorisation &')'}), \", \")",
+                        section: 'farmpractises',
+                        label: 'farmInspection_farmpractises_off_farm_inputs'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farmpractises_off_farm_treated',
+                        section: 'farmpractises',
+                        label: 'farmInspection_farmpractises_off_farm_treated'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_farmpractises_off_farm_proof',
+                        section: 'farmpractises',
+                        label: 'farmInspection_farmpractises_off_farm_proof'
+                    }
+                ],
+                parentAuditActivity: null
+            },
+            {
+                properties: {
+                    customId: '999a1ba4-3f4d-4e10-9cbb-71887dcf0443'
+                },
+                isDeleted: false,
+                approvalStatus: 'NotSet',
+                reviewStatus: 'NotSet',
+                creationStatus: 'NotSet',
+                systemStatus: null,
+                isArchived: false,
+                enabled: true,
+                sourceSystem: null,
+                meta_workspace: 'master_latitude_waqar',
+                meta_organisation: 'latitude',
+                meta_configkey: 'ltc',
+                id: {
+                    id: '999a1ba4-3f4d-4e10-9cbb-71887dcf0443',
+                    refcollection: 'surveys',
+                    isPreviousVersion: false
+                },
+                createdDate: '2024-06-21T13:25:22.592Z',
+                updatedDate: '2024-06-21T13:25:22.592Z',
+                lastActivityDate: null,
+                createdBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                    refcollection: 'platformusers',
+                    label: 'waqar@orijin.io',
+                    labelShort: 'waqar@orijin.io',
+                    isPreviousVersion: false
+                },
+                updatedBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                    refcollection: 'platformusers',
+                    label: 'waqar@orijin.io',
+                    labelShort: 'waqar@orijin.io',
+                    isPreviousVersion: false
+                },
+                createdLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                updatedLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                activityName: 'AuditSurveyActivity3',
+                activityLabel: 'SurveyHygiene',
+                tags: [],
+                name: 'SurveyHygiene',
+                entityType: 'farm',
+                description: null,
+                notes: null,
+                entity: {
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    refcollection: 'farms',
+                    label: 'SEASON HISTORY',
+                    labelShort: 'FARM-007',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                },
+                entityParent: null,
+                values: [
+                    {
+                        widget: null,
+                        name: 'farmInspection_hygiene_waste_drinking_water',
+                        valueJsonata: "$translate(value,'lists.waterAccessTypes')",
+                        section: 'hygiene_waste',
+                        label: 'farmInspection_hygiene_waste_drinking_water',
+                        value: 'YesTested'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_hygiene_waste_home_hygiene',
+                        section: 'hygiene_waste',
+                        label: 'farmInspection_hygiene_waste_home_hygiene',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_hygiene_waste_toilet',
+                        section: 'hygiene_waste',
+                        label: 'farmInspection_hygiene_waste_toilet',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_hygiene_waste_toilet_soap',
+                        section: 'hygiene_waste',
+                        label: 'farmInspection_hygiene_waste_toilet_soap'
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_hygiene_waste_pitlatrine_river',
+                        section: 'hygiene_waste',
+                        label: 'farmInspection_hygiene_waste_pitlatrine_river',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_hygiene_waste_polluting_waters',
+                        section: 'hygiene_waste',
+                        label: 'farmInspection_hygiene_waste_polluting_waters',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_hygiene_waste_waste_disposal',
+                        section: 'hygiene_waste',
+                        label: 'farmInspection_hygiene_waste_waste_disposal',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_hygiene_waste_burn_crop_residue',
+                        section: 'hygiene_waste',
+                        label: 'farmInspection_hygiene_waste_burn_crop_residue',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_hygiene_waste_crop_residue_use',
+                        section: 'hygiene_waste',
+                        label: 'farmInspection_hygiene_waste_crop_residue_use',
+                        value: false
+                    },
+                    {
+                        widget: 'boolean',
+                        name: 'farmInspection_hygiene_waste_waste_hazard',
+                        section: 'hygiene_waste',
+                        label: 'farmInspection_hygiene_waste_waste_hazard',
+                        value: false
+                    }
+                ],
+                parentAuditActivity: null
+            }
+        ],
+        name: 'SEASON HISTORY',
+        type: null,
+        parentFacility: {
+            id: 'b6d7aabb-7268-449e-b755-eae819ade700',
+            refcollection: 'facilities',
+            label: 'BIIMALA',
+            labelShort: 'BTO-BML',
+            authTag: 'ALL',
+            qrCode: '123',
+            shortCode: '123',
+            type: 'CollectionPoint',
+            isPreviousVersion: false
+        },
+        parentFacilityParent: null,
+        parentFacilityParentParent: null,
+        parentFacilityFull: {
+            properties: {
+                idAuthTag: 'ALL',
+                idLabelShort: 'BTO-BML',
+                id: {
+                    authTag: 'ALL',
+                    qrCode: '123',
+                    refcollection: 'facilities',
+                    labelShort: 'BTO-BML',
+                    id: 'b6d7aabb-7268-449e-b755-eae819ade700',
+                    label: 'BIIMALA',
+                    isPreviousVersion: false,
+                    type: 'CollectionPoint',
+                    shortCode: '123'
+                },
+                customId: 'b6d7aabb-7268-449e-b755-eae819ade700'
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: null,
+            meta_workspace: 'master_latitude_waqar',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: 'b6d7aabb-7268-449e-b755-eae819ade700',
+                refcollection: 'facilities',
+                label: 'BIIMALA',
+                labelShort: 'BTO-BML',
+                authTag: 'ALL',
+                qrCode: '123',
+                shortCode: '123',
+                type: 'CollectionPoint',
+                isPreviousVersion: false
+            },
+            createdDate: '2023-12-03T08:40:30.581Z',
+            updatedDate: '2024-03-30T15:26:50.547Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.1882624,
+                    lon: 24.8774656
+                },
+                altitude: 0,
+                accuracy: null,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            name: 'BIIMALA',
+            type: 'CollectionPoint',
+            parentFacility: null,
+            parentFacilityParent: null,
+            parentFacilityParentParent: null,
+            parentFacilityFull: null,
+            parentLocation: null,
+            parentLocationCode: null,
+            parentLocationName: null,
+            parentLocationParent: null,
+            parentLocationParentCode: null,
+            parentLocationParentName: null,
+            parentLocationParentParent: {
+                id: '774362bf-2334-400f-b74b-bf9706dc416b',
+                refcollection: 'locations',
+                label: 'BUNDIBUGYO TOWN COUNCIL',
+                labelShort: 'BTO',
+                authTag: 'ALL',
+                qrCode: '123',
+                shortCode: '123',
+                type: 'SubCounty',
+                isPreviousVersion: false
+            },
+            parentLocationParentParentCode: null,
+            parentLocationParentParentName: null,
+            parentLocationParentParentParent: {
+                id: '606e1d79-1178-45ed-b713-47b9c6a34ebd',
+                refcollection: 'locations',
+                label: 'BUNDIBUGYO',
+                labelShort: 'BDG',
+                authTag: 'BDG',
+                qrCode: '123',
+                shortCode: '123',
+                type: 'District',
+                isPreviousVersion: false
+            },
+            parentLocationParentParentParentCode: null,
+            parentLocationParentParentParentName: null,
+            parentLocationFull: null,
+            mainContactPersonFull: null,
+            location: null,
+            address: null,
+            polygon: null,
+            polygonFull: null,
+            contactFirstName: null,
+            contactIdentificationNumber: null,
+            contactDobApproximate: null,
+            contactMaritalStatus: null,
+            contactIdentificationNumberType: null,
+            contactDob: null,
+            nickName: null,
+            contactEducation: null,
+            contactHouseHoldMemberCount: null,
+            contactLastName: null,
+            contactMiddleName: null,
+            contactGender: null
+        },
+        parentLocation: null,
+        parentLocationCode: null,
+        parentLocationName: null,
+        parentLocationParent: null,
+        parentLocationParentCode: null,
+        parentLocationParentName: null,
+        parentLocationParentParent: {
+            id: '1ce86ef5-7e7a-489e-aa8f-ea9c9edbe620',
+            refcollection: 'locations',
+            label: 'BIREMBO',
+            labelShort: 'BII',
+            authTag: 'ALL',
+            qrCode: '123',
+            shortCode: '123',
+            type: 'SubCounty',
+            isPreviousVersion: false
+        },
+        parentLocationParentParentCode: 'BBD',
+        parentLocationParentParentName: 'BUBANDI',
+        parentLocationParentParentParent: {
+            id: '606e1d79-1178-45ed-b713-47b9c6a34ebd',
+            refcollection: 'locations',
+            label: 'BUNDIBUGYO',
+            labelShort: 'BDG',
+            authTag: 'BDG',
+            qrCode: '123',
+            shortCode: '123',
+            type: 'District',
+            isPreviousVersion: false
+        },
+        parentLocationParentParentParentCode: 'BDG',
+        parentLocationParentParentParentName: 'BUNDIBUGYO',
+        parentLocationFull: null,
+        mainContactPerson: {
+            id: 'clxn3e2qm001kfmxv5kgk0cap',
+            refcollection: 'users',
+            label: 'SEASON HISTORY',
+            labelShort: 'FARM-007',
+            qrCode: '123',
+            shortCode: '123',
+            isPreviousVersion: false
+        },
+        mainContactPersonFull: {
+            properties: {
+                idLabelShort: 'FARM-007',
+                id: {
+                    refcollection: 'users',
+                    labelShort: 'FARM-007',
+                    id: 'clxn3e2qm001kfmxv5kgk0cap',
+                    label: 'SEASON HISTORY',
+                    isPreviousVersion: false
+                },
+                customId: 'clxn3e2qm001kfmxv5kgk0cap',
+                picture: [],
+                auditActivityId: {
+                    qrCode: '123',
+                    refcollection: 'auditactivities',
+                    chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                    id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                    label: 'AUDIT-21062022',
+                    isPreviousVersion: false,
+                    shortCode: '123',
+                    workflowId: {
+                        refcollection: 'workflowscopes_wip',
+                        id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                        isPreviousVersion: false
+                    }
+                }
+            },
+            isDeleted: false,
+            approvalStatus: 'NotSet',
+            reviewStatus: 'NotSet',
+            creationStatus: 'NotSet',
+            systemStatus: null,
+            isArchived: false,
+            enabled: true,
+            sourceSystem: 'V2',
+            meta_workspace: 'master_latitude_waqar',
+            meta_organisation: 'latitude',
+            meta_configkey: 'ltc',
+            id: {
+                id: 'clxn3e2qm001kfmxv5kgk0cap',
+                refcollection: 'users',
+                label: 'SEASON HISTORY',
+                labelShort: 'FARM-007',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            },
+            createdDate: '2024-06-21T13:25:22.592Z',
+            updatedDate: '2024-06-21T13:25:22.592Z',
+            lastActivityDate: null,
+            createdBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            updatedBy: {
+                id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                refcollection: 'platformusers',
+                label: 'waqar@orijin.io',
+                labelShort: 'waqar@orijin.io',
+                isPreviousVersion: false
+            },
+            createdLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            updatedLocation: {
+                latLong: {
+                    lat: 60.24962529560727,
+                    lon: 24.97167293249805
+                },
+                altitude: null,
+                accuracy: 62,
+                altitudeAccuracy: null,
+                speed: null,
+                altitudeMin: null,
+                altitudeMax: null,
+                name: null
+            },
+            type: 'Farmer',
+            email: null,
+            phone: '778434715',
+            phone2: null,
+            name: 'SEASON HISTORY',
+            firstName: 'GWENDO',
+            middleName: null,
+            lastName: 'STEFAN',
+            nickName: null,
+            gender: 'Female',
+            dob: '1980-12-10T00:00:00.000Z',
+            dobApproximate: false,
+            identificationNumber: 'CF800011111',
+            identificationNumberType: 'NationalId',
+            education: 'Secondary',
+            maritalStatus: 'Married',
+            houseHoldMemberCount: null,
+            picture: {
+                id: '6eef896b-955b-4669-a949-a5d60f98f0e7',
+                refcollection: 'documents',
+                isPreviousVersion: false
+            },
+            pictureFull: {
+                properties: {
+                    customId: '6eef896b-955b-4669-a949-a5d60f98f0e7'
+                },
+                isDeleted: false,
+                approvalStatus: 'NotSet',
+                reviewStatus: 'NotSet',
+                creationStatus: 'NotSet',
+                systemStatus: null,
+                isArchived: false,
+                enabled: true,
+                sourceSystem: null,
+                meta_workspace: 'master_latitude_waqar',
+                meta_organisation: 'latitude',
+                meta_configkey: 'ltc',
+                id: {
+                    id: '6eef896b-955b-4669-a949-a5d60f98f0e7',
+                    refcollection: 'documents',
+                    isPreviousVersion: false
+                },
+                createdDate: '2024-06-21T13:00:58.287Z',
+                updatedDate: '2024-06-21T13:00:58.287Z',
+                lastActivityDate: null,
+                createdBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                    refcollection: 'platformusers',
+                    label: 'waqar@orijin.io',
+                    labelShort: 'waqar@orijin.io',
+                    isPreviousVersion: false
+                },
+                operatedBy: null,
+                updatedBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                    refcollection: 'platformusers',
+                    label: 'waqar@orijin.io',
+                    labelShort: 'waqar@orijin.io',
+                    isPreviousVersion: false
+                },
+                name: 'Screenshot 2024-05-11 at 14.01.44.png',
+                type: 'image/png',
+                url: '/o',
+                originalUploadName: 'Screenshot 2024-05-11 at 14.01.44.png',
+                storagePath: 'gs://orijin-dev.appspot.com/workspaces/master_latitude_waqar/files/documents/6eef896b-955b-4669-a949-a5d60f98f0e7-24-06-21-13:01-0f96253f-36a4-4bbe-ac3b-29ec7f892aeeScreenshot%202024-05-11%20at%2014.01.44.png',
+                publicUrl: 'https://storage.googleapis.com/orijin-dev.appspot.com/workspaces%2Fmaster_latitude_waqar%2Ffiles%2Fdocuments%2F6eef896b-955b-4669-a949-a5d60f98f0e7-24-06-21-13%3A01-0f96253f-36a4-4bbe-ac3b-29ec7f892aeeScreenshot%202024-05-11%20at%2014.01.44.png',
+                lastModified: '2024-05-11T11:01:49.756Z',
+                targetProperty: 'picture',
+                sourceProperty: 'picture',
+                uid: '0d8baef1-635a-4ae0-a80f-a832e3d100be',
+                index: 0,
+                size: 495719,
+                data: null,
+                isSliced: false,
+                chunks: null
+            },
+            contactPersonForFacility: {
+                id: 'clxn3e2r8002mfmxv5sfmuopu',
+                refcollection: 'farms',
+                label: 'SEASON HISTORY',
+                labelShort: 'FARM-007',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            },
+            parentFacility: null,
+            parentFacilityParent: null,
+            parentFacilityParentParent: null,
+            parentLocation: null,
+            parentLocationCode: null,
+            parentLocationName: null,
+            parentLocationParent: null,
+            parentLocationParentCode: null,
+            parentLocationParentName: null,
+            parentLocationParentParent: null,
+            parentLocationParentParentCode: null,
+            parentLocationParentParentName: null,
+            parentLocationParentParentParent: null,
+            parentLocationParentParentParentCode: null,
+            parentLocationParentParentParentName: null
+        },
+        location: {
+            latLong: {
+                lat: 60.24962521410096,
+                lon: 24.971673072638996
+            },
+            altitude: 2,
+            accuracy: null,
+            altitudeAccuracy: null,
+            speed: null,
+            altitudeMin: null,
+            altitudeMax: null,
+            name: null
+        },
+        address: null,
+        geodatas: null,
+        polygon: null,
+        polygonFull: null,
+        areaTotal: 4.11,
+        certificationStatus: 'NotSet',
+        isOrganic: true,
+        complianceImplementationDeadline: null,
+        numberOfPlantsTotal: 22,
+        areaOrganic: 0,
+        areaNonOrganic: 0,
+        areaPermanentCrop: 0,
+        areaAnnualCrop: 0,
+        cultivationStartDate: null,
+        varieties: [
+            {
+                id: '340e527e-f17c-436d-beff-40e83cfbb8df',
+                refcollection: 'varieties',
+                label: 'In Transition FRESH Cocoa',
+                labelShort: 'ITC',
+                authTag: 'ALL',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            }
+        ],
+        varietiesFull: [
+            {
+                properties: {
+                    idAuthTag: 'ALL',
+                    idLabelShort: 'ITC',
+                    id: {
+                        authTag: 'ALL',
+                        qrCode: '123',
+                        refcollection: 'varieties',
+                        labelShort: 'ITC',
+                        id: '340e527e-f17c-436d-beff-40e83cfbb8df',
+                        label: 'In Transition Dry Cocoa',
+                        isPreviousVersion: false,
+                        shortCode: '123'
+                    },
+                    customId: '340e527e-f17c-436d-beff-40e83cfbb8df'
+                },
+                isDeleted: false,
+                approvalStatus: 'NotSet',
+                reviewStatus: 'NotSet',
+                creationStatus: 'NotSet',
+                systemStatus: null,
+                isArchived: false,
+                enabled: true,
+                sourceSystem: null,
+                meta_workspace: 'master_latitude_waqar',
+                meta_organisation: 'latitude',
+                meta_configkey: 'ltc',
+                id: {
+                    id: '340e527e-f17c-436d-beff-40e83cfbb8df',
+                    refcollection: 'varieties',
+                    label: 'In Transition FRESH Cocoa',
+                    labelShort: 'ITC',
+                    authTag: 'ALL',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                },
+                createdDate: '2023-12-02T19:45:35.160Z',
+                updatedDate: '2024-06-18T11:11:06.462Z',
+                lastActivityDate: null,
+                createdBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                    refcollection: 'platformusers',
+                    label: 'waqar@orijin.io',
+                    labelShort: 'waqar@orijin.io',
+                    isPreviousVersion: false
+                },
+                updatedBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                    refcollection: 'platformusers',
+                    label: 'waqar@orijin.io',
+                    labelShort: 'waqar@orijin.io',
+                    isPreviousVersion: false
+                },
+                updatedLocation: {
+                    latLong: {
+                        lat: 60.1849856,
+                        lon: 24.8741888
+                    },
+                    altitude: 0,
+                    accuracy: null,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                name: 'In Transition FRESH Cocoa',
+                grade: null,
+                organic: false,
+                dry: false
+            }
+        ],
+        primaryCrops: [],
+        secondaryCrops: [
+            'Cassava'
+        ],
+        yieldEstimateRaw: 222,
+        season: {
+            id: '0f81d551-e601-4b93-bdb3-5e1258a6bb10',
+            refcollection: 'seasons',
+            label: '2023/24',
+            labelShort: '2023/24',
+            authTag: 'ALL',
+            qrCode: '123',
+            shortCode: '123',
+            isPreviousVersion: false
+        },
+        contractDate: null,
+        registrationDate: null,
+        certificationStartDate: null,
+        lastChemicalUseDate: null,
+        lastInspectionDate: null,
+        firstVisitDate: null,
+        trainings: null,
+        contacts: [
+            {
+                id: 'b66085b0-6f86-4d17-ab93-e0fa67909c50',
+                refcollection: 'contacts',
+                label: 'SEASON HISTORY +2562222233',
+                qrCode: '123',
+                shortCode: '123',
+                isPreviousVersion: false
+            }
+        ],
+        contactsFull: [
+            {
+                properties: {
+                    customId: 'b66085b0-6f86-4d17-ab93-e0fa67909c50',
+                    auditActivityId: {
+                        qrCode: '123',
+                        refcollection: 'auditactivities',
+                        chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                        id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                        label: 'AUDIT-21062022',
+                        isPreviousVersion: false,
+                        shortCode: '123',
+                        workflowId: {
+                            refcollection: 'workflowscopes_wip',
+                            id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                            isPreviousVersion: false
+                        }
+                    }
+                },
+                isDeleted: false,
+                approvalStatus: 'NotSet',
+                reviewStatus: 'NotSet',
+                creationStatus: 'NotSet',
+                systemStatus: null,
+                isArchived: false,
+                enabled: true,
+                sourceSystem: null,
+                meta_workspace: 'master_latitude_waqar',
+                meta_organisation: 'latitude',
+                meta_configkey: 'ltc',
+                id: {
+                    id: 'b66085b0-6f86-4d17-ab93-e0fa67909c50',
+                    refcollection: 'contacts',
+                    label: 'SEASON HISTORY +2562222233',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                },
+                createdDate: '2024-06-21T13:25:22.592Z',
+                updatedDate: '2024-06-21T13:25:22.592Z',
+                lastActivityDate: null,
+                createdBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                    refcollection: 'platformusers',
+                    label: 'waqar@orijin.io',
+                    labelShort: 'waqar@orijin.io',
+                    isPreviousVersion: false
+                },
+                updatedBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                    refcollection: 'platformusers',
+                    label: 'waqar@orijin.io',
+                    labelShort: 'waqar@orijin.io',
+                    isPreviousVersion: false
+                },
+                createdLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                updatedLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                firstName: 'GWENDO',
+                lastName: 'STEFAN',
+                phone: '+2562222233',
+                registeredUnderPrincipalsName: true,
+                registeredForMobileMoney: true,
+                entity: {
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    refcollection: 'farms',
+                    label: 'SEASON HISTORY',
+                    labelShort: 'FARM-007',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                },
+                wallet: null
+            }
+        ],
+        certifications: null,
+        animalCounts: [
+            {
+                id: 'd7b4d369-32f0-417c-8e02-17c94130f112',
+                refcollection: 'animalcounts',
+                label: 'Cow',
+                qrCode: '123',
+                shortCode: '123',
+                type: 'Cow',
+                isPreviousVersion: false
+            }
+        ],
+        animalCountsFull: [
+            {
+                properties: {
+                    customId: 'd7b4d369-32f0-417c-8e02-17c94130f112',
+                    auditActivityId: {
+                        qrCode: '123',
+                        refcollection: 'auditactivities',
+                        chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                        id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                        label: 'AUDIT-21062022',
+                        isPreviousVersion: false,
+                        shortCode: '123',
+                        workflowId: {
+                            refcollection: 'workflowscopes_wip',
+                            id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                            isPreviousVersion: false
+                        }
+                    }
+                },
+                isDeleted: false,
+                approvalStatus: 'NotSet',
+                reviewStatus: 'NotSet',
+                creationStatus: 'NotSet',
+                systemStatus: null,
+                isArchived: false,
+                enabled: true,
+                sourceSystem: null,
+                meta_workspace: 'master_latitude_waqar',
+                meta_organisation: 'latitude',
+                meta_configkey: 'ltc',
+                id: {
+                    id: 'd7b4d369-32f0-417c-8e02-17c94130f112',
+                    refcollection: 'animalcounts',
+                    label: 'Cow',
+                    qrCode: '123',
+                    shortCode: '123',
+                    type: 'Cow',
+                    isPreviousVersion: false
+                },
+                createdDate: '2024-06-21T13:25:22.592Z',
+                updatedDate: '2024-06-21T13:25:22.592Z',
+                lastActivityDate: null,
+                createdBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                    refcollection: 'platformusers',
+                    label: 'waqar@orijin.io',
+                    labelShort: 'waqar@orijin.io',
+                    isPreviousVersion: false
+                },
+                updatedBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                    refcollection: 'platformusers',
+                    label: 'waqar@orijin.io',
+                    labelShort: 'waqar@orijin.io',
+                    isPreviousVersion: false
+                },
+                createdLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                updatedLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                type: 'Cow',
+                count: 2,
+                isOrganic: true,
+                usedForManure: true,
+                description: null,
+                notes: null,
+                entity: {
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    refcollection: 'farms',
+                    label: 'SEASON HISTORY',
+                    labelShort: 'FARM-007',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                }
+            }
+        ],
+        complianceItems: null,
+        plots: [
+            {
+                id: 'eb83b85e-9c3f-4dea-b734-7c5dbfb5fcd1',
+                refcollection: 'plots',
+                label: 'P1',
+                labelShort: 'FARM-007 - P1',
+                qrCode: '123',
+                shortCode: '123',
+                type: 'Permanent',
+                isPreviousVersion: false
+            }
+        ],
+        plotsFull: [
+            {
+                properties: {
+                    idLabelShort: 'FARM-007 - P1',
+                    customId: 'eb83b85e-9c3f-4dea-b734-7c5dbfb5fcd1',
+                    auditActivityId: {
+                        qrCode: '123',
+                        refcollection: 'auditactivities',
+                        chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                        id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                        label: 'AUDIT-21062022',
+                        isPreviousVersion: false,
+                        shortCode: '123',
+                        workflowId: {
+                            refcollection: 'workflowscopes_wip',
+                            id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                            isPreviousVersion: false
+                        }
+                    }
+                },
+                isDeleted: false,
+                approvalStatus: 'NotSet',
+                reviewStatus: 'NotSet',
+                creationStatus: 'NotSet',
+                systemStatus: null,
+                isArchived: false,
+                enabled: true,
+                sourceSystem: null,
+                meta_workspace: 'master_latitude_waqar',
+                meta_organisation: 'latitude',
+                meta_configkey: 'ltc',
+                id: {
+                    id: 'eb83b85e-9c3f-4dea-b734-7c5dbfb5fcd1',
+                    refcollection: 'plots',
+                    label: 'P1',
+                    labelShort: 'FARM-007 - P1',
+                    qrCode: '123',
+                    shortCode: '123',
+                    type: 'Permanent',
+                    isPreviousVersion: false
+                },
+                createdDate: '2024-06-21T13:25:22.592Z',
+                updatedDate: '2024-06-21T13:25:22.592Z',
+                lastActivityDate: null,
+                createdBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                    refcollection: 'platformusers',
+                    label: 'waqar@orijin.io',
+                    labelShort: 'waqar@orijin.io',
+                    isPreviousVersion: false
+                },
+                updatedBy: {
+                    id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                    refcollection: 'platformusers',
+                    label: 'waqar@orijin.io',
+                    labelShort: 'waqar@orijin.io',
+                    isPreviousVersion: false
+                },
+                createdLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                updatedLocation: {
+                    latLong: {
+                        lat: 60.24962529560727,
+                        lon: 24.97167293249805
+                    },
+                    altitude: null,
+                    accuracy: 62,
+                    altitudeAccuracy: null,
+                    speed: null,
+                    altitudeMin: null,
+                    altitudeMax: null,
+                    name: null
+                },
+                surveys: [
+                    {
+                        id: '441756e5-b718-413a-a7bf-6b782411503b',
+                        refcollection: 'surveys',
+                        isPreviousVersion: false
+                    }
+                ],
+                surveysFull: [
+                    {
+                        properties: {
+                            customId: '441756e5-b718-413a-a7bf-6b782411503b'
+                        },
+                        isDeleted: false,
+                        approvalStatus: 'NotSet',
+                        reviewStatus: 'NotSet',
+                        creationStatus: 'NotSet',
+                        systemStatus: null,
+                        isArchived: false,
+                        enabled: true,
+                        sourceSystem: null,
+                        meta_workspace: 'master_latitude_waqar',
+                        meta_organisation: 'latitude',
+                        meta_configkey: 'ltc',
+                        id: {
+                            id: '441756e5-b718-413a-a7bf-6b782411503b',
+                            refcollection: 'surveys',
+                            isPreviousVersion: false
+                        },
+                        createdDate: '2024-06-21T13:25:22.592Z',
+                        updatedDate: '2024-06-21T13:25:22.592Z',
+                        lastActivityDate: null,
+                        createdBy: {
+                            id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                            refcollection: 'platformusers',
+                            label: 'waqar@orijin.io',
+                            labelShort: 'waqar@orijin.io',
+                            isPreviousVersion: false
+                        },
+                        updatedBy: {
+                            id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                            refcollection: 'platformusers',
+                            label: 'waqar@orijin.io',
+                            labelShort: 'waqar@orijin.io',
+                            isPreviousVersion: false
+                        },
+                        createdLocation: {
+                            latLong: {
+                                lat: 60.24962529560727,
+                                lon: 24.97167293249805
+                            },
+                            altitude: null,
+                            accuracy: 62,
+                            altitudeAccuracy: null,
+                            speed: null,
+                            altitudeMin: null,
+                            altitudeMax: null,
+                            name: null
+                        },
+                        updatedLocation: {
+                            latLong: {
+                                lat: 60.24962529560727,
+                                lon: 24.97167293249805
+                            },
+                            altitude: null,
+                            accuracy: 62,
+                            altitudeAccuracy: null,
+                            speed: null,
+                            altitudeMin: null,
+                            altitudeMax: null,
+                            name: null
+                        },
+                        activityName: 'PlotSurvey',
+                        activityLabel: 'PlotSurvey',
+                        name: 'PlotSurvey',
+                        entityType: 'Plot',
+                        description: null,
+                        notes: null,
+                        entity: {
+                            id: 'eb83b85e-9c3f-4dea-b734-7c5dbfb5fcd1',
+                            refcollection: 'plots',
+                            label: 'P1',
+                            labelShort: 'FARM-007 - P1',
+                            qrCode: '123',
+                            shortCode: '123',
+                            type: 'Permanent',
+                            isPreviousVersion: false
+                        },
+                        entityParent: {
+                            id: 'clxn3e2r8002mfmxv5sfmuopu',
+                            refcollection: 'farms',
+                            label: 'SEASON HISTORY',
+                            labelShort: 'FARM-007',
+                            qrCode: '123',
+                            shortCode: '123',
+                            isPreviousVersion: false
+                        },
+                        values: [
+                            {
+                                widget: 'boolean',
+                                name: 'farmInspection_plotsurvey_lastyear_sell',
+                                section: 'plotsurvey',
+                                label: 'farmInspection_plotsurvey_lastyear_sell',
+                                value: true
+                            },
+                            {
+                                widget: null,
+                                name: 'farmInspection_plotsurvey_previous_year_sell_quantity',
+                                section: 'plotsurvey',
+                                label: 'farmInspection_plotsurvey_previous_year_sell_quantity',
+                                value: 2
+                            },
+                            {
+                                widget: 'boolean',
+                                name: 'farmInspection_plotsurvey_stumping',
+                                section: 'plotsurvey',
+                                label: 'farmInspection_plotsurvey_stumping',
+                                value: true
+                            },
+                            {
+                                widget: 'boolean',
+                                name: 'farmInspection_plotsurvey_pests_yesno',
+                                section: 'plotsurvey',
+                                label: 'farmInspection_plotsurvey_pests_yesno',
+                                value: false
+                            },
+                            {
+                                widget: null,
+                                name: 'farmInspection_plotsurvey_pests',
+                                valueJsonata: "$join($map(value, function($v) { $translate($v,'lists.organicManagementPests') }), ', ')",
+                                section: 'plotsurvey',
+                                label: 'farmInspection_plotsurvey_pests'
+                            },
+                            {
+                                widget: 'boolean',
+                                name: 'farmInspection_plotsurvey_inorganic_fertilisers_yesno',
+                                section: 'plotsurvey',
+                                label: 'farmInspection_plotsurvey_inorganic_fertilisers_yesno',
+                                value: false
+                            },
+                            {
+                                widget: null,
+                                name: 'farmInspection_plotsurvey_inorganic_fertilisers',
+                                valueJsonata: "$join($map(value, function($v) { $translate($v,'lists.organicManagementInorganicFertilizers') }), ', ')",
+                                section: 'plotsurvey',
+                                label: 'farmInspection_plotsurvey_inorganic_fertilisers'
+                            },
+                            {
+                                widget: 'boolean',
+                                name: 'farmInspection_plotsurvey_herbicides_yesno',
+                                section: 'plotsurvey',
+                                label: 'farmInspection_plotsurvey_herbicides_yesno',
+                                value: false
+                            },
+                            {
+                                widget: null,
+                                name: 'farmInspection_plotsurvey_herbicides',
+                                valueJsonata: "$join($map(value, function($v) { $translate($v,'lists.organicManagementHerbicides') }), ', ')",
+                                section: 'plotsurvey',
+                                label: 'farmInspection_plotsurvey_herbicides'
+                            },
+                            {
+                                widget: 'boolean',
+                                name: 'farmInspection_plotsurvey_pesticides_yesno',
+                                section: 'plotsurvey',
+                                label: 'farmInspection_plotsurvey_pesticides_yesno',
+                                value: false
+                            },
+                            {
+                                widget: null,
+                                name: 'farmInspection_plotsurvey_pesticides',
+                                valueJsonata: "$join($map(value, function($v) { $translate($v,'lists.organicManagementPesticides') }), ', ')",
+                                section: 'plotsurvey',
+                                label: 'farmInspection_plotsurvey_pesticides'
+                            },
+                            {
+                                widget: 'boolean',
+                                name: 'farmInspection_plotsurvey_fungicides_yesno',
+                                section: 'plotsurvey',
+                                label: 'farmInspection_plotsurvey_fungicides_yesno',
+                                value: false
+                            },
+                            {
+                                widget: null,
+                                name: 'farmInspection_plotsurvey_fungicides',
+                                valueJsonata: "$join($map(value, function($v) { $translate($v,'lists.organicManagementFungicides') }), ', ')",
+                                section: 'plotsurvey',
+                                label: 'farmInspection_plotsurvey_fungicides'
+                            }
+                        ],
+                        parentAuditActivity: null
+                    }
+                ],
+                isOrganic: true,
+                interCropped: true,
+                isActive: true,
+                principalOwnsLand: true,
+                principalLeasesLand: null,
+                hasRightToLand: null,
+                hasLandTitle: 'true',
+                ownerName: null,
+                establishedBefore2020: true,
+                hasShadeTrees: null,
+                distanceToForestKnown: true,
+                distanceToForest: '22',
+                traditionalOwners: true,
+                isDecifientOfNutrition: null,
+                shadeAmount: [
+                    'NoShade'
+                ],
+                landInclination: [
+                    'Horizontal'
+                ],
+                shannonIndex: null,
+                evennessIndex: null,
+                name: 'P1',
+                type: 'Permanent',
+                numberOfPlants: null,
+                numberOfPlantsProductive: null,
+                numberOfPlantsNonProductive: null,
+                numberOfPlantsYoung: null,
+                numberOfPlantsStumped: null,
+                numberOfPlantsTotal: 22,
+                numberOfPlantsShade: null,
+                averageAgeOfPlants: 22,
+                minAgeOfPlants: null,
+                maxAgeOfPlants: null,
+                areaCrop: null,
+                areaOrganic: null,
+                areaSanctioned: null,
+                areaInConversion: null,
+                areaTotal: null,
+                areaTotalManual: 33,
+                notes: null,
+                cultivationStartDate: '2024-05-20T21:00:00.000Z',
+                registrationDate: null,
+                lastChemicalUseDate: null,
+                lastInspectionDate: null,
+                varieties: [
+                    {
+                        id: '340e527e-f17c-436d-beff-40e83cfbb8df',
+                        refcollection: 'varieties',
+                        label: 'In Transition FRESH Cocoa',
+                        labelShort: 'ITC',
+                        authTag: 'ALL',
+                        qrCode: '123',
+                        shortCode: '123',
+                        isPreviousVersion: false
+                    }
+                ],
+                varietiesFull: [
+                    {
+                        properties: {
+                            idAuthTag: 'ALL',
+                            idLabelShort: 'ITC',
+                            id: {
+                                authTag: 'ALL',
+                                qrCode: '123',
+                                refcollection: 'varieties',
+                                labelShort: 'ITC',
+                                id: '340e527e-f17c-436d-beff-40e83cfbb8df',
+                                label: 'In Transition Dry Cocoa',
+                                isPreviousVersion: false,
+                                shortCode: '123'
+                            },
+                            customId: '340e527e-f17c-436d-beff-40e83cfbb8df'
+                        },
+                        isDeleted: false,
+                        approvalStatus: 'NotSet',
+                        reviewStatus: 'NotSet',
+                        creationStatus: 'NotSet',
+                        systemStatus: null,
+                        isArchived: false,
+                        enabled: true,
+                        sourceSystem: null,
+                        meta_workspace: 'master_latitude_waqar',
+                        meta_organisation: 'latitude',
+                        meta_configkey: 'ltc',
+                        id: {
+                            id: '340e527e-f17c-436d-beff-40e83cfbb8df',
+                            refcollection: 'varieties',
+                            label: 'In Transition FRESH Cocoa',
+                            labelShort: 'ITC',
+                            authTag: 'ALL',
+                            qrCode: '123',
+                            shortCode: '123',
+                            isPreviousVersion: false
+                        },
+                        createdDate: '2023-12-02T19:45:35.160Z',
+                        updatedDate: '2024-06-18T11:11:06.462Z',
+                        lastActivityDate: null,
+                        createdBy: {
+                            id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                            refcollection: 'platformusers',
+                            label: 'waqar@orijin.io',
+                            labelShort: 'waqar@orijin.io',
+                            isPreviousVersion: false
+                        },
+                        updatedBy: {
+                            id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                            refcollection: 'platformusers',
+                            label: 'waqar@orijin.io',
+                            labelShort: 'waqar@orijin.io',
+                            isPreviousVersion: false
+                        },
+                        updatedLocation: {
+                            latLong: {
+                                lat: 60.1849856,
+                                lon: 24.8741888
+                            },
+                            altitude: 0,
+                            accuracy: null,
+                            altitudeAccuracy: null,
+                            speed: null,
+                            altitudeMin: null,
+                            altitudeMax: null,
+                            name: null
+                        },
+                        name: 'In Transition FRESH Cocoa',
+                        grade: null,
+                        organic: false,
+                        dry: false
+                    }
+                ],
+                polygon: {
+                    id: 'b1eafb57-5772-4927-b5a3-b9d6dd2419c5',
+                    refcollection: 'geodatas',
+                    label: 'Polygon - FARM-007 - P1',
+                    labelShort: 'Polygon - FARM-007 - P1',
+                    qrCode: '123',
+                    shortCode: '123',
+                    type: 'Polygon',
+                    isPreviousVersion: false
+                },
+                polygonFull: {
+                    properties: {
+                        idLabelShort: 'Polygon - FARM-007 - P1',
+                        customId: 'b1eafb57-5772-4927-b5a3-b9d6dd2419c5',
+                        auditActivityId: {
+                            qrCode: '123',
+                            refcollection: 'auditactivities',
+                            chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                            id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                            label: 'AUDIT-21062022',
+                            isPreviousVersion: false,
+                            shortCode: '123',
+                            workflowId: {
+                                refcollection: 'workflowscopes_wip',
+                                id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                                isPreviousVersion: false
+                            }
+                        }
+                    },
+                    isDeleted: false,
+                    approvalStatus: 'NotSet',
+                    reviewStatus: 'NotSet',
+                    creationStatus: 'NotSet',
+                    systemStatus: null,
+                    isArchived: false,
+                    enabled: true,
+                    sourceSystem: null,
+                    meta_workspace: 'master_latitude_waqar',
+                    meta_organisation: 'latitude',
+                    meta_configkey: 'ltc',
+                    id: {
+                        id: 'b1eafb57-5772-4927-b5a3-b9d6dd2419c5',
+                        refcollection: 'geodatas',
+                        label: 'Polygon - FARM-007 - P1',
+                        labelShort: 'Polygon - FARM-007 - P1',
+                        qrCode: '123',
+                        shortCode: '123',
+                        type: 'Polygon',
+                        isPreviousVersion: false
+                    },
+                    createdDate: '2024-06-21T13:25:22.592Z',
+                    updatedDate: '2024-06-21T13:25:22.592Z',
+                    lastActivityDate: null,
+                    createdBy: {
+                        id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                        refcollection: 'platformusers',
+                        label: 'waqar@orijin.io',
+                        labelShort: 'waqar@orijin.io',
+                        isPreviousVersion: false
+                    },
+                    updatedBy: {
+                        id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                        refcollection: 'platformusers',
+                        label: 'waqar@orijin.io',
+                        labelShort: 'waqar@orijin.io',
+                        isPreviousVersion: false
+                    },
+                    createdLocation: {
+                        latLong: {
+                            lat: 60.24962529560727,
+                            lon: 24.97167293249805
+                        },
+                        altitude: null,
+                        accuracy: 62,
+                        altitudeAccuracy: null,
+                        speed: null,
+                        altitudeMin: null,
+                        altitudeMax: null,
+                        name: null
+                    },
+                    updatedLocation: {
+                        latLong: {
+                            lat: 60.24962529560727,
+                            lon: 24.97167293249805
+                        },
+                        altitude: null,
+                        accuracy: 62,
+                        altitudeAccuracy: null,
+                        speed: null,
+                        altitudeMin: null,
+                        altitudeMax: null,
+                        name: null
+                    },
+                    type: 'Polygon',
+                    targetType: null,
+                    name: 'Polygon - FARM-007 - P1',
+                    data: [
+                        {
+                            altitude: null,
+                            lng: 24.971673339406202,
+                            lat: 60.249625059250924
+                        }
+                    ],
+                    areaCalculated: null,
+                    areaManual: 33,
+                    notes: null,
+                    season: {
+                        id: '0f81d551-e601-4b93-bdb3-5e1258a6bb10',
+                        refcollection: 'seasons',
+                        label: '2023/24',
+                        labelShort: '2023/24',
+                        authTag: 'ALL',
+                        qrCode: '123',
+                        shortCode: '123',
+                        isPreviousVersion: false
+                    },
+                    entity: {
+                        id: 'eb83b85e-9c3f-4dea-b734-7c5dbfb5fcd1',
+                        refcollection: 'plots',
+                        label: 'P1',
+                        labelShort: 'FARM-007 - P1',
+                        qrCode: '123',
+                        shortCode: '123',
+                        type: 'Permanent',
+                        isPreviousVersion: false
+                    },
+                    entityParent: {
+                        id: 'clxn3e2r8002mfmxv5sfmuopu',
+                        refcollection: 'farms',
+                        label: 'SEASON HISTORY',
+                        labelShort: 'FARM-007',
+                        qrCode: '123',
+                        shortCode: '123',
+                        isPreviousVersion: false
+                    }
+                },
+                geodatas: [
+                    {
+                        id: 'b1eafb57-5772-4927-b5a3-b9d6dd2419c5',
+                        refcollection: 'geodatas',
+                        label: 'Polygon - FARM-007 - P1',
+                        labelShort: 'Polygon - FARM-007 - P1',
+                        qrCode: '123',
+                        shortCode: '123',
+                        type: 'Polygon',
+                        isPreviousVersion: false
+                    }
+                ],
+                geodatasFull: [
+                    {
+                        properties: {
+                            idLabelShort: 'Polygon - FARM-007 - P1',
+                            customId: 'b1eafb57-5772-4927-b5a3-b9d6dd2419c5',
+                            auditActivityId: {
+                                qrCode: '123',
+                                refcollection: 'auditactivities',
+                                chainId: '9ded27dc-7edb-43b4-b3ab-d9e3d0212193',
+                                id: '6609eb13-ab41-43d6-92ab-148260e83c28',
+                                label: 'AUDIT-21062022',
+                                isPreviousVersion: false,
+                                shortCode: '123',
+                                workflowId: {
+                                    refcollection: 'workflowscopes_wip',
+                                    id: '7d85ea53-5260-4ca9-b20e-ef6054f17d18',
+                                    isPreviousVersion: false
+                                }
+                            }
+                        },
+                        isDeleted: false,
+                        approvalStatus: 'NotSet',
+                        reviewStatus: 'NotSet',
+                        creationStatus: 'NotSet',
+                        systemStatus: null,
+                        isArchived: false,
+                        enabled: true,
+                        sourceSystem: null,
+                        meta_workspace: 'master_latitude_waqar',
+                        meta_organisation: 'latitude',
+                        meta_configkey: 'ltc',
+                        id: {
+                            id: 'b1eafb57-5772-4927-b5a3-b9d6dd2419c5',
+                            refcollection: 'geodatas',
+                            label: 'Polygon - FARM-007 - P1',
+                            labelShort: 'Polygon - FARM-007 - P1',
+                            qrCode: '123',
+                            shortCode: '123',
+                            type: 'Polygon',
+                            isPreviousVersion: false
+                        },
+                        createdDate: '2024-06-21T13:25:22.592Z',
+                        updatedDate: '2024-06-21T13:25:22.592Z',
+                        lastActivityDate: null,
+                        createdBy: {
+                            id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                            refcollection: 'platformusers',
+                            label: 'waqar@orijin.io',
+                            labelShort: 'waqar@orijin.io',
+                            isPreviousVersion: false
+                        },
+                        updatedBy: {
+                            id: 'TQL1bwid2MQJDwUiyz9FaeuzpxA4',
+                            refcollection: 'platformusers',
+                            label: 'waqar@orijin.io',
+                            labelShort: 'waqar@orijin.io',
+                            isPreviousVersion: false
+                        },
+                        createdLocation: {
+                            latLong: {
+                                lat: 60.24962529560727,
+                                lon: 24.97167293249805
+                            },
+                            altitude: null,
+                            accuracy: 62,
+                            altitudeAccuracy: null,
+                            speed: null,
+                            altitudeMin: null,
+                            altitudeMax: null,
+                            name: null
+                        },
+                        updatedLocation: {
+                            latLong: {
+                                lat: 60.24962529560727,
+                                lon: 24.97167293249805
+                            },
+                            altitude: null,
+                            accuracy: 62,
+                            altitudeAccuracy: null,
+                            speed: null,
+                            altitudeMin: null,
+                            altitudeMax: null,
+                            name: null
+                        },
+                        type: 'Polygon',
+                        targetType: null,
+                        name: 'Polygon - FARM-007 - P1',
+                        // COORDINATES HERE - from NKD-0559
+                        data: [
+                            {
+                                altitude: null,
+                                lng: 30.0271878,
+                                lat: 0.6521586
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0271452,
+                                lat: 0.6521671
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0271148,
+                                lat: 0.6521711
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.027088,
+                                lat: 0.6521806
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0270629,
+                                lat: 0.652196
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0270354,
+                                lat: 0.6522096
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0270127,
+                                lat: 0.6522258
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0269878,
+                                lat: 0.652237
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0269633,
+                                lat: 0.6522505
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0269409,
+                                lat: 0.6522664
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0269179,
+                                lat: 0.652283
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0268941,
+                                lat: 0.6523006
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.026866,
+                                lat: 0.6523015
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0268379,
+                                lat: 0.6522959
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0268102,
+                                lat: 0.6522893
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0267831,
+                                lat: 0.6522804
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0267569,
+                                lat: 0.652271
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0267291,
+                                lat: 0.6522587
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0267016,
+                                lat: 0.652266
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0266769,
+                                lat: 0.6522792
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0266608,
+                                lat: 0.6523024
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0266481,
+                                lat: 0.652329
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0266335,
+                                lat: 0.6523528
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0266175,
+                                lat: 0.6523766
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.026606,
+                                lat: 0.6524023
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0265987,
+                                lat: 0.6524286
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0266121,
+                                lat: 0.6524533
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0266268,
+                                lat: 0.652477
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0266429,
+                                lat: 0.6525003
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0266584,
+                                lat: 0.6525229
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.026669,
+                                lat: 0.652548
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0266817,
+                                lat: 0.6525744
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0267009,
+                                lat: 0.6525997
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0267084,
+                                lat: 0.6526285
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0267207,
+                                lat: 0.6526541
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0267377,
+                                lat: 0.6526754
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.026749,
+                                lat: 0.6527011
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0267725,
+                                lat: 0.6527201
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0268019,
+                                lat: 0.6527328
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0268297,
+                                lat: 0.652743
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0268579,
+                                lat: 0.6527476
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0268844,
+                                lat: 0.6527551
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0269115,
+                                lat: 0.6527502
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0269397,
+                                lat: 0.6527494
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0269938,
+                                lat: 0.6527422
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0270214,
+                                lat: 0.6527367
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0270524,
+                                lat: 0.6527363
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.027081,
+                                lat: 0.6527324
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0271084,
+                                lat: 0.6527297
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0271363,
+                                lat: 0.6527307
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0271567,
+                                lat: 0.6527121
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0271823,
+                                lat: 0.6527033
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0272031,
+                                lat: 0.6526831
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0272273,
+                                lat: 0.6526668
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0272424,
+                                lat: 0.6526436
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0272636,
+                                lat: 0.6526194
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0272834,
+                                lat: 0.6525998
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0273002,
+                                lat: 0.6525777
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0273223,
+                                lat: 0.6525612
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0273405,
+                                lat: 0.6525409
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0273599,
+                                lat: 0.6525168
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0273777,
+                                lat: 0.6524952
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0273929,
+                                lat: 0.6524715
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0274071,
+                                lat: 0.652448
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0274265,
+                                lat: 0.6524281
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0274347,
+                                lat: 0.6524009
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0274327,
+                                lat: 0.6523738
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0274357,
+                                lat: 0.6523429
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0274338,
+                                lat: 0.6523158
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0274335,
+                                lat: 0.6522855
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0274378,
+                                lat: 0.6522538
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0274417,
+                                lat: 0.6522259
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.027431,
+                                lat: 0.6522006
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0274112,
+                                lat: 0.6521667
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0273849,
+                                lat: 0.6521596
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0273618,
+                                lat: 0.6521437
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0273364,
+                                lat: 0.6521335
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0273089,
+                                lat: 0.6521307
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0272775,
+                                lat: 0.6521283
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0272508,
+                                lat: 0.6521322
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0272258,
+                                lat: 0.652151
+                            },
+                            {
+                                altitude: null,
+                                lng: 30.0271878,
+                                lat: 0.6521586
+                            }
+                        ],
+                        areaCalculated: null,
+                        areaManual: 33,
+                        notes: null,
+                        season: {
+                            id: '0f81d551-e601-4b93-bdb3-5e1258a6bb10',
+                            refcollection: 'seasons',
+                            label: '2023/24',
+                            labelShort: '2023/24',
+                            authTag: 'ALL',
+                            qrCode: '123',
+                            shortCode: '123',
+                            isPreviousVersion: false
+                        },
+                        entity: {
+                            id: 'eb83b85e-9c3f-4dea-b734-7c5dbfb5fcd1',
+                            refcollection: 'plots',
+                            label: 'P1',
+                            labelShort: 'FARM-007 - P1',
+                            qrCode: '123',
+                            shortCode: '123',
+                            type: 'Permanent',
+                            isPreviousVersion: false
+                        },
+                        entityParent: {
+                            id: 'clxn3e2r8002mfmxv5sfmuopu',
+                            refcollection: 'farms',
+                            label: 'SEASON HISTORY',
+                            labelShort: 'FARM-007',
+                            qrCode: '123',
+                            shortCode: '123',
+                            isPreviousVersion: false
+                        }
+                    }
+                ],
+                primaryCrops: null,
+                secondaryCrops: [
+                    'Cassava'
+                ],
+                cropHistory: [],
+                yieldEstimateRaw: 222,
+                yieldEstimateProcessed: null,
+                location: null,
+                bioDiversityData: {},
+                season: null,
+                seasons: [],
+                facility: null,
+                farm: {
+                    id: 'clxn3e2r8002mfmxv5sfmuopu',
+                    refcollection: 'farms',
+                    label: 'SEASON HISTORY',
+                    labelShort: 'FARM-007',
+                    qrCode: '123',
+                    shortCode: '123',
+                    isPreviousVersion: false
+                },
+                traditionalOwnersPresent: null
+            }
+        ],
+        mobilePayWalletsFullIds: [],
+        mobilePayRegistrationStatus: 'NotSet',
+        identityVerificationStatus: 'NotSet',
+        contactFirstName: null,
+        contactDobApproximate: null,
+        contactIdentificationNumberType: null,
+        nickName: null,
+        contactEducation: null,
+        contactLastName: null,
+        contactMiddleName: null,
+        contactIdentificationNumber: null,
+        contactMaritalStatus: null,
+        contactHouseHoldMemberCount: null,
+        contactGender: null,
+        contractsFull: []
+    }
+};

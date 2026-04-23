@@ -1,0 +1,8 @@
+shortCode,name,size,weight,facility,subType,type
+GP,Grain Pro,60;kg,1;kg,KSE,StorageContainer,Sack
+ET,Ecotact,60;kg,1;kg,KSE,StorageContainer,Sack
+GT,Graintech,60;kg,1;kg,KSE,StorageContainer,Sack
+GB25,Gunny bag 25kg,25;kg,1;kg,KSE,StorageContainer,Sack
+GB60,Gunny bag 60kg,60;kg,1;kg,KSE,StorageContainer,Sack
+PP25,Polypropylene bag 25kg,25;kg,1;kg,KSE,StorageContainer,Sack
+PP60,Polypropylene bag 60kg,60;kg,1;kg,KSE,StorageContainer,Sack

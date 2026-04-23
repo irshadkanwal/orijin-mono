@@ -1,0 +1,5 @@
+shortCode,name,organisationId,path
+BDG,BUNDIBUGYO,testOrg,ALL.BDG
+KSE,KASESE,testOrg,ALL.KSE
+KGD,KAGADI,testOrg,ALL.KGD
+ALL,ALL,testOrg,ALL
