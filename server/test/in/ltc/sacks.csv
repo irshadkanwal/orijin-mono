@@ -1,0 +1,8 @@
+organisation,idLabelShort,name,size,weight,facility,vesselSubType,idAuthTag
+ltc,GP,Grain Pro,60;kg,1;kg,LTC,StorageContainer,ALL
+ltc,ET,Ecotact,60;kg,1;kg,LTC,StorageContainer,ALL
+ltc,GT,Graintech,60;kg,1;kg,LTC,StorageContainer,ALL
+ltc,GB25,Gunny bag 25kg,25;kg,1;kg,LTC,StorageContainer,ALL
+ltc,GB60,Gunny bag 60kg,60;kg,1;kg,LTC,StorageContainer,ALL
+ltc,PP25,Polypropylene bag 25kg,25;kg,1;kg,LTC,StorageContainer,ALL
+ltc,PP60,Polypropylene bag 60kg,60;kg,1;kg,LTC,StorageContainer,ALL

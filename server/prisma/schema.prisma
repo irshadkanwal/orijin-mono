@@ -1,0 +1,1389 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+  // previewFeatures = ["relationJoins"] // 5.9.0!
+  // previewFeatures = []
+}
+
+generator dbml {
+  provider = "prisma-dbml-generator"
+}
+
+enum Role {
+  ADMIN
+  USER
+}
+
+// enum OrderStatus {
+//   // Actually used
+//   UNDER_WORK
+//   DELIVERED
+//   EXCEPTION
+//   CANCELLED
+//   // Legacy
+//   NEW
+//   WAITING_ROUTING
+//   DELIVERY_ONGOING
+// }
+
+model Organisation {
+  id        String    @id @default(cuid())
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  name String
+}
+
+model User {
+  id        String    @id @default(cuid())
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  email    String @unique
+  password String
+
+  name      String?
+  firstname String?
+  lastname  String?
+  posts     Post[]
+  role      Role
+
+  hasCreatedActivitiLogs ActivityLog[]
+  surveyResultsCreated   SurveyResult[]   @relation("createdByUser")
+  surveyResultsUpdated   SurveyResult[]   @relation("updatedByUser")
+  surveysCreated         Survey[]         @relation("createdByUser")
+  surveysUpdated         Survey[]         @relation("updatedByUser")
+  notes                  Note[]
+  activitySubmits        ActivitySubmit[]
+  Approvals              Approval[]
+}
+
+model Post {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  published Boolean
+  title     String
+  content   String?
+  author    User?   @relation(fields: [authorId], references: [id])
+  authorId  String?
+}
+
+model Farmer {
+  id           String  @id @default(cuid())
+  shortCode    String?
+  organisation String
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  name String @unique
+
+  supportingServiceActivities SupportingServiceActivity[]
+
+  @@unique([shortCode, organisation])
+}
+
+//////////////////
+// Support service categories
+//////////////////
+
+model SupportingServiceCategoryType {
+  id           String  @id @default(cuid())
+  shortCode    String?
+  organisation String
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  supportingServiceCategories SupportingServiceCategory[]
+
+  name                      String
+  description               String?
+  type                      String?
+  supportingServiceActivity SupportingServiceActivity[]
+
+  @@unique([shortCode, organisation])
+}
+
+model SupportingServiceCategory {
+  id           String  @id @default(cuid())
+  shortCode    String?
+  organisation String
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  supportingServiceCategoryTypeId String
+  supportingServiceCategoryType   SupportingServiceCategoryType @relation(fields: [supportingServiceCategoryTypeId], references: [id])
+
+  supportingServiceActivities SupportingServiceActivity[]
+
+  name        String
+  description String?
+
+  type                          String?
+  SupportingServiceActivityType SupportingServiceActivityType[]
+  SupportingServiceInputType    SupportingServiceInputType[]
+
+  @@unique([shortCode, organisation])
+}
+
+enum BeneficiaryType {
+  INDIVIDUAL
+  GROUP
+}
+
+model SupportingServiceActivityType {
+  id           String  @id @default(cuid())
+  shortCode    String?
+  organisation String
+
+  createdAt                   DateTime                    @default(now())
+  updatedAt                   DateTime                    @updatedAt
+  deletedAt                   DateTime?
+  supportingServiceActivities SupportingServiceActivity[]
+
+  name        String
+  description String?
+
+  type String?
+
+  beneficiaryType BeneficiaryType @default(INDIVIDUAL)
+
+  supportingServiceInputType   SupportingServiceInputType? @relation(fields: [supportingServiceInputTypeId], references: [id])
+  supportingServiceInputTypeId String?
+
+  supportingServiceCategory   SupportingServiceCategory @relation(fields: [supportingServiceCategoryId], references: [id])
+  supportingServiceCategoryId String
+
+  @@unique([shortCode, organisation])
+}
+
+model SupportingServiceInputType {
+  id           String  @id @default(cuid())
+  shortCode    String?
+  organisation String
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  name        String
+  description String?
+
+  type String?
+
+  supportingServiceCategory   SupportingServiceCategory @relation(fields: [supportingServiceCategoryId], references: [id])
+  supportingServiceCategoryId String
+
+  supportingServiceActivities SupportingServiceActivity[]
+
+  SupportingServiceActivityType SupportingServiceActivityType[]
+
+  @@unique([shortCode, organisation])
+}
+
+model SupportingServiceActivity {
+  id           String  @id @default(cuid())
+  shortCode    String?
+  organisation String
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  supportingServiceInputType   SupportingServiceInputType? @relation(fields: [supportingServiceInputTypeId], references: [id])
+  supportingServiceInputTypeId String?
+
+  supportingServiceActivityType   SupportingServiceActivityType @relation(fields: [supportingServiceActivityTypeId], references: [id])
+  supportingServiceActivityTypeId String
+
+  farmer                      Farmer?                   @relation(fields: [farmerId], references: [id])
+  farmerId                    String?
+  supportingServiceCategory   SupportingServiceCategory @relation(fields: [supportingServiceCategoryId], references: [id])
+  supportingServiceCategoryId String
+
+  beneficiaryType String?
+
+  operator                        String
+  dateOfService                   DateTime
+  ServiceActivityBeneficiaries    ServiceActivityBeneficiaries[]
+  serviceActivityLocations        ServiceActivityLocation[]
+  description                     String?
+  locationId                      String?
+  location                        Location?                      @relation(fields: [locationId], references: [id])
+  supportingServiceCategoryType   SupportingServiceCategoryType? @relation(fields: [supportingServiceCategoryTypeId], references: [id])
+  supportingServiceCategoryTypeId String?
+
+  @@unique([shortCode, organisation])
+}
+
+model ServiceActivityBeneficiaries {
+  id                          String                    @id @default(cuid())
+  supportingServiceActivityId String
+  supportingServiceActivity   SupportingServiceActivity @relation(fields: [supportingServiceActivityId], references: [id])
+  personId                    String
+  person                      Person                    @relation(fields: [personId], references: [id])
+  primary                     Boolean?
+  itemValue                   Decimal?
+  itemsProcessed              Decimal?
+  values                      Json?
+  grade                       Decimal?
+  score                       Decimal?
+  total                       Decimal?
+}
+
+model ServiceActivityLocation {
+  id                          String                    @id @default(cuid())
+  supportingServiceActivityId String
+  supportingServiceActivity   SupportingServiceActivity @relation(fields: [supportingServiceActivityId], references: [id])
+  locationId                  String
+  location                    Location                  @relation(fields: [locationId], references: [id])
+}
+
+model ActivityLog {
+  id           String    @id @default(cuid())
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  deletedAt    DateTime?
+  organisation String
+  createdBy    User      @relation(fields: [createdById], references: [id])
+  createdById  String
+
+  type         String
+  activityName String?
+  note         String
+  dataPreview  Json
+  data         Json
+}
+
+model Season {
+  id        String @id @default(cuid())
+  shortCode String
+
+  organisation String
+  firestoreId  String?
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  name     String
+  startsAt DateTime
+  endsAt   DateTime?
+
+  active      Boolean
+  usedInFarms Farm[]
+  lots        Lot[]
+
+  @@unique([shortCode, organisation])
+}
+
+model Tag {
+  id           String  @id @default(cuid())
+  shortCode    String?
+  organisation String
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  name String
+
+  usedByLocations  Location[]
+  usedByFacilities Facility[]
+
+  @@unique([shortCode, organisation])
+}
+
+model Crop {
+  id           String  @id @default(cuid())
+  shortCode    String?
+  organisation String
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  name String
+
+  usedByVarieties    CropVariety[]
+  usedByPlots        Plot[]
+  usedByProductTypes ProductType[]
+
+  @@unique([shortCode, organisation])
+}
+
+model CropVariety {
+  id           String  @id @default(cuid())
+  shortCode    String?
+  organisation String
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  name        String
+  description String?
+
+  crop           Crop      @relation(fields: [cropId], references: [id])
+  cropId         String
+  usedByProducts Product[]
+  usedByPlots    Plot[]
+
+  @@unique([shortCode, organisation])
+}
+
+model CertificationType {
+  id           String  @id @default(cuid())
+  shortCode    String?
+  organisation String
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  name                 String
+  products             Product[]
+  usedByCertifications Certification[]
+  auditActivities      AuditActivity[]
+
+  @@unique([shortCode, organisation])
+}
+
+model GeoCoordinate {
+  id        String  @id @default(cuid())
+  shortCode String? @unique
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  name String?
+
+  latitude  Decimal
+  longitude Decimal
+
+  altitude         Decimal?
+  accuracy         Decimal?
+  altitudeAccuracy Decimal?
+  speed            Decimal?
+  altitudeMin      Decimal?
+  altitudeMax      Decimal?
+
+  usedByFacilities              Facility[]
+  usedByLocations               Location[]
+  usedByFarmHouseHoldCoordinate Farm[]
+}
+
+enum EnumMainType {
+  GLOBAL
+  CUSTOM
+}
+
+model Location {
+  id           String  @id @default(cuid())
+  shortCode    String?
+  organisation String
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  mainType EnumMainType @default(GLOBAL)
+  type     String
+  name     String
+
+  coordinateId String?
+  coordinate   GeoCoordinate? @relation(fields: [coordinateId], references: [id])
+
+  parentId String?
+  parent   Location? @relation("ParentChildLocation", fields: [parentId], references: [id])
+
+  tags                      Tag[]
+  children                  Location[] @relation("ParentChildLocation")
+  originLocationForProducts Product[]
+  facilities                Facility[] @relation("FacilityLocation")
+  facilitiesCustom          Facility[] @relation("FacilityCustomLocation")
+
+  SupportingServiceActivity SupportingServiceActivity[]
+  ServiceActivityLocation   ServiceActivityLocation[]
+
+  @@unique([shortCode, organisation, type])
+}
+
+model ProductType {
+  id           String  @id @default(cuid())
+  shortCode    String?
+  organisation String
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  name           String
+  usedByProducts Product[]
+
+  cropId String?
+  crop   Crop?   @relation(fields: [cropId], references: [id])
+
+  @@unique([shortCode, organisation])
+}
+
+model Product {
+  id           String  @id @default(cuid())
+  shortCode    String?
+  organisation String
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  name         String
+  sku          String?
+  description  String?
+  // this could also be fetched from the certification typs perhaps
+  organic      Boolean?
+  // this is just a helper really, there could be a different way
+  singleOrigin Boolean?
+  dry          Boolean?
+
+  productTypeId String
+  productType   ProductType @relation(fields: [productTypeId], references: [id])
+
+  grade Int?
+
+  originVarietyId    String
+  originVariety      CropVariety         @relation(fields: [originVarietyId], references: [id])
+  // I could not make this work in plural... so making it single for now
+  // originVarieties    CropVariety[]
+  certificationTypes CertificationType[]
+  originFacilities   Facility[]
+  originFarms        Farm[]
+
+  originLocationId String
+  originLocation   Location @relation(fields: [originLocationId], references: [id])
+
+  // originLocations    Location[]
+
+  prices Price[]
+
+  @@unique([shortCode, organisation])
+}
+
+model Price {
+  id           String    @id @default(cuid())
+  shortCode    String?
+  organisation String
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  deletedAt    DateTime?
+
+  unit            String
+  amount          Decimal
+  perAmountUnit   String
+  perAmountAmount Decimal
+
+  active   Boolean?  @default(true)
+  startsAt DateTime?
+  endsAt   DateTime?
+
+  productId String
+  product   Product @relation(fields: [productId], references: [id])
+
+  @@unique([shortCode, organisation])
+}
+
+model Person {
+  id           String  @id @default(cuid())
+  shortCode    String?
+  organisation String
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  type       String
+  email      String?
+  phone      String?
+  phone2     String?
+  firstName  String
+  middleName String?
+  lastName   String
+  gender     String?
+
+  dateOfBirth            DateTime?
+  dateOfBirthApproximate Boolean?
+
+  nickName String?
+
+  identificationNumber     String?
+  identificationNumberType String?
+  education                String?
+  maritalStatus            String?
+
+  customFields Json?
+
+  mainContactPersonFor Facility[]
+
+  contacts                     Contact[]
+  ServiceActivityBeneficiaries ServiceActivityBeneficiaries[]
+  notes                        Note[]
+  payments                     PaymentTransaction[]
+
+  @@unique([shortCode, organisation])
+}
+
+model Contact {
+  id           String @id @default(cuid())
+  shortCode    String
+  organisation String
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  firstName String?
+  lastName  String?
+
+  type                          String
+  email                         String?
+  phone                         String?
+  address                       String?
+  primary                       Boolean?
+  registeredUnderPrincipalsName Boolean?
+  registeredForMobileMoney      Boolean?
+
+  personId String
+  person   Person @relation(fields: [personId], references: [id])
+
+  wallets Wallet[]
+
+  @@unique([shortCode, organisation])
+}
+
+model Wallet {
+  id           String @id @default(cuid())
+  shortCode    String
+  organisation String
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  externalSystemName String?
+  type               String
+  phone              String?
+
+  externalId        String?
+  externalUuid      String?
+  externalName      String?
+  externalFirstName String?
+  externalLastName  String?
+
+  errorMsg                    String?
+  errorStatus                 String?
+  name_on_network             String?
+  name_matches_network_score  Decimal?
+  name_matches_network_status String?
+
+  contactId           String
+  contact             Contact              @relation(fields: [contactId], references: [id])
+  paymentTransactions PaymentTransaction[]
+
+  @@unique([shortCode, organisation])
+}
+
+model Polygon {
+  id                         String                      @id @default(cuid())
+  shortCode                  String?                     @unique
+  createdAt                  DateTime                    @default(now())
+  updatedAt                  DateTime                    @updatedAt
+  deletedAt                  DateTime?
+  active                     Boolean
+  status                     String?
+  areaCalculated             Decimal?
+  coordinates                Json
+  source                     String
+  polygonWarnings            PolygonWarning[]
+  polygonInteractionWarnings PolygonInteractionWarning[] @relation("polygonInteractionWarnings")
+
+  plotId String
+  plot   Plot   @relation(fields: [plotId], references: [id])
+  notes  Note[]
+}
+
+model PolygonWarning {
+  id        String  @id @default(cuid())
+  polygonId String
+  key       String
+  fixed     Boolean
+  polygon   Polygon @relation(fields: [polygonId], references: [id])
+}
+
+model PolygonInteractionWarning {
+  id       String    @id @default(cuid())
+  key      String
+  fixed    Boolean
+  polygons Polygon[] @relation("polygonInteractionWarnings")
+}
+
+model Facility {
+  id           String  @id @default(cuid())
+  shortCode    String?
+  organisation String
+  firestoreId  String?
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  name            String
+  type            String
+  areaTotalManual Decimal?
+
+  address          Json?
+  locationId       String?
+  customLocationId String?
+
+  location       Location? @relation("FacilityLocation", fields: [locationId], references: [id])
+  customLocation Location? @relation("FacilityCustomLocation", fields: [customLocationId], references: [id])
+
+  coordinateId String?
+  coordinate   GeoCoordinate? @relation(fields: [coordinateId], references: [id])
+
+  mainContactPersonId String?
+  mainContactPerson   Person? @relation(fields: [mainContactPersonId], references: [id])
+
+  countryIso String?
+  timezone   String?
+  farm       Farm?
+
+  tags Tag[]
+
+  usedAsOriginFacilityForProducts Product[]
+  vessles                         Vessel[]
+}
+
+model Certification {
+  id           String  @id @default(cuid())
+  shortCode    String?
+  organisation String
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  status String
+
+  startsAt DateTime
+  endsAt   DateTime?
+
+  certificationType   CertificationType @relation(fields: [certificationTypeId], references: [id])
+  certificationTypeId String
+
+  farm   Farm?   @relation(fields: [farmId], references: [id])
+  farmId String?
+
+  plot   Plot?   @relation(fields: [plotId], references: [id])
+  plotId String?
+
+  auditActivities AuditActivity[]
+
+  @@unique([shortCode, organisation])
+}
+
+model AuditActivity {
+  id           String  @id @default(cuid())
+  shortCode    String?
+  organisation String
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  type        String
+  name        String
+  description String?
+  status      String
+
+  startDate DateTime
+
+  scope  CertificationType[]
+  farm   Farm?               @relation(fields: [farmId], references: [id])
+  farmId String?
+
+  nonCompliances AuditNonCompliance[]
+  entries        AuditEntry[]
+
+  conductedForCertifications Certification[]
+
+  @@unique([shortCode, organisation])
+}
+
+model AuditEntry {
+  id           String  @id @default(cuid())
+  shortCode    String?
+  organisation String
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  type        String
+  name        String
+  description String?
+  status      String
+
+  auditActivity   AuditActivity @relation(fields: [auditActivityId], references: [id])
+  auditActivityId String
+
+  targetNonCompliance   AuditNonCompliance? @relation(fields: [targetNonComplianceId], references: [id])
+  targetNonComplianceId String?
+
+  targetFarm   Farm?   @relation(fields: [targetFarmId], references: [id])
+  targetFarmId String?
+
+  targetPlot   Plot?   @relation(fields: [targetPlotId], references: [id])
+  targetPlotId String?
+
+  targetSurvey   Survey? @relation(fields: [targetSurveyId], references: [id])
+  targetSurveyId String?
+
+  @@unique([shortCode, organisation])
+}
+
+model AuditNonCompliance {
+  id           String  @id @default(cuid())
+  shortCode    String?
+  organisation String
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  type        String
+  description String?
+  status      String
+  severity    String
+
+  correctiveActionType        String
+  correctiveActionDescription String?
+  // correctiveActionResponsiblePerson: string = null;
+
+  notes                        String?
+  correctiveActionDeadlineDate DateTime?
+  followUpDate                 DateTime?
+
+  targetFarm   Farm?   @relation(fields: [targetFarmId], references: [id])
+  targetFarmId String?
+
+  targetPlot   Plot?   @relation(fields: [targetPlotId], references: [id])
+  targetPlotId String?
+
+  auditActivity   AuditActivity? @relation(fields: [auditActivityId], references: [id])
+  auditActivityId String?
+
+  targetedInAuditEntries AuditEntry[]
+
+  @@unique([shortCode, organisation])
+}
+
+model Farm {
+  id           String  @id @default(cuid())
+  organisation String
+  firestoreId  String?
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  // The Facility which the Farm extends!
+  facility   Facility @relation(fields: [facilityId], references: [id])
+  facilityId String   @unique
+
+  // The name to the actual processing facility closest to the Farm
+  parentFacilityName String?
+
+  season   Season? @relation(fields: [seasonId], references: [id])
+  seasonId String?
+
+  plots          Plot[]
+  certifications Certification[]
+  contracts      Contract[]
+  countItems     CountItem[]
+  surveyResults  SurveyResult[]
+
+  // get rid of this and make it a dynamic calculation based on the certifications linked to the farm, however have to get this for now
+  certificationStatus String?
+  approvalStatus      String?
+  creationStatus      String?
+
+  // TODO: Not needed! The GPS location is stored at Facility - this is needed, household is different to farm GPS which should be in the middle of the farm
+  houseHoldCoordinateId String?
+  houseHoldCoordinate   GeoCoordinate? @relation(fields: [houseHoldCoordinateId], references: [id])
+
+  contractDate           DateTime?
+  registrationDate       DateTime?
+  certificationStartDate DateTime?
+  lastChemicalUseDate    DateTime?
+  lastInspectionDate     DateTime?
+  firstVisitDate         DateTime?
+
+  usedAsOriginFarmForProducts Product[]
+  notes                       Note[]
+  incomingPayloads            JsonPayload[]
+  payments                    PaymentTransaction[]
+  auditActivities             AuditActivity[]
+  auditEntries                AuditEntry[]
+  auditNonCompliances         AuditNonCompliance[]
+  Lot                         Lot[]
+}
+
+model CountItem {
+  id        String    @id @default(cuid())
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  category String
+  type     String
+  subType  String?
+  count    Int
+
+  plotId String?
+  plot   Plot?   @relation(fields: [plotId], references: [id])
+
+  farmId String?
+  farm   Farm?   @relation(fields: [farmId], references: [id])
+}
+
+model Plot {
+  id        String  @id @default(cuid())
+  shortCode String? // @unique
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  firestoreId String?
+
+  type   String
+  name   String
+  status String?
+
+  farm   Farm   @relation(fields: [farmId], references: [id])
+  farmId String
+
+  polygons          Polygon[]
+  plotCountItems    CountItem[]
+  satelliteAnalysis SatelliteAnalysis[]
+
+  certificationStatus String?
+  interCropped        Boolean?
+  active              Boolean?
+
+  // these have been called crops before
+  // mainVariety Variety
+  mainVarieties  CropVariety[]
+  secondaryCrops Crop[]
+
+  yieldEstimateRaw       Int?
+  // calculated??
+  yieldEstimateProcessed Int?
+  cultivationStartDate   DateTime?
+  registrationDate       DateTime?
+  lastChemicalUseDate    DateTime?
+
+  //
+  // "isOrganic": true,
+  // "interCropped": true,
+  // "isActive": true,
+  // "principalOwnsLand": true,
+  // "principalLeasesLand": null,
+  // "hasRightToLand": null,
+  // "hasLandTitle": "true",
+  // "ownerName": null,
+  // "establishedBefore2020": true,
+  // "hasShadeTrees": null,
+  // "distanceToForestKnown": true,
+  // "distanceToForest": "22",
+  // "traditionalOwners": true,
+  // "isDecifientOfNutrition": null,
+  // "shadeAmount": [
+  // "NoShade"
+  // ],
+  // "landInclination": [
+  // "Horizontal"
+  // ],
+
+  principalOwnsLand        Boolean?
+  principalLeasesLand      Boolean?
+  hasRightToLand           Boolean?
+  hasLandTitle             Boolean?
+  ownerName                String?
+  establishedBefore2020    Boolean?
+  hasShadeTrees            Boolean?
+  distanceToForestKnown    Boolean?
+  distanceToForest         Int?
+  traditionalOwners        Boolean?
+  traditionalOwnersPresent Boolean?
+
+  areaSizeManual        Float?
+  areaSizeOrganicManual Float?
+  notes                 Note[]
+  certifications        Certification[]
+  vessels               Vessel[]
+  auditEntries          AuditEntry[]
+  auditNonCompliances   AuditNonCompliance[]
+}
+
+model Contract {
+  id           String  @id @default(cuid())
+  shortCode    String?
+  organisation String
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  status String
+
+  startsAt DateTime
+  endsAt   DateTime?
+
+  farm   Farm   @relation(fields: [farmId], references: [id])
+  farmId String
+
+  @@unique([shortCode, organisation])
+}
+
+model SatelliteAnalysis {
+  id String @id @default(cuid())
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  plotId String
+  plot   Plot   @relation(fields: [plotId], references: [id])
+
+  // Our own status (GeoCledian does not have one)
+  status String
+
+  // Metadata
+  parcelId String
+  entity   String //  "entity": "Orijin test farm 1",
+  name     String //  "name": "Orijin Test One",
+
+  // Satellite data
+  area                Decimal?
+  countryIso          String?
+  countryRisk         String?
+  deforestationAreaHa Decimal?
+  deforestationRisk   String?
+
+  // Landcover
+  landcoverForestCoverage     Decimal?
+  landcoverNoTreesCoverage    Decimal?
+  landcoverPlantationCoverage Decimal?
+  landcoverShrubsCoverage     Decimal?
+
+  rawData Json
+}
+
+model Survey {
+  id           String  @id @default(cuid())
+  shortCode    String?
+  organisation String
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @default(now()) @updatedAt
+  deletedAt DateTime?
+
+  title           String
+  description     String
+  createdBy       String
+  updatedBy       String
+  surveyQuestions SurveyQuestion[]
+  surveyResults   SurveyResult[]
+  createdByUser   User             @relation("createdByUser", fields: [createdBy], references: [id])
+  updatedByUser   User             @relation("updatedByUser", fields: [updatedBy], references: [id])
+  auditEntries    AuditEntry[]
+
+  @@unique([shortCode, organisation])
+}
+
+model SurveyQuestion {
+  id        String    @id @default(cuid())
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @default(now()) @updatedAt
+  deletedAt DateTime?
+
+  question      String
+  description   String
+  answerType    String
+  answerOptions Json
+  min           Int
+  max           Int
+  unique_key    String
+  sorting_index Int
+  surveyId      String?
+  sectionId     String?
+  survey        Survey?        @relation(fields: [surveyId], references: [id])
+  section       Section?       @relation(fields: [sectionId], references: [id])
+  surveyAnswers SurveyAnswer[]
+}
+
+model Section {
+  id   String @id @default(cuid())
+  name String
+
+  surveyQuestions SurveyQuestion[]
+}
+
+model SurveyResult {
+  id        String    @id @default(cuid())
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @default(now()) @updatedAt
+  deletedAt DateTime?
+
+  createdBy     String
+  updatedBy     String
+  farmId        String?
+  surveyId      String?
+  survey        Survey?        @relation(fields: [surveyId], references: [id])
+  farm          Farm?          @relation(fields: [farmId], references: [id])
+  createdByUser User           @relation("createdByUser", fields: [createdBy], references: [id])
+  updatedByUser User           @relation("updatedByUser", fields: [updatedBy], references: [id])
+  surveyAnswers SurveyAnswer[]
+}
+
+model SurveyAnswer {
+  id String @id @default(cuid())
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @default(now()) @updatedAt
+  deletedAt DateTime?
+
+  survey_result_id   String
+  survey_question_id String
+  answer             String
+  surveyResult       SurveyResult   @relation(fields: [survey_result_id], references: [id])
+  surveyQuestion     SurveyQuestion @relation(fields: [survey_question_id], references: [id])
+}
+
+model Document {
+  id           String @id @default(cuid())
+  organisation String
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @default(now()) @updatedAt
+  deletedAt DateTime?
+
+  name             String?
+  description      String?
+  type             String?
+  mimeType         String?
+  sourceType       String?
+  url              String?
+  externalId       String?
+  storagePath      String?
+  language         String?
+  lastModifiedDate DateTime?
+  isLocked         Boolean?
+  index            Int?
+  size             Int?
+  originalFileName String?
+
+  note       Note?     @relation(fields: [noteId], references: [id])
+  noteId     String?
+  Approval   Approval? @relation(fields: [approvalId], references: [id])
+  approvalId String?
+}
+
+model Note {
+  id String @id @default(cuid())
+
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @default(now()) @updatedAt
+  deletedAt    DateTime?
+  organisation String
+
+  status  String
+  content String
+
+  createdBy   User   @relation(fields: [createdById], references: [id])
+  createdById String
+
+  farm   Farm   @relation(fields: [farmId], references: [id])
+  farmId String
+
+  plot   Plot   @relation(fields: [plotId], references: [id])
+  plotId String
+
+  polygon   Polygon @relation(fields: [polygonId], references: [id])
+  polygonId String
+
+  person   Person @relation(fields: [personId], references: [id])
+  personId String
+
+  documents Document[]
+}
+
+enum FunctionTypes {
+  CUSTOM
+  FARM_AREA_VALIDATOR
+}
+
+model Rule {
+  id                 String        @id @default(cuid())
+  category           String
+  name               String        @unique()
+  functionCode       String?
+  functionType       FunctionTypes
+  commonThreshold    Int
+  countryAdjustments String?
+}
+
+model ScoringResult {
+  id         String   @id @default(cuid())
+  ruleName   String
+  inputValue String?
+  scoreValue Float
+  createdAt  DateTime @default(now())
+}
+
+model Change {
+  id            String    @id @default(cuid())
+  startTime     DateTime? // 1970-01-01T00:00:00Z for new record, or the date of previous record
+  endTime       DateTime? // 2100-01-01T00:00:00Z for the current data, or the date of the update
+  transaction   String // id for whole transaction, i.e. to select all changes
+  sourceType    String // @link {ChangeSourceType}
+  objectId      String // ID of the object
+  objectType    String // Model enum (= Facility, Farm, Plot, etc)
+  operationType String? // @link {ChangeOperationType}
+  name          String // Name of the column, e.g. "certificationStatus", can be a JSONPath??
+  updatedBy     String // User.id
+  oldValue      String? // Serialized to string scalar or NULL for new record
+  newValue      String? // Serialized to string scalar or NULL for empty value
+}
+
+model JsonPayload {
+  id           String    @id @default(cuid())
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @default(now()) @updatedAt
+  deletedAt    DateTime?
+  organisation String
+  entityId     String // Just in case Farm creation breaks, we'll have the Shortcode here
+  source       String
+  payload      Json
+  Farm         Farm?     @relation(fields: [farmId], references: [id])
+  farmId       String?
+}
+
+model Lot {
+  id           String  @id @default(cuid())
+  idCode       String? @unique
+  organisation String
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  chainLabel   String
+  chainId      String
+  status       String
+  systemStatus String
+
+  containerId String?
+
+  payments PaymentTransaction[]
+
+  accumulationType String
+  originType       String[]
+  type             String[]
+  isBackDating     Boolean
+
+  purchaseStatus     String?
+  paymentStatus      String?
+  transportStatus    String?
+  modificationStatus String?
+  reportStatus       String?
+  approvalStatus     String?
+
+  // prices           Price[]
+
+  startDate DateTime
+  endDate   DateTime
+
+  weight     Decimal
+  weightUnit String
+  sackCount  Int
+  properties Json
+
+  // processingProperties ProcessingProperties?
+  // originPropertes      OriginProperties?
+
+  //
+  farm   Farm?   @relation(fields: [farmId], references: [id])
+  farmId String?
+
+  // currentFacility   Facility? @relation(fields: [currentFacilityId], references: [id])
+  // currentFacilityId String?
+
+  // currentLocation   Location? @relation(fields: [currentLocationId], references: [id])
+  // currentLocationId String?
+
+  season   Season @relation(fields: [seasonId], references: [id])
+  seasonId String
+
+  parentLots  Lot[]   @relation("parentLots")
+  parentLot   Lot?    @relation("parentLots", fields: [parentlotId], references: [id])
+  parentlotId String?
+
+  // tags            Tag[]
+  // farms           Farm[]
+  activitySubmits ActivitySubmit[]
+  approvals       Approval[]
+}
+
+model ActivitySubmit {
+  id           String @id @default(cuid())
+  organisation String
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  createdBy   User   @relation(fields: [createdById], references: [id])
+  createdById String
+
+  rawData Json?
+  // processingProperties ProcessingProperties? @relation(fields: [processingPropertiesId], references: [id])
+
+  approvals              Approval[]
+  // changeRecords          ValueChangeRecord[]
+  lot                    Lot        @relation(fields: [lotId], references: [id])
+  lotId                  String
+  processingPropertiesId String?
+}
+
+model Approval {
+  id           String @id @default(cuid())
+  organisation String
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  type   String //NOTE, approval,
+  status String?
+  note   String?
+
+  documents Document[]
+
+  user   User   @relation(fields: [userId], references: [id])
+  userId String
+
+  lot   Lot?    @relation(fields: [lotId], references: [id])
+  lotId String?
+
+  activitySubmit   ActivitySubmit? @relation(fields: [activitySubmitId], references: [id])
+  activitySubmitId String?
+}
+
+model PaymentTransaction {
+  id           String    @id @default(cuid())
+  organisation String
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  deletedAt    DateTime?
+
+  status         String
+  externalStatus String
+  externalId     String
+  accountId      String?
+  payeeFirstName String
+  payeeLastName  String
+
+  type        String
+  paymentDate DateTime
+
+  weight          Decimal
+  weightUnit      String
+  amount          Decimal
+  currency        String
+  conversionToUSD Decimal
+
+  lot   Lot    @relation(fields: [lotId], references: [id])
+  lotId String @unique
+
+  farm   Farm?   @relation(fields: [farmId], references: [id])
+  farmId String?
+
+  person   Person? @relation(fields: [personId], references: [id])
+  personId String?
+
+  wallet   Wallet? @relation(fields: [walletId], references: [id])
+  walletId String?
+
+  errorMsg String?
+}
+
+model Vessel {
+  id           String  @id @default(cuid())
+  shortCode    String?
+  organisation String
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  name        String
+  type        String
+  subType     String
+  description String?
+  permanent   Boolean?
+
+  //we then need to have some org display configs on how to display these always correctly!
+  //in ML
+  size   Decimal?
+  //in grams
+  weight Decimal?
+
+  facility   Facility? @relation(fields: [facilityId], references: [id])
+  facilityId String?
+
+  plot   Plot?   @relation(fields: [plotId], references: [id])
+  plotId String?
+
+  //maybe we should just saves these all in grams??? and then have
+  // sizeUnit            String
+  // sizeAmount          Decimal
+  // sizePerAmountUnit   String
+  // sizePerAmountAmount Decimal
+  // weightUnit            String
+  // weightAmount          Decimal
+  // weightPerAmountUnit   String
+  // weightPerAmountAmount Decimal
+
+  // picture?: string = null;
+
+  // currentBatch?: ObjectId = null;
+  // currentProdLot?: ObjectId = null;
+  // currentProdLotStartDate: Date;
+
+  @@unique([shortCode, organisation])
+}
